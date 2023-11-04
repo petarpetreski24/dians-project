@@ -42,7 +42,7 @@ if __name__ == '__main__':
                   fix_location,
                   fix_phoneNumber,
                   fix_occupation])
-    wineries = pd.read_csv('./dirty_data/wineries.csv').to_dict(orient='records')
+    wineries = pd.read_csv('../dirty_data/wineries.csv').to_dict(orient='records')
     for w in wineries:
         pipeline.execute(w)
 
