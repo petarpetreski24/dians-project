@@ -26,7 +26,10 @@ if __name__ == '__main__':
         winery["Location"] = html.select('ul.details > li')[1].text
         winery["Mob. Number"] = html.select_one('a.tcall').text
         winery["Occupation"] = html.select_one('.shortdescription').text
+        winery["WorkingHours"] = html.select_one('.workingtime').text if html.select_one('.workingtime') else ''
+        winery['Website'] = html.select_one('.website').attrs['href'] if html.select_one('.website').attrs['href'] != 'http://' else ''
+
         wineries.append(winery)
 
     df = pd.DataFrame(wineries)
-    df.to_csv('./dirty_data/wineries.csv',index=None)
+    df.to_csv('../dirty_data/wineries.csv',index=None)

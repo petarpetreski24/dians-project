@@ -47,4 +47,4 @@ if __name__ == '__main__':
         pipeline.execute(w)
 
     df = pd.DataFrame(wineries)
-    df.to_csv('./clean_data/wineries.csv',index=None)
+    df.to_csv('../clean_data/wineries.csv',index=None)
