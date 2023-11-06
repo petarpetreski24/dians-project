@@ -1,0 +1,24 @@
+Најпрво се собираат податоците преку OpenStreetMap со користење на следната команда:
+
+osmfilter map.osm --keep="amenity=winery =wine =wine_cellar" | osmconvert64-0.8.8p - --all-to-nodes --csv="@id @lon @lat name" --csv-headline --csv-separator="," -o="wineries.csv"
+
+Во фолдерот "clean_data" се поставени фајловите со подетални податоци.
+Во фајлот "final_data.csv" се наоѓа финалната верзија на податоците
+Овде како пример е дадена командата само за креиранје на фајлот wineries_osm.csv.
+
+За да ја користиме командата претходно требаше да спуштиме osmfilter од
+https://wiki.openstreetmap.org/wiki/Osmfilter#Download, како и osmconvert од
+https://wiki.openstreetmap.org/wiki/Osmconvert#Download и притоа ги ставивме во
+ист директориум заедно со мапатa која ја опфаќа Македонија.
+
+Бидејќи бројот на податоци е релативно мал, користени се и дополнителни извори на податоци.
+Дополнителниот извор на податоци е Златна книга, за која се користи Web Scraping за да се соберат податоци за винарии.
+Скриптата користена за ова се наоѓа во фолдерот "python_scripts" во фајлот "zlatna-kniga-scraping.py"
+Добиените податоци се зачувани во фолдерот "dirty_data" во фајлот "wineries.csv"
+
+Така добиените податоци се филтрираат преку pipe-от дефиниран во фајлот "data-pipe-filter.py"
+
+Потоа, користејќи ја нивната адреса, се лоцира таа адреса и се пронаоѓаат параметри како Longitude и Latitude.
+Скриптата користена за ова се наоѓа во фолдерот "python_scripts" во фајлот "geocoding_script.py"
+
+Вака добиените податоци, заедно со податоците извлечени од OpenStreetMap се наоѓаат во фајлот "final_data.csv"
