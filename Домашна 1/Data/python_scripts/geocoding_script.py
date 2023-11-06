@@ -25,7 +25,8 @@ def batch_geocode(addresses, api_key):
     coordinates = []
 
     for address in addresses:
-        location = geocode_address(address, api_key)
+        search_address = str(address).split(',')[0] + str(address).split(',')[2] if str(address)[:2] == 'с.' else address
+        location = geocode_address(search_address, api_key)
         if location:
             coordinates.append(location)
         else:
@@ -34,10 +35,10 @@ def batch_geocode(addresses, api_key):
     return coordinates
 
 
-df = pd.read_csv("wineries.csv")
+df = pd.read_csv("../clean_data/wineries.csv")
 
 names = df['Name']
-addresses = df['Address'] + ", " + df['Location'] + ", MK"
+addresses = df['Address'] + ", MK" if str(df['Address'])[:2] == 'с.' else df['Address'] + ", " + df['Location'] + ", MK";
 coordinates = batch_geocode(addresses, api_key)
 latitudes = []
 longitudes = []
@@ -46,12 +47,7 @@ for coordinate in coordinates:
     latitudes.append(coordinate[0])
     longitudes.append(coordinate[1])
 
-data = {
-    'Name': names,
-    'Latitude': latitudes,
-    'Longitude': longitudes
-}
-
-df = pd.DataFrame(data)
-file_name = "wineries_with_coordinates.csv"
+df['Latitude'] = latitudes
+df['Longitude'] = longitudes
+file_name = "../clean_data/wineries_with_coordinates_final.csv"
 df.to_csv(file_name, index=False)
