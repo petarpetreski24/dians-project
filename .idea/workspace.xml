@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Data Update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Домашна 1/Data/Опис_за_филтри.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Домашна 1/Data/Опис_за_филтри.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +195,7 @@
       <workItem from="1699269571844" duration="4967000" />
       <workItem from="1699366684503" duration="415000" />
       <workItem from="1699378988813" duration="337000" />
-      <workItem from="1699631283840" duration="612000" />
+      <workItem from="1699631283840" duration="913000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
@@ -281,7 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699395247227</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Data Update">
+      <created>1699633923669</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699633923669</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Data Update">
+      <created>1699634086022</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699634086022</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
