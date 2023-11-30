@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Macedonia Wineries</title>
+    <!-- Link to Bootstrap CSS (you can replace this with your own Bootstrap file) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #fff; /* White background */
+            color: #333; /* Text color */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1, h2 {
+            color: #8B0000; /* Dark red wine color */
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #F5F5F5; /* Light gray background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container label {
+            color: #8B0000; /* Dark red wine color */
+        }
+
+        .login-container .btn {
+            background-color: #8B0000; /* Dark red wine color */
+            color: #fff; /* White text */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center">Винарии во Македонија</h1>
+
+<!--    &lt;!&ndash; Winery Pictures (Replace with actual images and captions) &ndash;&gt;-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-4">-->
+<!--            <img src="winery1.jpg" alt="Winery 1" class="img-fluid">-->
+<!--            <p class="text-center">Winery 1</p>-->
+<!--        </div>-->
+<!--        <div class="col-md-4">-->
+<!--            <img src="winery2.jpg" alt="Winery 2" class="img-fluid">-->
+<!--            <p class="text-center">Winery 2</p>-->
+<!--        </div>-->
+<!--        <div class="col-md-4">-->
+<!--            <img src="winery3.jpg" alt="Winery 3" class="img-fluid">-->
+<!--            <p class="text-center">Winery 3</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <!-- Login Form -->
+    <div class="login-container mt-4">
+        <h2 class="text-center mb-4">Најава во системот</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-block">Login</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

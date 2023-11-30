@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="README edit">
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Adding subfolders for Homework 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +187,7 @@
       <workItem from="1699366684503" duration="415000" />
       <workItem from="1699378988813" duration="337000" />
       <workItem from="1699631283840" duration="1683000" />
-      <workItem from="1701354458890" duration="336000" />
+      <workItem from="1701354458890" duration="1370000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
@@ -295,7 +294,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699634261121</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Adding subfolders for Homework 2">
+      <option name="closed" value="true" />
+      <created>1701354893342</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701354893342</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Adding subfolders for Homework 2">
+      <option name="closed" value="true" />
+      <created>1701354989899</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701354989899</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +337,7 @@
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Data Update" />
     <MESSAGE value="README edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="README edit" />
+    <MESSAGE value="Adding subfolders for Homework 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding subfolders for Homework 2" />
   </component>
 </project>
