@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Винодвентура</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .text {
+            color: #8B0000;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <!-- Slides -->
+    <div class="mySlides">
+        <img src="https://experience-macedonia.com/wp-content/uploads/2019/05/2.jpg" style="width:100%">
+        <div class="text">Истражување на убавината на винариите</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="https://www.secondbottle.co/wp-content/uploads/2018/02/bigstock-Grape-fields-landscape-winery-135809075.jpg" style="width:100%">
+        <div class="text">Уживајте во богатите вкусови на локалните вина</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="https://www.wsetglobal.com/media/10306/1200x627_b_macedonia.jpg?mode=max&width=1200&height=630&rnd=132779018210000000" style="width:100%">
+        <div class="text">Опуштете се и уживајте во мирната атмосфера</div>
+    </div>
+</div>
+
+<!-- Script for slideshow -->
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2500);
+    }
+</script>
+
+
+<div class="text">
+    <p>Добредојдовте на почетната страна од Винодвентура</p>
+    <p>Откријте го шармот на локалните винарии, уживајте во извонредните вина и опуштете се во спокојниот амбиент.</p>
+</div>
+
+</body>
+</html>

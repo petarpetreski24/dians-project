@@ -1,0 +1,88 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Винодвентура</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #8B0000;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    header a:hover {
+      background-color: #fff;
+      color: #8B0000;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      top: 100%;
+      left: -600%;
+      width: max-content;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<header xmlns:th="http://www.thymeleaf.org">
+  <div>
+    <a href="/home">Home</a>
+    <a href="/allWineries">Wineries</a>
+    <a href="/search">Search</a>
+  </div>
+  <div class="user-info">
+    <span th:text="'Welcome ' + ${user.getName()}"></span>
+    <div class="dropdown">
+      <span>&#9660;</span>
+      <div class="dropdown-content">
+        <a href="/logout">Log Out</a>
+      </div>
+    </div>
+  </div>
+</header>
