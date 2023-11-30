@@ -28,33 +28,34 @@ public class SearchController {
                             Model model){
         model.addAttribute("bodyContent", "search-page");
         model.addAttribute("user",user);
-        if(searchCriteria==null){
-            return "master-template";
+        model.addAttribute("searchText",searchText);
+
+        if (searchCriteria != null) {
+            switch (searchCriteria) {
+                case "name" -> {
+                    List<Winery> wineries = wineryService.findByName(searchText);
+                    model.addAttribute("wineries", wineries);
+                }
+                case "location" -> {
+                    List<Winery> wineries = wineryService.findByLocation(searchText);
+                    model.addAttribute("wineries", wineries);
+                }
+                case "address" -> {
+                    List<Winery> wineries = wineryService.findByAddress(searchText);
+                    model.addAttribute("wineries", wineries);
+                }
+                case "id" -> {
+                    List<Winery> wineries = new ArrayList<>();
+                    Optional<Winery> winery = wineryService.findById(Long.getLong(searchText));
+                    winery.ifPresent(wineries::add);
+                    model.addAttribute("wineries", wineries);
+                }
+                default -> {
+                    List<Winery> wineries = wineryService.findByOccupation(searchText);
+                    model.addAttribute("wineries", wineries);
+                }
+            }
         }
-        else{
-            if (searchCriteria.equals("name")){
-                List<Winery> wineries = wineryService.findByName(searchText);
-                model.addAttribute("wineries",wineries);
-            }
-            else if (searchCriteria.equals("location")){
-                List<Winery> wineries = wineryService.findByLocation(searchText);
-                model.addAttribute("wineries",wineries);
-            }
-            else if (searchCriteria.equals("address")){
-                List<Winery> wineries = wineryService.findByAddress(searchText);
-                model.addAttribute("wineries",wineries);
-            }
-            else if (searchCriteria.equals("id")){
-                List<Winery> wineries = new ArrayList<>();
-                Optional<Winery> winery = wineryService.findById(Long.getLong(searchText));
-                winery.ifPresent(wineries::add);
-                model.addAttribute("wineries",wineries);
-            }
-            else {
-                List<Winery> wineries = wineryService.findByOccupation(searchText);
-                model.addAttribute("wineries",wineries);
-            }
-            return "master-template";
-        }
+        return "master-template";
     }
 }

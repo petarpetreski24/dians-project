@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Прикажи винарии</title>
+    <title>Винодвентура</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8; /* Light gray background */
-            color: #333; /* Text color */
+            background-color: #f8f8f8;
+            color: #333;
         }
 
         .winery-card {
@@ -28,7 +28,7 @@
         }
 
         h2 {
-            color: #8B0000; /* Dark red wine color */
+            color: #8B0000;
             margin-bottom: 10px;
         }
 
@@ -38,7 +38,7 @@
         }
 
         a {
-            color: #0066cc; /* Link color */
+            color: #0066cc;
             text-decoration: none;
         }
 
@@ -47,7 +47,7 @@
         }
     </style>
 </head>
-<!--<header th:replace="fragments/header" th:object="${user}"/>-->
+
 <body>
 
 <div th:each="winery : ${wineries}" class="winery-card">
