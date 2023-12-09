@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Adding conceptual and execution model and behaviours" />
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Adding conceptual and execution model and behaviours">
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/Winery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/WishList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/enumerations/WishListStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/exceptions/InvalidArgumentsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/exceptions/InvalidUserCredentialsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/exceptions/PasswordsDoNotMatchException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/WineryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/WishListRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/WineryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/WineryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LogoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WineriesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/resources/templates/all-wineries.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/resources/templates/master-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VinodventuraApp/src/main/resources/templates/search-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,27 +59,50 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2XhwkbSUP9tss1sNidv5MAxlGMO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PycharmProjects/dians-project/Домашна 2/architecture&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "last_opened_file_path": "D:/IdeaProjects/dians-project/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "spring.configuration.checksum": "7041e7dae5893237cb103cfc5fc13b09",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\dians-project\VinodventuraApp\src\main\java\mk\ukim\finki\vinodventuraapp" />
+      <recent name="D:\IdeaProjects\dians-project\VinodventuraApp\src\main\resources" />
       <recent name="D:\PycharmProjects\dians-project\Домашна 2\architecture" />
       <recent name="D:\PycharmProjects\dians-project\Домашна 1\Data\python_scripts" />
       <recent name="D:\PycharmProjects\dians-project\Homework 1\Data\clean_data" />
@@ -60,7 +114,7 @@
       <recent name="D:\PycharmProjects\dians-project\Homework 1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.VinodventuraAppApplication">
     <configuration name="data-pipe-filter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dians-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,6 +225,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Domasna3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Domasna3" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="java.mk.ukim.finki.domasna3.Domasna3Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VinodventuraAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="VinodventuraApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.vinodventuraapp.VinodventuraAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -191,6 +259,9 @@
       <workItem from="1701363591489" duration="766000" />
       <workItem from="1701428589509" duration="654000" />
       <workItem from="1701546077914" duration="108000" />
+      <workItem from="1702085178559" duration="402000" />
+      <workItem from="1702085590984" duration="116000" />
+      <workItem from="1702116851343" duration="1718000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
