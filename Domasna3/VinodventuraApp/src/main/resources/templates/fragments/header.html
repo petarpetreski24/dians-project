@@ -76,13 +76,34 @@
     <a href="/allWineries">Wineries</a>
     <a href="/search">Search</a>
   </div>
-  <div class="user-info">
-    <span th:text="'Welcome ' + ${user.getName()}"></span>
-    <div class="dropdown">
-      <span>&#9660;</span>
-      <div class="dropdown-content">
-        <a href="/logout">Log Out</a>
-      </div>
-    </div>
-  </div>
+<!--  <div class="user-info">-->
+<!--    <span th:text="'Welcome ' + ${user.getName()}"></span>-->
+<!--    <div class="dropdown">-->
+<!--      <span>&#9660;</span>-->
+<!--      <div class="dropdown-content">-->
+<!--        <a href="/logout">Log Out</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+  <ul class="nav navbar-nav navbar-right">
+
+    <li class="nav-item" th:if="${session.user != null}">
+      <span th:text="'Welcome ' + ${session.user.getName()}"></span>
+    </li>
+    <li class="nav-item" th:if="${session.user != null}">
+      <a class="btn btn-success btn-sm ml-3" href="/wish-list">
+        <i class="fa-solid fa-heart"></i> Wish List
+      </a>
+    </li>
+    <li class="nav-item" th:if="${session.user != null}">
+      <a class="btn btn-light btn-sm ml-3" href="/logout">
+        <i class="fa-solid fa-right-from-bracket"></i> Logout
+      </a>
+    </li>
+    <li class="nav-item" th:if="${session.user == null}">
+      <a class="btn btn-light btn-sm ml-3" href="/login">
+        <i class="fa-solid fa-right-to-bracket"></i> Login
+      </a>
+    </li>
+  </ul>
 </header>
