@@ -24,6 +24,8 @@ public class Winery {
     private String website;
     private Double latitude;
     private Double longitude;
+    @OneToMany(mappedBy = "winery")
+    private List<Review> reviews;
 
     public Winery() {
     }
