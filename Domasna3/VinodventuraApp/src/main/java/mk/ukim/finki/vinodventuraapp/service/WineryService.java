@@ -8,8 +8,8 @@ import java.util.Optional;
 public interface WineryService {
     List<Winery> findAll();
     Optional<Winery> findById(Long wineryId);
-    List<Winery> findByLocation(String location);
-    List<Winery> findByName(String name);
-    List<Winery> findByOccupation(String occupation);
-    List<Winery> findByAddress(String address);
+    List<Winery> findAllByLocation(String location);
+    List<Winery> findAllByNameContaining(String name);
+    List<Winery> findByOccupationContaining(String occupation);
+    List<Winery> findAllByAddressContaining(String address);
 }

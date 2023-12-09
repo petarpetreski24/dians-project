@@ -12,34 +12,34 @@ import java.util.Optional;
 @Service
 @AllArgsConstructor
 public class WineryServiceImpl implements WineryService {
-    private final WineryRepository wineryRepository;
+    private final WineryRepository wineyRepository;
     @Override
     public List<Winery> findAll() {
-        return wineryRepository.findAll();
+        return wineyRepository.findAll();
     }
 
     @Override
     public Optional<Winery> findById(Long wineryId) {
-        return wineryRepository.findById(wineryId);
+        return wineyRepository.findById(wineryId);
     }
 
     @Override
-    public List<Winery> findByLocation(String city) {
-        return wineryRepository.findByCity(city);
+    public List<Winery> findAllByLocation(String location) {
+        return wineyRepository.findAllByLocation(location);
     }
 
     @Override
-    public List<Winery> findByName(String name) {
-        return wineryRepository.findByName(name);
+    public List<Winery> findAllByNameContaining(String name) {
+        return wineyRepository.findAllByNameContaining(name);
     }
 
     @Override
-    public List<Winery> findByOccupation(String occupation) {
-        return wineryRepository.findByOccupation(occupation);
+    public List<Winery> findByOccupationContaining(String occupation) {
+        return wineyRepository.findAllByOccupationsContaining(occupation);
     }
 
     @Override
-    public List<Winery> findByAddress(String address) {
-        return wineryRepository.findByAddress(address);
+    public List<Winery> findAllByAddressContaining(String address) {
+        return wineyRepository.findAllByAddressContaining(address);
     }
 }

@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Creating folder for Homework 3 and adding the files from the techincal prototype" />
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Moving the folder">
+      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/inmem/InMemoryUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/inmem/InMemoryWineryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/inmem/InMemoryWishListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/Winery.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/Winery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/WishList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/WishList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/WineryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/WineryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/WishListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/repository/WishListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/WineryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/WineryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/WineryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/WineryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -78,6 +98,7 @@
       <recent name="D:\PycharmProjects\dians-project\Homework 1\Data\clean_data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\dians-project\Domasna3" />
       <recent name="D:\PycharmProjects\dians-project\Домашна 2\architecture" />
       <recent name="D:\PycharmProjects\dians-project\Homework 1\Data" />
       <recent name="D:\PycharmProjects\dians-project\Homework 1\Data\python_scripts" />
@@ -231,7 +252,7 @@
       <workItem from="1701546077914" duration="108000" />
       <workItem from="1702085178559" duration="402000" />
       <workItem from="1702085590984" duration="116000" />
-      <workItem from="1702116851343" duration="2149000" />
+      <workItem from="1702116851343" duration="6941000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
@@ -394,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702119003372</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Moving the folder">
+      <option name="closed" value="true" />
+      <created>1702119097751</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1702119097751</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,6 +456,7 @@
     <MESSAGE value="Changes in architecture files" />
     <MESSAGE value="Adding conceptual and execution model and behaviours" />
     <MESSAGE value="Creating folder for Homework 3 and adding the files from the techincal prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating folder for Homework 3 and adding the files from the techincal prototype" />
+    <MESSAGE value="Moving the folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moving the folder" />
   </component>
 </project>

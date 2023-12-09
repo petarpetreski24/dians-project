@@ -34,8 +34,8 @@ public class AuthServiceImpl implements AuthService {
         if (!password.equals(repeatPassword)) {
             throw new PasswordsDoNotMatchException();
         }
-        User user = new User((long) (Math.random() * 1000),username, password, name, surname);
-        return userRepository.saveOrUpdate(user);
+        User user = new User(username, password, name, surname);
+        return userRepository.save(user);
 
     }
 }

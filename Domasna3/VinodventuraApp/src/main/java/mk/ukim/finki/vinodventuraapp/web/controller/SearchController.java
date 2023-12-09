@@ -33,15 +33,15 @@ public class SearchController {
         if (searchCriteria != null) {
             switch (searchCriteria) {
                 case "name" -> {
-                    List<Winery> wineries = wineryService.findByName(searchText);
+                    List<Winery> wineries = wineryService.findAllByNameContaining(searchText);
                     model.addAttribute("wineries", wineries);
                 }
                 case "location" -> {
-                    List<Winery> wineries = wineryService.findByLocation(searchText);
+                    List<Winery> wineries = wineryService.findAllByLocation(searchText);
                     model.addAttribute("wineries", wineries);
                 }
                 case "address" -> {
-                    List<Winery> wineries = wineryService.findByAddress(searchText);
+                    List<Winery> wineries = wineryService.findAllByAddressContaining(searchText);
                     model.addAttribute("wineries", wineries);
                 }
                 case "id" -> {
@@ -51,7 +51,7 @@ public class SearchController {
                     model.addAttribute("wineries", wineries);
                 }
                 default -> {
-                    List<Winery> wineries = wineryService.findByOccupation(searchText);
+                    List<Winery> wineries = wineryService.findByOccupationContaining(searchText);
                     model.addAttribute("wineries", wineries);
                 }
             }
