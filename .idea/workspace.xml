@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Changing SQL Properties">
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/MapController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/map/map-script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header.html" afterDir="false" />
-    </list>
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Changing SQL Properties" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +15,6 @@
       <list>
         <option value="Python Script" />
         <option value="Interface" />
-        <option value="Class" />
-        <option value="HTML File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,12 +43,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -70,7 +57,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
@@ -247,7 +234,6 @@
       <workItem from="1702085178559" duration="402000" />
       <workItem from="1702085590984" duration="116000" />
       <workItem from="1702116851343" duration="8563000" />
-      <workItem from="1702210537582" duration="4340000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
@@ -480,5 +466,16 @@
     <MESSAGE value="Minor footer changes" />
     <MESSAGE value="Changing SQL Properties" />
     <option name="LAST_COMMIT_MESSAGE" value="Changing SQL Properties" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
