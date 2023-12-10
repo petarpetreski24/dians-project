@@ -1,9 +1,7 @@
 package mk.ukim.finki.vinodventuraapp.service.impl;
 
 import mk.ukim.finki.vinodventuraapp.model.User;
-import mk.ukim.finki.vinodventuraapp.model.exceptions.InvalidArgumentsException;
-import mk.ukim.finki.vinodventuraapp.model.exceptions.InvalidUserCredentialsException;
-import mk.ukim.finki.vinodventuraapp.model.exceptions.PasswordsDoNotMatchException;
+import mk.ukim.finki.vinodventuraapp.model.exceptions.*;
 import mk.ukim.finki.vinodventuraapp.repository.UserRepository;
 import mk.ukim.finki.vinodventuraapp.service.AuthService;
 import org.springframework.stereotype.Service;
@@ -28,11 +26,19 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public User register(String username, String password, String repeatPassword, String name, String surname) {
-        if (username == null || username.isEmpty() || password == null || password.isEmpty()) {
+        if (username == null || username.isEmpty() || password == null || password.isEmpty() || repeatPassword == null ||
+                repeatPassword.isEmpty() || name == null || name.isEmpty() || surname == null || surname.isEmpty()) {
             throw new InvalidArgumentsException();
+        }
+        if (password.length() < 8) {
+            throw new PasswordLengthException();
         }
         if (!password.equals(repeatPassword)) {
             throw new PasswordsDoNotMatchException();
+        }
+        System.out.println(userRepository.findByUsername(username));
+        if (userRepository.findByUsername(username).isPresent()) {
+            throw new UsernameAlreadyExistsException(username);
         }
         User user = new User(username, password, name, surname);
         return userRepository.save(user);

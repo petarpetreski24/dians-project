@@ -99,8 +99,8 @@ public class DataHolder {
             wineryRepository.saveAll(wineries);
         }
 
-        if (wishListRepository.count() == 0){
+        //if (wishListRepository.count() == 0){
 
-        }
+        //}
     }
 }
