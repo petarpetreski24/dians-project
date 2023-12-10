@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Adding review">
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/css/bootstrap-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/css/templatemo-tiya-golf-club.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/fonts/bootstrap-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/fonts/bootstrap-icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/images/WorldMap.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/images/anna-rosar-ZxFyVBHMK-c-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/images/anna-rosar-ew-olGvgCCs-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/images/frederik-rosar-NDSZcCfnsbY-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/images/girl-taking-selfie-with-friends-golf-field.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/images/members/portrait-young-handsome-businessman-wearing-suit-standing-with-crossed-arms-with-isolated-studio-white-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/images/professional-golf-player.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/js/animated-headline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/js/click-scroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/js/jquery.sticky.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/js/modernizr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/master-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/master-template.html" afterDir="false" />
-    </list>
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Changing SQL Properties" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,15 +15,13 @@
       <list>
         <option value="Python Script" />
         <option value="Interface" />
-        <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="petar-d2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +43,6 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -78,9 +50,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "frontend-preview",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_opened_file_path": "D:/IdeaProjects/dians-project/Domasna3/VinodventuraApp/src/main/resources/static",
+    "last_opened_file_path": "D:/IdeaProjects/dians-project/VinodventuraApp/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,7 +61,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "spring.configuration.checksum": "ff61543f092ef6163a2957a96b8fae17",
+    "spring.configuration.checksum": "7041e7dae5893237cb103cfc5fc13b09",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -100,11 +72,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\dians-project\Domasna3\VinodventuraApp\src\main\resources\static" />
       <recent name="D:\IdeaProjects\dians-project\VinodventuraApp\src\main\resources" />
       <recent name="D:\IdeaProjects\dians-project\VinodventuraApp\src\main\java\mk\ukim\finki\vinodventuraapp" />
       <recent name="D:\PycharmProjects\dians-project\Домашна 2\architecture" />
       <recent name="D:\PycharmProjects\dians-project\Домашна 1\Data\python_scripts" />
+      <recent name="D:\PycharmProjects\dians-project\Homework 1\Data\clean_data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\dians-project\Domasna3" />
@@ -262,8 +234,6 @@
       <workItem from="1702085178559" duration="402000" />
       <workItem from="1702085590984" duration="116000" />
       <workItem from="1702116851343" duration="8563000" />
-      <workItem from="1702148401628" duration="262000" />
-      <workItem from="1702207526211" duration="1049000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
@@ -458,15 +428,7 @@
       <option name="project" value="LOCAL" />
       <updated>1702145720506</updated>
     </task>
-    <task id="LOCAL-00027" summary="Adding review">
-      <option name="closed" value="true" />
-      <created>1702148629284</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1702148629284</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,8 +465,7 @@
     <MESSAGE value="Implementing JPA to the project, using H2 Database" />
     <MESSAGE value="Minor footer changes" />
     <MESSAGE value="Changing SQL Properties" />
-    <MESSAGE value="Adding review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing SQL Properties" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
