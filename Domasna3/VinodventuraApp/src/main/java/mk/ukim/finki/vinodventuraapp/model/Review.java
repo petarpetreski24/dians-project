@@ -21,4 +21,11 @@ public class Review {
 
     public Review() {
     }
+
+    public Review(Integer score, String description, Winery winery, LocalDateTime timestamp) {
+        this.score = score;
+        this.description = description;
+        this.winery = winery;
+        this.timestamp = timestamp;
+    }
 }
