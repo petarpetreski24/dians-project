@@ -33,7 +33,9 @@
         var address = wineries[i].address;
         var town = wineries[i].location;
         var marker = L.marker([lat, lon]).addTo(map);
-        marker.bindPopup("<h5>" + name + "</h5><p><b>" + address + "</b></p><p>" + town + "</p>");
+        var winery_id = wineries[i].id;
+        var message = "<h5>" + name + "</h5><p><b>" + address + "</b></p><p>" + town + "</p><a href=\"/winery/details/" + winery_id + "\"" + " class=\"btn btn-primary\">Детали</a>"
+        marker.bindPopup(message);
     }
 </script>
 </html>
