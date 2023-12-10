@@ -119,13 +119,13 @@
         <div th:each="winery : ${wineries}" class="winery-row">
             <div class="winery-info">
                 <h3 th:text="${winery.getName()}"></h3>
-                <p th:text="'Адреса: ' + ${winery.getAddress()} + ' '+${winery.getLocation()}"></p>
+                <p th:text="'Адреса: ' + ${winery.getAddress()} + ' ' + ${winery.getLocation()}"></p>
                 <p th:text="'Телефон: ' + ${winery.getMobNumber()}"></p>
-                <p>
-                    Веб-сајт: <a th:href="${winery.getWebsite()}" target="_blank" th:text="${winery.getWebsite()}"></a>
-                </p>
-                <p th:text="'Работно време: ' + ${winery.getWorkingHours()}"></p>
+
+                <a th:href="@{/winery/details/{id}(id=${winery.getId()})}" class="btn btn-primary">Детали</a>
+
             </div>
+
         </div>
     </div>
     <div th:unless="${wineries.size()} > 0">

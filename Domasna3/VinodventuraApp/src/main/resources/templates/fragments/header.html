@@ -8,6 +8,9 @@
       margin: 0;
       padding: 0;
     }
+    li{
+      display: inline;
+    }
 
     header {
       background-color: #8B0000;
@@ -67,6 +70,7 @@
     .dropdown:hover .dropdown-content {
       display: block;
     }
+
   </style>
 </head>
 
@@ -75,6 +79,7 @@
     <a href="/home">Home</a>
     <a href="/allWineries">Wineries</a>
     <a href="/search">Search</a>
+    <a href="/map">Map</a>
   </div>
 <!--  <div class="user-info">-->
 <!--    <span th:text="'Welcome ' + ${user.getName()}"></span>-->
@@ -100,9 +105,14 @@
         <i class="fa-solid fa-right-from-bracket"></i> Logout
       </a>
     </li>
-    <li class="nav-item" th:if="${session.user == null}">
+    <li class="nav-item" th:if="${session.user == null}" style="display: inline;">
       <a class="btn btn-light btn-sm ml-3" href="/login">
         <i class="fa-solid fa-right-to-bracket"></i> Login
+      </a>
+    </li>
+    <li class="nav-item" th:if="${session.user == null}" style="display: inline;">
+      <a class="btn btn-light btn-sm ml-3" href="/register">
+        <i class="fa-solid fa-right-to-bracket"></i> Register
       </a>
     </li>
   </ul>

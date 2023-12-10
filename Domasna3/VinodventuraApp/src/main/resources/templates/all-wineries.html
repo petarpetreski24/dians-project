@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -45,21 +46,21 @@
         a:hover {
             text-decoration: underline;
         }
+
     </style>
 </head>
 
 <body>
-
+<div th:if="${error!=null}" th:text="${error}"></div>
 <div th:each="winery : ${wineries}" class="winery-card">
     <h2 th:text="${winery.getName()}"></h2>
-    <p th:text="'Address: ' + ${winery.getAddress()}">
-    <p th:text="${winery.getLocation()}"></p>
+    <p th:text="'City: ' + ${winery.getLocation()}"></p>
     <p th:text="'Phone: ' + ${winery.getMobNumber()}"></p>
-    <p>
-        Website: <a th:href="${winery.getWebsite()}" target="_blank" th:text="${winery.getWebsite()}"></a>
-    </p>
-    <p th:text="'Working Hours: ' + ${winery.getWorkingHours()}"></p>
+    <a th:href="@{'/winery/details/' + ${winery.getId()}}" class="btn btn-primary">Детали</a>
+    <form th:action="@{'/wish-list/add-winery/{id}' (id=${winery.getId()})}"
+          th:method="POST">
+        <button type="submit" class="btn btn-sm btn-success">Додади во листа на желби</button>
+    </form>
 </div>
-
 </body>
 </html>
