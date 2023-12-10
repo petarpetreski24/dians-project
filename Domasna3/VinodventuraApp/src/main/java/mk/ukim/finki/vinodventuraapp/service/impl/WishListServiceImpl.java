@@ -11,9 +11,7 @@ import mk.ukim.finki.vinodventuraapp.repository.WishListRepository;
 import mk.ukim.finki.vinodventuraapp.service.WineryService;
 import mk.ukim.finki.vinodventuraapp.service.WishListService;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class WishListServiceImpl implements WishListService {
@@ -34,28 +32,29 @@ public class WishListServiceImpl implements WishListService {
         User findUser = userRepository.findById(user.getId())
                 .orElseThrow(InvalidUserCredentialsException::new);
         return wishListRepository.findByUser(user).orElseGet(() ->
-                {
-                    WishList wishList = new WishList(user);
-                    return this.wishListRepository.save(wishList);
-                });
+        {
+            WishList wishList = new WishList(user);
+            return this.wishListRepository.save(wishList);
+        });
     }
+
     @Override
     public WishList addToWishlist(User user, Long wineryId) {
-       WishList wishList = getWishListForUser(user);
-        Winery winery =this.wineryService.findById(wineryId)
+        WishList wishList = getWishListForUser(user);
+        Winery winery = this.wineryService.findById(wineryId)
                 .orElseThrow(() -> new WineryNotFoundException(wineryId));
         List<Winery> wineriesInWishList = wishList.getWineries().stream()
                 .filter(i -> i.getId().equals(wineryId)).toList();
-        if(wineriesInWishList.size()>0)
-            throw new WineryAlreadyInWishListException(user.getUsername(),wineryId);
+        if (wineriesInWishList.size() > 0)
+            throw new WineryAlreadyInWishListException();
         wishList.getWineries().add(winery);
         return this.wishListRepository.save(wishList);
     }
+
     @Override
-    public void removeFromWishList(User user, Long wineryId)
-    {
+    public void removeFromWishList(User user, Long wineryId) {
         WishList wishList = getWishListForUser(user);
-        Winery winery =this.wineryService.findById(wineryId)
+        Winery winery = this.wineryService.findById(wineryId)
                 .orElseThrow(() -> new WineryNotFoundException(wineryId));
         wishList.getWineries().remove(winery);
         this.wishListRepository.save(wishList);
