@@ -144,4 +144,15 @@
     </div>
 </div>
 </body>
+<script th:inline="javascript">
+  var winery = [[${winery}]];
+  var lat = winery.latitude;
+  var lon = winery.longitude;
+  var map = L.map('map').setView([lat, lon], 13);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+  var marker = L.marker([lat, lon]).addTo(map);
+</script>
 </html>
