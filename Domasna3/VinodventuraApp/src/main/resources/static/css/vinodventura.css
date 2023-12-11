@@ -398,7 +398,7 @@ strong {
   NAVIGATION BAR & OFFCANVAS              
 -----------------------------------------*/
 .offcanvas {
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   padding: 30px;
 }
 
