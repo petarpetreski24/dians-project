@@ -1,29 +1,20 @@
-/*
-
-TemplateMo 587 Tiya Golf Club
-
-https://templatemo.com/tm-587-tiya-golf-club
-
-*/
-
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #81B29A;
-  --secondary-color:              #3D405B;
+  --primary-color:                #350a06;
+  --secondary-color:              #56070c;
   --section-bg-color:             #F4F1DE;
   --custom-btn-bg-color:          #F2CC8F;
   --custom-btn-bg-hover-color:    #E07A5F;
   --dark-color:                   #000000;
   --p-color:                      #717275;
-  --link-hover-color:             #F2CC8F;
+  --link-hover-color:             #cb7169;
 
   --body-font-family:             'DM Sans', sans-serif;
 
-  --h1-font-size:                 42px;
+  --h1-font-size:                 60px;
   --h2-font-size:                 36px;
   --h3-font-size:                 28px;
   --h4-font-size:                 24px;
@@ -438,7 +429,7 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-color: rgb(61 64 91);
+  background-color: #56070c;
 }
 
 .navbar {
@@ -643,7 +634,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/anna-rosar-ZxFyVBHMK-c-unsplash.jpg');
+  background-image: url('../images/home_background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -695,7 +686,7 @@ strong {
   BACKGROUND IMAGE SECTION        
 -----------------------------------------*/
 .section-bg-image {
-  background-image: url('../images/frederik-rosar-NDSZcCfnsbY-unsplash.jpg');
+  background-image: url('../images/home_background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
