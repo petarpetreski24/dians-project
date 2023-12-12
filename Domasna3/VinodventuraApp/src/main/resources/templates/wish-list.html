@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Винодвентура</title>
-  <style>
-    .content-wrapper {
-      display: flex;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Винодвентура</title>
+    <style>
+        .winery-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            flex: 1;
+        }
 
-    .winery-card {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin: 20px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out;
-      flex: 1;
-    }
+        .winery-card:hover {
+            transform: scale(1.05);
+        }
 
-    .winery-card:hover {
-      transform: scale(1.05);
-    }
+        h2 {
+            color: #8B0000;
+            margin-bottom: 10px;
+        }
 
-    h2 {
-      color: #8B0000;
-      margin-bottom: 10px;
-    }
+        p {
+            margin: 0;
+            margin-bottom: 8px;
+        }
 
-    p {
-      margin: 0;
-      margin-bottom: 8px;
-    }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
 
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
+        a:hover {
+            text-decoration: underline;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-    .map-container {
-      background-color: lightgray;
-      flex: 1;
-    }
-  </style>
+    </style>
 </head>
 
 <body>
-<div class="content-wrapper">
-  <th:block th:if="${wineries.size()==0}" th:class="winery-card">Your Wish List is empty.</th:block>
-  <th:block th:if="${wineries.size()!=0}">
-  <div th:each="winery : ${wineries}" th:class="winery-card">
-    <h2 th:text="${winery.getName()}"></h2>
-    <p th:text="'Address: ' + ${winery.getAddress()}"></p>
-    <p th:text="'City: ' + ${winery.getLocation()}"></p>
-    <p th:text="'Phone: ' + ${winery.getMobNumber()}"></p>
-    <p>
-      Website: <a th:href="${winery.getWebsite()}" target="_blank" th:text="${winery.getWebsite()}"></a>
-    </p>
-    <p th:text="'Working Hours: ' + ${winery.getWorkingHours()}"></p>
-    <form th:action="@{'/wish-list/delete-winery/{id}' (id=${winery.getId()})}"
-          th:method="POST">
-      <button type="submit"
-              class="btn btn-sm btn-danger delete-product">Отстрани</button>
-    </form>
-  </div>
-  </th:block>
-</div>
+
+<section class="events-section section-bg section-padding" id="section_4">
+    <div class="content-wrapper">
+        <th:block th:if="${wineries.size()==0}" th:class="winery-card">Your Wish List is empty.</th:block>
+        <th:block th:if="${wineries.size()!=0}">
+            <div th:each="winery : ${wineries}" class="winery-card">
+                <h2 th:text="${winery.getName()}"></h2>
+                <p th:text="'Address: ' + ${winery.getAddress()}"></p>
+                <p th:text="'City: ' + ${winery.getLocation()}"></p>
+                <p th:text="'Phone: ' + ${winery.getMobNumber()}"></p>
+                <p>
+                    Website: <a th:href="${winery.getWebsite()}" target="_blank" th:text="${winery.getWebsite()}"></a>
+                </p>
+                <p th:text="'Working Hours: ' + ${winery.getWorkingHours()}"></p>
+                <form th:action="@{'/wish-list/delete-winery/{id}' (id=${winery.getId()})}" th:method="POST">
+                    <button class="btn custom-btn custom-border-btn" href="/wish-list" role="button" type="submit">
+                        Отстрани
+                    </button>
+                </form>
+            </div>
+            >
+        </th:block>
+    </div>
+</section>
 
 </body>
 </html>
