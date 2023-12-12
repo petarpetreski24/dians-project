@@ -22,9 +22,12 @@ public class WineriesController {
 
     @GetMapping
     public String showAllWineries(@RequestParam(required = false) String error,
-                                  @SessionAttribute User user, Model model){
-        if(error!=null && !error.isEmpty())
-            model.addAttribute("error",error);
+                                  @SessionAttribute(required = false) User user, Model model){
+
+        if(error!=null && !error.isEmpty()) {
+            model.addAttribute("hasError", true);
+            model.addAttribute("error", error);
+        }
         List<Winery> wineries = wineryService.findAll();
         model.addAttribute("bodyContent", "all-wineries");
         model.addAttribute("wineries",wineries);

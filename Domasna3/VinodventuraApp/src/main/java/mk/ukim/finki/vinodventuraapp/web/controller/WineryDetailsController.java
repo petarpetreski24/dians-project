@@ -27,8 +27,9 @@ public class WineryDetailsController {
             model.addAttribute("bodyContent", "winery-details");
         } else {
 
-            model.addAttribute("errorMessage", "Winery not found");
-            model.addAttribute("bodyContent", "error");
+            model.addAttribute("error", "Winery not found.");
+            model.addAttribute("hasError", true);
+            model.addAttribute("bodyContent", "winery-details");
         }
 
         return "master-template";
