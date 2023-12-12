@@ -13,11 +13,28 @@
 </head>
 <style>
     #map {
-        height: 540px;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        line-height: 200px;
+        z-index: 0;
+    }
+
+    #map-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Set the height of the body to the full viewport height */
+        z-index: 0;
+        background-color: #56070c;
+        margin-bottom: 50px;
+        margin-top: 95px;
     }
 </style>
 <body>
-<div id="map"></div>
+<div id="map-container">
+    <div id="map"></div>
+</div>
 </body>
 <script th:inline="javascript">
     var map = L.map('map').setView([41.6086, 21.7453], 8);
@@ -25,6 +42,13 @@
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
+    var wineIcon = L.icon({
+        iconUrl: 'images/wine-icon.webp',
+
+        iconSize:     [30, 46],
+        iconAnchor:   [15, 23],
+        popupAnchor:  [0, -20]
+    });
     var wineries = [[${wineries}]];
     for (let i = 0; i < wineries.length; i++) {
         var lat = wineries[i].latitude;
@@ -32,9 +56,9 @@
         var name = wineries[i].name;
         var address = wineries[i].address;
         var town = wineries[i].location;
-        var marker = L.marker([lat, lon]).addTo(map);
+        var marker = L.marker([lat, lon], {icon: wineIcon}).addTo(map);
         var winery_id = wineries[i].id;
-        var message = "<h5>" + name + "</h5><p><b>" + address + "</b></p><p>" + town + "</p><a href=\"/winery/details/" + winery_id + "\"" + " class=\"btn btn-primary\">Детали</a>"
+        var message = "<div style='border: #0a53be solid'><h5>" + name + "</h5><p><b>" + address + "</b></p><p>" + town + "</p><a href=\"/winery/details/" + winery_id + "\"" + " class=\"btn btn-primary\">Детали</a></div>"
         marker.bindPopup(message);
     }
 </script>
