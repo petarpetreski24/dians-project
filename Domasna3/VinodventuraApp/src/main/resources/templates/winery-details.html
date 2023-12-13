@@ -1,109 +1,125 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Винодвентура</title>
-    <style>
-        .content-wrapper {
-            display: flex;
-        }
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Винодвентура</title>-->
+<!--    <style>-->
+<!--        .content-wrapper {-->
+<!--            display: flex;-->
+<!--        }-->
 
-        .winery-card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin: 20px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-            flex: 1;
-        }
+<!--        .winery-card {-->
+<!--            background-color: #fff;-->
+<!--            border: 1px solid #ddd;-->
+<!--            border-radius: 8px;-->
+<!--            margin: 20px;-->
+<!--            padding: 20px;-->
+<!--            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);-->
+<!--            transition: transform 0.3s ease-in-out;-->
+<!--            flex: 1;-->
+<!--        }-->
 
-        .winery-card:hover {
-            transform: scale(1.05);
-        }
+<!--        .winery-card:hover {-->
+<!--            transform: scale(1.05);-->
+<!--        }-->
 
-        h2 {
-            color: #8B0000;
-            margin-bottom: 10px;
-        }
+<!--        h2 {-->
+<!--            color: #8B0000;-->
+<!--            margin-bottom: 10px;-->
+<!--        }-->
 
-        p {
-            margin: 0;
-            margin-bottom: 8px;
-        }
+<!--        p {-->
+<!--            margin: 0;-->
+<!--            margin-bottom: 8px;-->
+<!--        }-->
 
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
+<!--        a {-->
+<!--            color: #0066cc;-->
+<!--            text-decoration: none;-->
+<!--        }-->
 
-        a:hover {
-            text-decoration: underline;
-        }
+<!--        a:hover {-->
+<!--            text-decoration: underline;-->
+<!--        }-->
 
-        .map-container, .comment {
-            background-color: lightgray;
-            flex: 1;
-        }
+<!--        .comment {-->
+<!--            background-color: lightgray;-->
+<!--            flex: 1;-->
+<!--        }-->
 
-        .comment-form-container {
-            max-width: 600px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+<!--        #map {-->
+<!--            background-color: lightgray;-->
+<!--            flex: 1;-->
+<!--        }-->
 
-        }
-        .comment-form h3
-        {
-          text-align: center;
-        }
+<!--        .map-container, .comment {-->
+<!--            background-color: lightgray;-->
+<!--            flex: 1;-->
+<!--        }-->
 
-        .comment-form {
-            display: flex;
-            flex-direction: column;
-        }
+<!--        .comment-form-container {-->
+<!--            max-width: 600px;-->
+<!--            margin: 20px auto;-->
+<!--            background-color: #fff;-->
+<!--            padding: 20px;-->
+<!--            border-radius: 8px;-->
+<!--            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);-->
 
-        .form-group {
-            margin-bottom: 15px;
-        }
+<!--        }-->
+<!--        .comment-form h3-->
+<!--        {-->
+<!--          text-align: center;-->
+<!--        }-->
 
-        label {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
+<!--        .comment-form {-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--        }-->
 
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+<!--        .form-group {-->
+<!--            margin-bottom: 15px;-->
+<!--        }-->
 
-        textarea {
-            resize: vertical;
-        }
+<!--        label {-->
+<!--            font-weight: bold;-->
+<!--            margin-bottom: 8px;-->
+<!--        }-->
 
-        .submit-button {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+<!--        input, textarea {-->
+<!--            width: 100%;-->
+<!--            padding: 10px;-->
+<!--            box-sizing: border-box;-->
+<!--            border: 1px solid #ccc;-->
+<!--            border-radius: 4px;-->
+<!--        }-->
 
-        .submit-button:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
+<!--        textarea {-->
+<!--            resize: vertical;-->
+<!--        }-->
 
-<body>
+<!--        .submit-button {-->
+<!--            background-color: #4caf50;-->
+<!--            color: #fff;-->
+<!--            padding: 10px;-->
+<!--            border: none;-->
+<!--            border-radius: 4px;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+
+<!--        .submit-button:hover {-->
+<!--            background-color: #45a049;-->
+<!--        }-->
+<!--    </style>-->
+<!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"-->
+<!--      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="-->
+<!--      crossorigin=""/>-->
+<!--<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"-->
+<!--        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="-->
+<!--        crossorigin=""></script>-->
+<!--</head>-->
+
+<!--<body>-->
 <div class="content-wrapper">
     <div th:if="${winery}" class="winery-card">
         <h2 th:text="${winery.getName()}"></h2>
@@ -120,10 +136,6 @@
                 <p th:text="'Рејтинг: '+ ${review.getScore()}"></p>
                 <p th:text="'Опис: ' + ${review.getDescription()}"></p>
             </div>
-
-        </div>
-        <div class="map-container">
-
         </div>
         <div class="comment-form-container">
             <div class="comment-form">
@@ -142,6 +154,31 @@
             </div>
         </div>
     </div>
+    <div id="map">
+
+    </div>
 </div>
 </body>
+<script th:inline="javascript">
+  var lat = [[${winery.getLatitude()}]];
+  var lon = [[${winery.getLongitude()}]];
+
+  var map = L.map('map').setView([lat, lon], 13);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  var wineIcon = L.icon({
+      iconUrl: '../../images/wine-pin.png',
+      iconSize: [30, 46],
+      iconAnchor: [15, 46],
+      popupAnchor: [0, 180]
+  });
+
+  var marker = L.marker([lat, lon], {icon: wineIcon}).addTo(map);
+</script>
 </html>
+
+<!--</body>-->
+<!--</html>-->

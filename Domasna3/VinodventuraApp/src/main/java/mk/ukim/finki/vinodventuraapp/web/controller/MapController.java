@@ -23,6 +23,7 @@ public class MapController {
         List<Winery> wineries = wineryService.findAll();
         User user = (User) request.getSession().getAttribute("user");
         model.addAttribute("bodyContent", "map");
+        model.addAttribute("footerMap", "true");
         model.addAttribute("user",user);
         model.addAttribute("wineries",wineries);
         return "master-template";
