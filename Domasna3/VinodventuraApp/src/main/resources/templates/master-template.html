@@ -49,6 +49,8 @@
     }, 300);
   }
 </script>
-<footer th:replace="fragments/footer"></footer>
+<th:block th:unless="${footerMap}">
+  <footer th:replace="fragments/footer"></footer>
+</th:block>
 </body>
 </html>
