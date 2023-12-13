@@ -157,11 +157,20 @@
 <script th:inline="javascript">
   var lat = [[${winery.getLatitude()}]];
   var lon = [[${winery.getLongitude()}]];
+
   var map = L.map('map').setView([lat, lon], 13);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
-  var marker = L.marker([lat, lon]).addTo(map);
+
+  var wineIcon = L.icon({
+      iconUrl: '../../images/wine-pin.png',
+      iconSize: [30, 46],
+      iconAnchor: [15, 46],
+      popupAnchor: [0, 180]
+  });
+
+  var marker = L.marker([lat, lon], {icon: wineIcon}).addTo(map);
 </script>
 </html>

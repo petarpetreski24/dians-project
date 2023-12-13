@@ -19,6 +19,8 @@
 <header th:replace="fragments/header2" th:object="${user}"></header>
 
 <section th:include="${bodyContent}"></section>
-<footer th:replace="fragments/footer"></footer>
+<th:block th:unless="${footerMap}">
+  <footer th:replace="fragments/footer"></footer>
+</th:block>
 </body>
 </html>
