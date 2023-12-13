@@ -1,11 +1,98 @@
-<div th:if="${error!=null}" th:text="${error}"></div>
-<div th:each="winery : ${wineries}" class="winery-card">
-    <h2 th:text="${winery.getName()}"></h2>
-    <p th:text="'City: ' + ${winery.getLocation()}"></p>
-    <p th:text="'Phone: ' + ${winery.getMobNumber()}"></p>
-    <a th:href="@{'/winery/details/' + ${winery.getId()}}" class="btn btn-primary">Детали</a>
-    <form th:action="@{'/wish-list/add-winery/{id}' (id=${winery.getId()})}"
-          th:method="POST">
-        <button type="submit" class="btn btn-sm btn-success">Додади во листа на желби</button>
-    </form>
-</div>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Винодвентура</title>
+    <style>
+        .content-wrapper{
+            margin-top: 80px;
+        }
+        .winery-container {
+            width: calc(100% - 350px);
+            margin-left: 80px;
+            margin-top: 35px;
+        }
+
+        .winery-card {
+            background-color: whitesmoke;
+            width: 85%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-right: 20px;
+            height: 270px;
+        }
+
+        .winery-card:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #8B0000;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #custom{
+            background: #a73d36;
+            border-color: #a73d36;
+            color: var(--white-color);
+
+        }
+        #custom:hover{
+            background: #740000;
+            border-color: #740000;
+            color: var(--white-color);
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="section-bg-image-block" id="section_4">
+    <div class="content-wrapper">
+        <th:block th:if="${wineries.size()==0}" th:class="winery-card">Your Wish List is empty.</th:block>
+        <th:block th:if="${wineries.size()!=0}">
+            <div th:each="winery : ${wineries}" class="winery-container">
+                <div class="winery-card">
+                    <h2 th:text="${winery.getName()}"></h2>
+                    <p th:text="'City: ' + ${winery.getLocation()}"></p>
+                    <p th:text="'Phone: ' + ${winery.getMobNumber()}"></p>
+                    <a th:href="@{'/winery/details/' + ${winery.getId()}}" class="custom-btn">
+                        Детали
+                    </a>
+
+                    <form th:action="@{'/wish-list/add-winery/{id}' (id=${winery.getId()})}" th:method="POST">
+                        <button type="submit" class="btn custom-btn custom-border-btn" id="custom">
+                            Додади во листа на желби
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </th:block>
+    </div>
+</section>
+
+</body>
+</html>
