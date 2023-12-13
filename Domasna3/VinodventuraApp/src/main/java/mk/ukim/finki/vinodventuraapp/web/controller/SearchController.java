@@ -24,7 +24,7 @@ public class SearchController {
     @GetMapping
     public String getSearch(@RequestParam(required = false)String searchCriteria,
                             @RequestParam(required = false)String searchText,
-                            @SessionAttribute User user,
+                            @SessionAttribute(required = false) User user,
                             Model model){
         model.addAttribute("bodyContent", "search-page");
         model.addAttribute("user",user);

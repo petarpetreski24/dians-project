@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(path = {"/","/login","*"})
+@RequestMapping(path = {"/login"})
 public class LoginController {
 
     private final AuthService authService;
@@ -23,8 +23,8 @@ public class LoginController {
 
     @GetMapping
     public String getLoginPage(Model model) {
-        model.addAttribute("bodyContent", "login");
-        return "login";
+        model.addAttribute("bodyContent", "home");
+        return "master-template";
     }
 
     @PostMapping
@@ -34,7 +34,7 @@ public class LoginController {
         try {
             user = authService.login(request.getParameter("username"), request.getParameter("password"));
         } catch (InvalidUserCredentialsException | InvalidArgumentsException exception) {
-            model.addAttribute("bodyContent", "login");
+            model.addAttribute("bodyContent", "home");
             model.addAttribute("hasError", true);
             model.addAttribute("error", exception.getMessage());
             return "master-template";
