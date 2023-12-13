@@ -39,7 +39,7 @@ public class RegisterController {
                            @RequestParam String repeatPassword) {
         try{
             this.authService.register(username, password, repeatPassword, name, surname);
-            return "redirect:/login";
+            return "redirect:/home";
         } catch (InvalidArgumentsException | PasswordsDoNotMatchException
                  | UsernameAlreadyExistsException | PasswordLengthException exception) {
             return "redirect:/register?error=" + exception.getMessage();
