@@ -160,5 +160,21 @@
     </div>
     -->
 </div>
+<script>
+    function addClassById(elementId, className) {
+        var element = document.getElementById(elementId);
+
+        if (element) {
+            element.classList.add(className);
+        } else {
+            console.error("Element with ID '" + elementId + "' not found.");
+        }
+    }
+    var anchorTags = document.getElementsByTagName('a');
+    for (var i = 0; i < anchorTags.length; i++) {
+        anchorTags[i].classList.remove('active');
+    }
+    addClassById("winery", "active");
+</script>
 </body>
 </html>
