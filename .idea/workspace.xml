@@ -523,16 +523,6 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/ReviewController.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/ReviewController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/SearchController.java</url>
           <line>30</line>
           <option name="timeStamp" value="10" />
