@@ -188,5 +188,19 @@
             winery_id + "\"" + " class=\"custom-btn-popup custom-border-btn-popup btn\" role=\"button\">Детали</a></div></div>"
         marker.bindPopup(message);
     }
+        function addClassById(elementId, className) {
+        var element = document.getElementById(elementId);
+
+        if (element) {
+        element.classList.add(className);
+    } else {
+        console.error("Element with ID '" + elementId + "' not found.");
+    }
+    }
+    var anchorTags = document.getElementsByTagName('a');
+    for (var i = 0; i < anchorTags.length; i++) {
+        anchorTags[i].classList.remove('active');
+    }
+        addClassById("map_active", "active");
 </script>
 </html>

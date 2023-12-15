@@ -72,6 +72,11 @@
         </th:block>
     </div>
 </section>
-
+<script>
+    var anchorTags = document.getElementsByTagName('a');
+    for (var i = 0; i < anchorTags.length; i++) {
+        anchorTags[i].classList.remove('active');
+    }
+</script>
 </body>
 </html>

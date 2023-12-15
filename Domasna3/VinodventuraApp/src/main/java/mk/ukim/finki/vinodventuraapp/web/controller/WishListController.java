@@ -18,13 +18,15 @@ import java.util.List;
 @AllArgsConstructor
 public class WishListController {
     private final WishListService wishListService;
+    private final WineryService wineryService;
 
     @GetMapping
     public String getWishList(Model model, @SessionAttribute(required = false) User user) {
         if (user == null){
             model.addAttribute("hasError", true);
             model.addAttribute("error", "You need to be logged in to do this action.");
-            model.addAttribute("bodyContent", "home");
+            model.addAttribute("bodyContent", "all-wineries");
+            model.addAttribute("wineries",wineryService.findAll());
             return "master-template";
         }
         List<Winery> wineries = wishListService.getWishListForUser(user).getWineries();
@@ -40,7 +42,8 @@ public class WishListController {
         if (user == null){
             model.addAttribute("hasError", true);
             model.addAttribute("error", "You need to be logged in to do this action.");
-            model.addAttribute("bodyContent", "home");
+            model.addAttribute("bodyContent", "all-wineries");
+            model.addAttribute("wineries",wineryService.findAll());
             return "master-template";
         }
         try {
@@ -49,7 +52,8 @@ public class WishListController {
         } catch (RuntimeException exception) {
             model.addAttribute("hasError", true);
             model.addAttribute("error", exception.getMessage());
-            model.addAttribute("bodyContent", "allWineries");
+            model.addAttribute("bodyContent", "all-wineries");
+            model.addAttribute("wineries",wineryService.findAll());
             return "master-template";
         }
     }
@@ -59,7 +63,8 @@ public class WishListController {
         if (user == null){
             model.addAttribute("hasError", true);
             model.addAttribute("error", "You need to be logged in to do this action.");
-            model.addAttribute("bodyContent", "home");
+            model.addAttribute("bodyContent", "all-wineries");
+            model.addAttribute("wineries",wineryService.findAll());
             return "master-template";
         }
 
