@@ -148,6 +148,7 @@
                             <textarea class="form-control" rows="4" id="description" name="description"
                                       required></textarea>
                         </div>
+                        <input th:if="${session.user !=null}" type="hidden" name="userId" th:value="session.user.getId()">
                         <button type="submit" class="custom-btn">Коментирај</button>
                     </form>
                 </div>

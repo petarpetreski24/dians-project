@@ -34,7 +34,7 @@ public class LoginFilter implements Filter {
         if ((path.startsWith(ignorePath) || path.startsWith(registerPath)) && user != null){
             response.sendRedirect("/home");
         }
-        if (path.startsWith("/wish-list") && user == null){
+        if (path.equals("/wish-list") && user == null){
             response.sendRedirect("/home");
         }
         filterChain.doFilter(servletRequest, servletResponse);

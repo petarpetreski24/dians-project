@@ -1,91 +1,53 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<style>
+    button:hover {
+        background-color: #660000;
+    }
+</style>
 
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f8f8f8;
-            color: #333;
-        }
+<section class="events-section events-listing-section section-bg section-padding" style="padding-top: 75px !important; ">
+    <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#56070c" d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z" stroke-width="0"></path> <path fill="#56070c" d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z" stroke-width="0"></path> <path fill="#56070c" d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z" stroke-width="0"></path><path fill="#56070c" d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z" stroke-width="0"></path><path fill="#56070c" d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z" stroke-width="0"></path><path fill="#56070c" d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z" stroke-width="0"></path><path fill="#56070c" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z" stroke-width="0"></path></svg>
 
-        h1 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+        <div class="container">
+            <div class="row">
 
-        #searchForm {
-            max-width: 400px;
-            margin: 0 auto;
-        }
+                <div class="col-lg-6 col-12">
+                    <div class="section-bg-image-block">
+                        <h2 class="mb-lg-3">Пребарај Винарии</h2>
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
+                        <form id="searchForm" action="/search" method="get" class="mb-3">
+                            <label for="searchText" class="form-label">Пребарувај по:</label>
+                            <input th:value="${searchText == null} ? ${searchText} : ''" type="text" id="searchText" name="searchText" placeholder="Внеси податоци" required class="form-control">
 
-        input {
-            padding: 10px;
-            margin-bottom: 16px;
-            width: 100%;
-            box-sizing: border-box;
-        }
+                            <label class="form-label">Избери критериум:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="searchCriteria" id="name" value="name">
+                                <label class="form-check-label" for="name">Име</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="searchCriteria" id="location" value="location">
+                                <label class="form-check-label" for="location">Населено место</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="searchCriteria" id="address" value="address">
+                                <label class="form-check-label" for="address">Адреса</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="searchCriteria" id="occupation" value="occupation" >
+                                <label class="form-check-label" for="occupation">Занимање</label>
+                            </div>
 
-        button {
-            padding: 12px;
-            background-color: #8B0000;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-            display: inline-block;
-        }
+                            <button type="submit" class="custom-btn">Пребарај</button>
+                        </form>
+                    </div>
+                </div>
 
-        button:hover {
-            background-color: #660000;
-        }
-
-        .search-results {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-
-<section style="min-height: 50rem;">
-    <h1>Пребарај Винарии</h1>
-
-    <form id="searchForm" action="/search" method="get" class="mb-3">
-        <label for="searchText" class="form-label">Пребарувај по:</label>
-        <input th:value="${searchText == null} ? ${searchText} : ''" type="text" id="searchText" name="searchText" placeholder="Внеси податоци" required class="form-control">
-
-        <label class="form-label">Избери критериум:</label>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="searchCriteria" id="name" value="name">
-            <label class="form-check-label" for="name">Име</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="searchCriteria" id="location" value="location">
-            <label class="form-check-label" for="location">Населено место</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="searchCriteria" id="address" value="address">
-            <label class="form-check-label" for="address">Адреса</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="searchCriteria" id="occupation" value="occupation" >
-            <label class="form-check-label" for="occupation">Занимање</label>
+            </div>
         </div>
 
-        <button type="submit" class="custom-btn">Пребарај</button>
-    </form>
-
-    <div th:if="${wineries != null && wineries.size() > 0}" class="search-results">
+    <div th:if="${wineries != null && wineries.size() > 0}" class="search-results" style="display: flex;justify-content: space-around; flex-direction: column;
+    align-items: center;">
         <th:block th:each="i : ${#numbers.sequence( 0, wineries.size()-1)}">
-            <div class="row custom-block custom-block-bg" style="margin-top: 3rem;" th:if="${i % 2 ==0}">
+            <div class="row custom-block custom-block-bg" style="margin-top: 3rem;width: 75%;" th:if="${i % 2 ==0}" >
                 <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
                     <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                         <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" th:text="${i+1}" style="color: white;"></h6>
@@ -124,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row custom-block mb-3" style="margin-top: 3rem;" th:if="${i % 2 ==1}">
+            <div class="row custom-block mb-3" style="margin-top: 3rem; width: 75%;" th:if="${i % 2 ==1}">
                 <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
                     <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                         <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" th:text="${i+1}" style="color: #F4F1DE;"></h6>
@@ -187,6 +149,3 @@
     }
     addClassById("search", "active");
 </script>
-
-</body>
-</html>
