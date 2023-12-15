@@ -7,6 +7,8 @@ import mk.ukim.finki.vinodventuraapp.model.Winery;
 import mk.ukim.finki.vinodventuraapp.model.WishList;
 import mk.ukim.finki.vinodventuraapp.service.WineryService;
 import mk.ukim.finki.vinodventuraapp.service.WishListService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -22,11 +24,11 @@ public class WishListController {
 
     @GetMapping
     public String getWishList(Model model, @SessionAttribute(required = false) User user) {
-        if (user == null){
+        if (user == null) {
             model.addAttribute("hasError", true);
             model.addAttribute("error", "You need to be logged in to do this action.");
             model.addAttribute("bodyContent", "all-wineries");
-            model.addAttribute("wineries",wineryService.findAll());
+            model.addAttribute("wineries", wineryService.findAll());
             return "master-template";
         }
         List<Winery> wineries = wishListService.getWishListForUser(user).getWineries();
@@ -38,33 +40,37 @@ public class WishListController {
 
     @PostMapping("/add-winery/{id}")
     public String addWineryToWishList(@PathVariable Long id, @SessionAttribute(required = false) User user,
-                                      Model model) {
-        if (user == null){
+                                      Model model, @RequestParam(defaultValue = "0") int page) {
+        Page<Winery> wineryPage = wineryService.findAll(PageRequest.of(page, 5));
+        if (user == null) {
             model.addAttribute("hasError", true);
             model.addAttribute("error", "You need to be logged in to do this action.");
             model.addAttribute("bodyContent", "all-wineries");
-            model.addAttribute("wineries",wineryService.findAll());
+            model.addAttribute("wineries", wineryPage.getContent());
+            model.addAttribute("wineryPage", wineryPage);
             return "master-template";
         }
         try {
             WishList wishList = this.wishListService.addToWishlist(user, id);
-            return "redirect:/allWineries";
+            return "redirect:/allWineries?page=" + page;
         } catch (RuntimeException exception) {
             model.addAttribute("hasError", true);
             model.addAttribute("error", exception.getMessage());
             model.addAttribute("bodyContent", "all-wineries");
-            model.addAttribute("wineries",wineryService.findAll());
+            model.addAttribute("wineryPage", wineryPage);
+            model.addAttribute("wineries", wineryPage.getContent());
+            model.addAttribute("wineryPage", wineryPage);
             return "master-template";
         }
     }
 
     @PostMapping("/delete-winery/{id}")
     public String deleteProduct(@PathVariable Long id, @SessionAttribute User user, Model model) {
-        if (user == null){
+        if (user == null) {
             model.addAttribute("hasError", true);
             model.addAttribute("error", "You need to be logged in to do this action.");
             model.addAttribute("bodyContent", "all-wineries");
-            model.addAttribute("wineries",wineryService.findAll());
+            model.addAttribute("wineries", wineryService.findAll());
             return "master-template";
         }
 

@@ -14,6 +14,8 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
             flex: 1;
+            text-align: center;
+            display: inline-block;
         }
 
         .winery-card:hover {
@@ -42,6 +44,12 @@
         .content-wrapper {
             display: flex;
             flex-wrap: wrap;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
     </style>
@@ -67,9 +75,10 @@
         <path fill="#56070c" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z"
               stroke-width="0"></path>
     </svg>
-
+  <div class="container">
     <div class="content-wrapper">
-        <th:block th:if="${wineries.size()==0}" th:class="winery-card">Your Wish List is empty.</th:block>
+        <th:block th:if="${wineries.size()==0}" th:class="winery-card">
+            <h2 class="mb-3" style="margin-top: 5rem; color: rgb(86, 7, 12);">Your wish list is empty.</h2></th:block>
         <th:block th:if="${wineries.size()!=0}">
             <div th:each="winery : ${wineries}" class="winery-card">
                 <h2 th:text="${winery.getName()}"></h2>
@@ -86,8 +95,9 @@
                     </button>
                 </form>
             </div>
-            >
+
         </th:block>
+    </div>
     </div>
 </section>
 <script>
