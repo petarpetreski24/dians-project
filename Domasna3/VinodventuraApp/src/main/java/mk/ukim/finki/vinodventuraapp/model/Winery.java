@@ -41,4 +41,24 @@ public class Winery {
         this.latitude = latitude;
         this.longitude = longitude;
     }
+
+    public String getNameEn() {
+        return Translator.transliterate(name);
+    }
+
+    public String getAddressEn() {
+        return Translator.transliterate(address);
+    }
+
+    public String getLocationEn() {
+        return Translator.transliterate(location);
+    }
+
+    public String getOccupationsEn() {
+        return Translator.transliterate(occupations);
+    }
+
+    public String getWorkingHoursEn() {
+        return Translator.transliterate(workingHours);
+    }
 }

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Винодвентура</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
           crossorigin=""/>
@@ -161,11 +160,11 @@
 </div>
 </body>
 <script th:inline="javascript">
-    var map = L.map('map').setView([41.6086, 21.7453], 8);
+    var mapList = L.map('map').setView([41.6086, 21.7453], 8);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    }).addTo(map);
+    }).addTo(mapList);
 
     var wineIcon = L.icon({
         iconUrl: 'images/wine-pin.png',
@@ -181,11 +180,11 @@
         var name = wineries[i].name;
         var address = wineries[i].address;
         var town = wineries[i].location;
-        var marker = L.marker([lat, lon], {icon: wineIcon}).addTo(map);
+        var marker = L.marker([lat, lon], {icon: wineIcon}).addTo(mapList);
         var winery_id = wineries[i].id;
         var message = "<div class='popup'><div class='popup-text'><span class='name-popup'>" + name +
             "</span></br></br><span class='address-popup'><b>" + address + "</b></span></br><span class='town-popup'>" + town + "</span></div></br><div class='popup-button'><a href=\"/winery/details/" +
-            winery_id + "\"" + " class=\"custom-btn-popup custom-border-btn-popup btn\" role=\"button\">Детали</a></div></div>"
+            winery_id + "\"" + " class=\"custom-btn-popup custom-border-btn-popup btn\" role=\"button\">Details</a></div></div>"
         marker.bindPopup(message);
     }
         function addClassById(elementId, className) {

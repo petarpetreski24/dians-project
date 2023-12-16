@@ -1,5 +1,6 @@
 package mk.ukim.finki.vinodventuraapp.web.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
 import mk.ukim.finki.vinodventuraapp.model.exceptions.InvalidArgumentsException;
 import mk.ukim.finki.vinodventuraapp.model.exceptions.PasswordLengthException;
@@ -21,10 +22,18 @@ public class RegisterController {
     private final AuthService authService;
 
     @GetMapping
-    public String getRegisterPage(@RequestParam(required = false) String error, Model model)
+    public String getRegisterPage(@RequestParam(required = false) String error, Model model, HttpServletRequest request)
     {
-        model.addAttribute("bodyContent", "register");
-        return "master-template";
+
+        String lang = (String)request.getSession().getAttribute("lang");
+        if (lang.equals("mk")){
+            model.addAttribute("bodyContent", "register-mk");
+            return "master-template-mk";
+        }
+        else {
+            model.addAttribute("bodyContent", "register-en");
+            return "master-template-en";
+        }
     }
 
     @PostMapping
@@ -33,23 +42,39 @@ public class RegisterController {
                            @RequestParam String username,
                            @RequestParam String password,
                            @RequestParam String repeatPassword,
-                           Model model) {
+                           Model model,
+                           HttpServletRequest request) {
         try{
             this.authService.register(username, password, repeatPassword, name, surname);
 
             model.addAttribute("hasError", true);
-            model.addAttribute("error", "Successfully registered! Please login.");
-            model.addAttribute("bodyContent", "home");
 
-            return "master-template";
+            String lang = (String)request.getSession().getAttribute("lang");
+            if (lang.equals("mk")){
+                model.addAttribute("error", "Успешно се регистриравте! Ве молиме најавете се.");
+                model.addAttribute("bodyContent", "home-mk");
+                return "master-template-mk";
+            }
+            else {
+                model.addAttribute("error", "Successfully registered! Please login.");
+                model.addAttribute("bodyContent", "home-en");
+                return "master-template-en";
+            }
         } catch (InvalidArgumentsException | PasswordsDoNotMatchException
                  | UsernameAlreadyExistsException | PasswordLengthException exception) {
 
             model.addAttribute("hasError", true);
             model.addAttribute("error", exception.getMessage());
-            model.addAttribute("bodyContent", "register");
 
-            return "master-template";
+            String lang = (String)request.getSession().getAttribute("lang");
+            if (lang.equals("mk")){
+                model.addAttribute("bodyContent", "register-mk");
+                return "master-template-mk";
+            }
+            else {
+                model.addAttribute("bodyContent", "register-en");
+                return "master-template-en";
+            }
         }
     }
 

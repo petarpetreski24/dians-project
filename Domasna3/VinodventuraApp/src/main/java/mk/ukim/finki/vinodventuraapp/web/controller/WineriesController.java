@@ -1,5 +1,6 @@
 package mk.ukim.finki.vinodventuraapp.web.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
 import mk.ukim.finki.vinodventuraapp.model.User;
 import mk.ukim.finki.vinodventuraapp.model.Winery;
@@ -22,7 +23,8 @@ public class WineriesController {
     @GetMapping()
     public String showAllWineries(@RequestParam(required = false) String error,
                                            @SessionAttribute(required = false) User user, Model model,
-                                           @RequestParam(defaultValue = "0") int page) {
+                                           @RequestParam(defaultValue = "0") int page,
+                                  HttpServletRequest request) {
 
         if(error!=null && !error.isEmpty()) {
             model.addAttribute("hasError", true);
@@ -31,10 +33,17 @@ public class WineriesController {
 
         Page<Winery> wineryPage = wineryService.findAll(PageRequest.of(page,5));
         List<Winery> wineries = wineryService.findAll();
-        model.addAttribute("bodyContent", "all-wineries");
         model.addAttribute("wineries",wineryPage.getContent());
         model.addAttribute("user",user);
         model.addAttribute("wineryPage",wineryPage);
-        return "master-template";
+        String lang = (String)request.getSession().getAttribute("lang");
+        if (lang.equals("mk")){
+            model.addAttribute("bodyContent", "all-wineries-mk");
+            return "master-template-mk";
+        }
+        else {
+            model.addAttribute("bodyContent", "all-wineries-en");
+            return "master-template-en";
+        }
     }
 }

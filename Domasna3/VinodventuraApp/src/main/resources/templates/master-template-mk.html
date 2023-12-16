@@ -16,7 +16,7 @@
           crossorigin="anonymous"></script>
 </head>
 <body>
-<header th:replace="fragments/header2"></header>
+<header th:replace="fragments/header-mk"></header>
 
 <section th:include="${bodyContent}"></section>
 <div th:if="${hasError}" style="
@@ -50,7 +50,7 @@
   }
 </script>
 <th:block th:unless="${footerMap}">
-  <footer th:replace="fragments/footer"></footer>
+  <footer th:replace="fragments/footer-mk"></footer>
 </th:block>
 </body>
 </html>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
-  <title>Винодвентура</title>
+  <title>Vinodventura</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -31,7 +31,7 @@
       </a>
 
       <div class="d-lg-none ms-auto me-3">
-        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Најавете се</a>
+        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Sign in</a>
       </div>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,34 +41,37 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-lg-auto">
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="/home">Почетна</a>
+            <a class="nav-link click-scroll" href="/home">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="#section_1">За нас</a>
+            <a class="nav-link click-scroll" href="#section_1">About us</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="/allWineries">Винарии</a>
+            <a class="nav-link click-scroll" href="/allWineries">Wineries</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="/search">Пребарување</a>
+            <a class="nav-link click-scroll" href="/search">Search</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="/map">Интерактивна мапа</a>
+            <a class="nav-link click-scroll" href="/map">Interactive map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="/language/en" style="margin-right: 0;padding-right: 3px;">EN</a>|<a class="nav-link click-scroll" href="/language/mk" style="margin-left: 0;padding-left: 3px;">MK</a>
           </li>
         </ul>
 
         <div class="d-none d-lg-block ms-lg-3" th:if="${session.user == null}">
-          <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Најавете се</a>
+          <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Sign in</a>
         </div>
         <div class="d-none d-lg-block ms-lg-3" th:if="${session.user != null}">
           <a class="btn custom-btn custom-border-btn" href="#offcanvasExample" role="button">Wishlist</a>
         </div>
         <div class="d-none d-lg-block ms-lg-3" th:if="${session.user != null}">
-          <a class="btn custom-btn custom-border-btn" href="/logout" role="button">Одјавете се</a>
+          <a class="btn custom-btn custom-border-btn" href="/logout" role="button">Sign Out</a>
         </div>
       </div>
     </div>
@@ -76,7 +79,7 @@
 
   <div th:if="${session.user == null}" class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Најавете се</h5>
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sign in</h5>
 
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
@@ -86,19 +89,19 @@
 
         <div class="member-login-form-body">
           <div class="mb-4">
-            <label class="form-label mb-2" for="username">Корисничко име</label>
+            <label class="form-label mb-2" for="username">Username:</label>
 
             <input type="text" name="username" id="username" class="form-control" required>
           </div>
 
           <div class="mb-4">
-            <label class="form-label mb-2" for="password">Лозинка</label>
+            <label class="form-label mb-2" for="password">Password:</label>
 
             <input type="password" name="password" id="password" class="form-control" required="">
           </div>
 
           <div class="col-lg-5 col-md-7 col-8 mx-auto">
-            <button type="submit" class="form-control">Најава</button>
+            <button type="submit" class="form-control">Sign in</button>
           </div>
         </div>
       </form>

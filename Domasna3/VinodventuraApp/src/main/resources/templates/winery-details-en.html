@@ -120,6 +120,7 @@
         .map-container {
             height: 500px;
             width: 600px;
+            z-index: 0;
         }
 
     </style>
@@ -130,15 +131,15 @@
 <div class="content-container">
     <div class="winery-container">
         <div th:if="${winery}" class="winery-card">
-            <h2 th:text="${winery.getName()}"></h2>
-            <p th:text="'Address: ' + ${winery.getAddress()}"></p>
-            <p th:text="'City: ' + ${winery.getLocation()}"></p>
+            <h2 th:text="${winery.getNameEn()}"></h2>
+            <p th:text="'Address: ' + ${winery.getAddressEn()}"></p>
+            <p th:text="'City: ' + ${winery.getLocationEn()}"></p>
             <p th:text="'Phone: ' + ${winery.getMobNumber()}"></p>
             <p>
                 Website: <a th:href="${winery.getWebsite()}" target="_blank"
                             th:text="${winery.getWebsite()}"></a>
             </p>
-            <p th:text="'Working Hours: ' + ${winery.getWorkingHours()}"></p>
+            <p th:text="'Working Hours: ' + ${winery.getWorkingHoursEn()}"></p>
             <div class="comments" th:if="${winery.getReviews().size()>0}">
                 <h3>Коментари:</h3>
                 <div class="comment" th:each="review:${winery.getReviews()}">

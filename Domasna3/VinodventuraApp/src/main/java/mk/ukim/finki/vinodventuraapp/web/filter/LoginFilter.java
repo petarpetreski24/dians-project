@@ -31,6 +31,11 @@ public class LoginFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         User user = (User) request.getSession().getAttribute("user");
         String path = request.getServletPath();
+
+        if(request.getSession().getAttribute("lang") == null){
+            request.getSession().setAttribute("lang","mk");
+        }
+
         if ((path.startsWith(ignorePath) || path.startsWith(registerPath)) && user != null){
             response.sendRedirect("/home");
         }
