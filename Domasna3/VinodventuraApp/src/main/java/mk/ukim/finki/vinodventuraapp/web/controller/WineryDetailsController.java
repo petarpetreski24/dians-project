@@ -1,5 +1,6 @@
 package mk.ukim.finki.vinodventuraapp.web.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
 import mk.ukim.finki.vinodventuraapp.model.Winery;
 import mk.ukim.finki.vinodventuraapp.service.WineryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +21,12 @@ public class WineryDetailsController {
     private WineryService wineryService;
 
     @GetMapping("/{id}")
-    public String getWineryDetails(@PathVariable Long id, Model model, @RequestParam(required = false) String error) {
+    public String getWineryDetails(@PathVariable Long id, Model model, @RequestParam(required = false) String error,
+                                   HttpServletRequest request) {
         Optional<Winery> winery = wineryService.findById(id);
 
         if (winery.isPresent()) {
             model.addAttribute("winery", winery.get());
-            model.addAttribute("bodyContent", "winery-details");
             if (error != null && !error.isEmpty()){
                 model.addAttribute("error", "You need to be signed in to post a review");
                 model.addAttribute("hasError",true);
@@ -33,9 +34,16 @@ public class WineryDetailsController {
         } else {
             model.addAttribute("error", "Winery not found.");
             model.addAttribute("hasError", true);
-            model.addAttribute("bodyContent", "winery-details");
         }
 
-        return "master-template";
+        String lang = (String)request.getSession().getAttribute("lang");
+        if (lang.equals("mk")){
+            model.addAttribute("bodyContent", "winery-details-mk");
+            return "master-template-mk";
+        }
+        else {
+            model.addAttribute("bodyContent", "winery-details-en");
+            return "master-template-en";
+        }
     }
 }

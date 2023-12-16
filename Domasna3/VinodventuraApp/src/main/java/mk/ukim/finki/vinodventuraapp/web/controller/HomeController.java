@@ -14,9 +14,17 @@ public class HomeController {
     @GetMapping
     public String getHomePage(HttpServletRequest request,Model model) {
         User user = (User) request.getSession().getAttribute("user");
-        model.addAttribute("bodyContent", "home");
+
         model.addAttribute("user",user);
-        return "master-template";
+        String lang = (String)request.getSession().getAttribute("lang");
+        if (lang.equals("mk")){
+            model.addAttribute("bodyContent", "home-mk");
+            return "master-template-mk";
+        }
+        else{
+            model.addAttribute("bodyContent", "home-en");
+            return "master-template-en";
+        }
     }
 }
 
