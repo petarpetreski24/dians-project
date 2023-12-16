@@ -26,19 +26,19 @@
 
                     <div class="col-lg-6 col-12 order-3 order-lg-0">
                         <div class="custom-block-info mt-2 mt-lg-0">
-                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}" class="events-title mb-3" th:text="${wineries.get(i).getName()}" style="color: #56070c;"></a>
-                            <p class="mb-0" th:text="${wineries.get(i).getOccupations()}"></p>
+                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}" class="events-title mb-3" th:text="${wineries.get(i).getNameEn()}" style="color: #56070c;"></a>
+                            <p class="mb-0" th:text="${wineries.get(i).getOccupationsEn()}"></p>
                             <div class="d-flex flex-wrap border-top mt-4 pt-3">
 
                                 <div class="mb-4 mb-lg-0">
                                     <div class="d-flex flex-wrap align-items-center mb-1">
-                                        <span class="custom-block-span">Град:</span>
+                                        <span class="custom-block-span">Location:</span>
 
-                                        <p class="mb-0" th:text="${wineries.get(i).getLocation()}"></p>
+                                        <p class="mb-0" th:text="${wineries.get(i).getLocationEn()}"></p>
                                     </div>
 
                                     <div class="d-flex flex-wrap align-items-center">
-                                        <span class="custom-block-span">Контакт телефон:</span>
+                                        <span class="custom-block-span">Contact Number:</span>
 
                                         <p class="mb-0" th:text="'+'+${wineries.get(i).getMobNumber()}"></p>
                                     </div>
@@ -71,19 +71,19 @@
 
                     <div class="col-lg-6 col-12 order-3 order-lg-0">
                         <div class="custom-block-info mt-2 mt-lg-0">
-                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}" class="events-title mb-3" th:text="${wineries.get(i).getName()}" style="color: #56070c;"></a>
-                            <p class="mb-0" th:text="${wineries.get(i).getOccupations()}"></p>
+                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}" class="events-title mb-3" th:text="${wineries.get(i).getNameEn()}" style="color: #56070c;"></a>
+                            <p class="mb-0" th:text="${wineries.get(i).getOccupationsEn()}"></p>
                             <div class="d-flex flex-wrap border-top mt-4 pt-3">
 
                                 <div class="mb-4 mb-lg-0">
                                     <div class="d-flex flex-wrap align-items-center mb-1">
-                                        <span class="custom-block-span">Град:</span>
+                                        <span class="custom-block-span">Location:</span>
 
                                         <p class="mb-0" th:text="${wineries.get(i).getLocation()}"></p>
                                     </div>
 
                                     <div class="d-flex flex-wrap align-items-center">
-                                        <span class="custom-block-span">Контакт телефон:</span>
+                                        <span class="custom-block-span">Contact Number:</span>
 
                                         <p class="mb-0" th:text="'+'+${wineries.get(i).getMobNumber()}"></p>
                                     </div>
