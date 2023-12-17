@@ -46,7 +46,7 @@
             flex-wrap: wrap;
             align-items: center;
         }
-        .container {
+        .container-content {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -75,30 +75,32 @@
         <path fill="#56070c" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z"
               stroke-width="0"></path>
     </svg>
-  <div class="container">
+  <div class="container-content">
     <div class="content-wrapper">
         <th:block th:if="${wineries.size()==0}" th:class="winery-card">
             <h2 class="mb-3" style="margin-top: 5rem; color: rgb(86, 7, 12);">Your wish list is empty.</h2></th:block>
         <th:block th:if="${wineries.size()!=0}">
             <div th:each="winery : ${wineries}" class="winery-card">
-                <h2 th:text="${winery.getNameEn()}"></h2>
-                <p th:text="'Address: ' + ${winery.getAddressEn()}"></p>
-                <p th:text="'Location: ' + ${winery.getLocationEn()}"></p>
-                <p th:text="'Contact Number: ' + ${winery.getMobNumber()}"></p>
-                <p>
-                    Website: <a th:href="${winery.getWebsite()}" target="_blank" th:text="${winery.getWebsite()}"></a>
-                </p>
-                <p th:text="'Working Hours: ' + ${winery.getWorkingHoursEn()}"></p>
-                <form th:action="@{'/wish-list/delete-winery/{id}' (id=${winery.getId()})}" th:method="POST">
-                    <button class="btn custom-btn custom-border-btn" href="/wish-list" role="button" type="submit">
-                        Remove from list
-                    </button>
-                </form>
+                <th:block th:if="${winery != null}">
+                    <h2 th:if="${winery.getName() != null}" th:text="${winery.getName()}"></h2>
+                    <p th:if="${winery.getAddress() != null}" th:text="'Address: ' + ${winery.getAddress()}"></p>
+                    <p th:if="${winery.getLocation() != null}" th:text="'Location: ' + ${winery.getLocation()}"></p>
+                    <p th:if="${winery.getMobNumber() != null}" th:text="'Contact Number: ' + ${winery.getMobNumber()}"></p>
+                    <p th:if="${winery.getWebsite() != null}">
+                        Веб страна: <a th:href="${winery.getWebsite()}" target="_blank" th:text="${winery.getWebsite()}"></a>
+                    </p>
+                    <p th:if="${winery.getWorkingHours() != null}" th:text="'Working Hours: ' + ${winery.getWorkingHours()}"></p>
+                    <form th:action="@{'/wish-list/delete-winery/{id}' (id=${winery.getId()})}" th:method="POST">
+                        <button class="btn custom-btn custom-border-btn" href="/wish-list" role="button" type="submit">
+                            Remove from list
+                        </button>
+                    </form>
+                </th:block>
             </div>
 
         </th:block>
     </div>
-    </div>
+  </div>
 </section>
 <script>
     var anchorTags = document.getElementsByTagName('a');

@@ -39,15 +39,14 @@ public class WishListController {
             }
         }
         List<Winery> wineries = wishListService.getWishListForUser(user).getWineries();
-        model.addAttribute("bodyContent", "wish-list");
         model.addAttribute("wineries", wineries);
         model.addAttribute("user", user);
         if (lang.equals("mk")){
-            model.addAttribute("bodyContent", "all-wineries-mk");
+            model.addAttribute("bodyContent", "wish-list-mk");
             return "master-template-mk";
         }
         else {
-            model.addAttribute("bodyContent", "all-wineries-en");
+            model.addAttribute("bodyContent", "wish-list-en");
             return "master-template-en";
         }
     }

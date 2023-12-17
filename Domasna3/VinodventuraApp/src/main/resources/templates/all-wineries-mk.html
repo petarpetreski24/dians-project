@@ -23,7 +23,7 @@
                 <h2 class="mb-3" style="margin-top: 5rem; color: rgb(86, 7, 12);">Достапни винарии во Македонија</h2>
             </div>
 
-            <th:block th:each="i : ${#numbers.sequence( 0, wineries.size()-1)}">
+            <th:block th:if="${wineries !=null}" th:each="i : ${#numbers.sequence( 0, wineries.size()-1)}">
                 <div class="row custom-block custom-block-bg" style="margin-top: 3rem;" th:if="${i % 2 ==0}">
                     <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
                         <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
@@ -33,7 +33,7 @@
                     </div>
                     <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                         <div class="custom-block-image-wrap">
-                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}">
+                            <a th:if="${wineries.get(i) != null}" th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}">
                                 <img th:src="'/images/wineries/winery'+${(i % 5)+1}+'.jpg'"
                                      class="custom-block-image img-fluid" alt="">
 
@@ -44,27 +44,31 @@
 
                     <div class="col-lg-6 col-12 order-3 order-lg-0">
                         <div class="custom-block-info mt-2 mt-lg-0">
-                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}" class="events-title mb-3"
+                            <a th:if="${wineries.get(i) != null && wineries.get(i).getName() !=null}" th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}" class="events-title mb-3"
                                th:text="${wineries.get(i).getName()}" style="color: #56070c;"></a>
-                            <p class="mb-0" th:text="${wineries.get(i).getOccupations()}"></p>
+                            <p class="mb-0" th:if="${wineries.get(i).getOccupations() != null}" th:text="${wineries.get(i).getOccupations()}"></p>
                             <div class="d-flex flex-wrap border-top mt-4 pt-3">
 
                                 <div class="mb-4 mb-lg-0">
                                     <div class="d-flex flex-wrap align-items-center mb-1">
                                         <span class="custom-block-span">Град:</span>
 
-                                        <p class="mb-0" th:text="${wineries.get(i).getLocation()}"></p>
+                                        <p th:if="${wineries.get(i).getLocation() != null}" class="mb-0" th:text="${wineries.get(i).getLocation()}"></p>
                                     </div>
 
                                     <div class="d-flex flex-wrap align-items-center">
                                         <span class="custom-block-span">Контакт телефон:</span>
 
-                                        <p class="mb-0" th:text="'+'+${wineries.get(i).getMobNumber()}"></p>
+                                        <p th:if="${wineries.get(i).getMobNumber() != null}" class="mb-0" th:text="'+'+${wineries.get(i).getMobNumber()}"></p>
                                     </div>
                                 </div>
 
                                 <div class="d-flex align-items-center ms-lg-auto">
-                                    <form th:action="'/wish-list/add-winery/'+${wineries.get(i).getId()}+'?page='+${wineryPage.number}"
+                                    <form th:if ="${wineryPage != null}" th:action="'/wish-list/add-winery/'+${wineries.get(i).getId()}+'?page='+${wineryPage.number}"
+                                          method="post">
+                                        <input type="submit" class="btn custom-btn" value="Додади во листа на желби">
+                                    </form>
+                                    <form th:if ="${wineryPage == null}" th:action="'/wish-list/add-winery/'+${wineries.get(i).getId()}"
                                           method="post">
                                         <input type="submit" class="btn custom-btn" value="Додади во листа на желби">
                                     </form>
@@ -82,7 +86,7 @@
                     </div>
                     <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                         <div class="custom-block-image-wrap">
-                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}">
+                            <a  th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}">
                                 <img th:src="'/images/wineries/winery'+${(i % 5)+1}+'.jpg'"
                                      class="custom-block-image img-fluid" alt="">
 
@@ -93,27 +97,31 @@
 
                     <div class="col-lg-6 col-12 order-3 order-lg-0">
                         <div class="custom-block-info mt-2 mt-lg-0">
-                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}" class="events-title mb-3"
+                            <a th:if="${wineries.get(i) != null && wineries.get(i).getName() !=null}" th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}" class="events-title mb-3"
                                th:text="${wineries.get(i).getName()}" style="color: #56070c;"></a>
-                            <p class="mb-0" th:text="${wineries.get(i).getOccupations()}"></p>
+                            <p th:if="${wineries.get(i).getOccupations() != null}" class="mb-0" th:text="${wineries.get(i).getOccupations()}"></p>
                             <div class="d-flex flex-wrap border-top mt-4 pt-3">
 
                                 <div class="mb-4 mb-lg-0">
                                     <div class="d-flex flex-wrap align-items-center mb-1">
                                         <span class="custom-block-span">Град:</span>
 
-                                        <p class="mb-0" th:text="${wineries.get(i).getLocation()}"></p>
+                                        <p th:if="${wineries.get(i).getLocation() != null}" class="mb-0" th:text="${wineries.get(i).getLocation()}"></p>
                                     </div>
 
                                     <div class="d-flex flex-wrap align-items-center">
                                         <span class="custom-block-span">Контакт телефон:</span>
 
-                                        <p class="mb-0" th:text="'+'+${wineries.get(i).getMobNumber()}"></p>
+                                        <p th:if="${wineries.get(i).getMobNumber() != null}" class="mb-0" th:text="'+'+${wineries.get(i).getMobNumber()}"></p>
                                     </div>
                                 </div>
 
                                 <div class="d-flex align-items-center ms-lg-auto">
-                                    <form th:action="'/wish-list/add-winery/'+${wineries.get(i).getId()}+'?page='+${wineryPage.number}"
+                                    <form th:if ="${wineryPage != null}" th:action="'/wish-list/add-winery/'+${wineries.get(i).getId()}+'?page='+${wineryPage.number}"
+                                          method="post">
+                                        <input type="submit" class="btn custom-btn" value="Додади во листа на желби">
+                                    </form>
+                                    <form th:if ="${wineryPage == null}" th:action="'/wish-list/add-winery/'+${wineries.get(i).getId()}"
                                           method="post">
                                         <input type="submit" class="btn custom-btn" value="Додади во листа на желби">
                                     </form>
