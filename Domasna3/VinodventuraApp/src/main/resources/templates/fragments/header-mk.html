@@ -41,23 +41,23 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-lg-auto">
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="/home">Почетна</a>
+            <a class="nav-link click-scroll" href="/home" id="home">Почетна</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="#section_1">За нас</a>
+            <a class="nav-link click-scroll" th:href="@{/home#section2}" id="info">За нас</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="/allWineries">Винарии</a>
+            <a class="nav-link click-scroll" href="/allWineries" id="winery">Винарии</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="/search">Пребарување</a>
+            <a class="nav-link click-scroll" href="/search" id="search">Пребарување</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="/map">Интерактивна мапа</a>
+            <a class="nav-link click-scroll" href="/map" id="map_active">Интерактивна мапа</a>
           </li>
           <li class="nav-item">
             <a class="nav-link click-scroll" href="/language/en" style="margin-right: 0;padding-right: 3px;">EN</a>|<a class="nav-link click-scroll" href="/language/mk" style="margin-left: 0;padding-left: 3px;">MK</a>

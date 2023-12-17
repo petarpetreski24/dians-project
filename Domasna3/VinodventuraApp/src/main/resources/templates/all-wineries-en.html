@@ -99,6 +99,16 @@
                     </div>
                 </div>
             </th:block>
+        </div>
+    </div>
+    <div th:if="${wineryPage}">
+        <div th:if="${wineryPage.totalPages > 1}">
+            <ul class="pagination">
+                <li th:each="i : ${#numbers.sequence(0, wineryPage.totalPages - 1)}"
+                    th:class="${wineryPage.number == i} ? 'active'">
+                    <a th:href="@{'/allWineries?page=' + ${i}}" th:text="${i + 1}"></a>
+                </li>
+            </ul>
 
         </div>
     </div>
@@ -123,3 +133,29 @@
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script src="/js/jquery.sticky.js"></script>
 <script src="/js/custom.js"></script>
+<style>
+    .pagination {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .pagination li {
+        margin: 0 5px;
+    }
+
+    .pagination a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        color: #333;
+        border-radius: 3px;
+    }
+
+    .pagination .active a {
+        background-color: rgb(86, 7, 12) !important;
+        color: white !important;
+    }
+</style>
