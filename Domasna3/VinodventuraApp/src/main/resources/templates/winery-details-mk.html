@@ -236,14 +236,14 @@
             <div class="wine-map-container">
                 <div th:if="${winery}" class="winery-card">
                     <h2 th:text="${winery.getName()}"></h2>
-                    <p th:text="'Address: ' + ${winery.getAddress()}"></p>
-                    <p th:text="'City: ' + ${winery.getLocation()}"></p>
-                    <p th:text="'Phone: ' + ${winery.getMobNumber()}"></p>
+                    <p th:text="'Адреса: ' + ${winery.getAddress()}"></p>
+                    <p th:text="'Град: ' + ${winery.getLocation()}"></p>
+                    <p th:text="'Телефонски број: ' + ${winery.getMobNumber()}"></p>
                     <p>
-                        Website: <a th:href="${winery.getWebsite()}" target="_blank"
+                        Веб-страница: <a th:href="${winery.getWebsite()}" target="_blank"
                                     th:text="${winery.getWebsite()}"></a>
                     </p>
-                    <p th:text="'Working Hours: ' + ${winery.getWorkingHours()}"></p>
+                    <p th:text="'Работни часови: ' + ${winery.getWorkingHours()}"></p>
 
                 </div>
                 <div class="map-container" id="map"></div>
