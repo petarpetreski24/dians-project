@@ -1,5 +1,6 @@
 package mk.ukim.finki.vinodventuraapp.web.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
 import mk.ukim.finki.vinodventuraapp.model.User;
 import mk.ukim.finki.vinodventuraapp.model.Winery;
@@ -25,8 +26,8 @@ public class SearchController {
     public String getSearch(@RequestParam(required = false)String searchCriteria,
                             @RequestParam(required = false)String searchText,
                             @SessionAttribute(required = false) User user,
-                            Model model){
-        model.addAttribute("bodyContent", "search-page");
+                            Model model,
+                            HttpServletRequest request){
         model.addAttribute("user",user);
         model.addAttribute("searchText",searchText);
 
@@ -56,6 +57,14 @@ public class SearchController {
                 }
             }
         }
-        return "master-template";
+        String lang = (String)request.getSession().getAttribute("lang");
+        if (lang.equals("mk")){
+            model.addAttribute("bodyContent", "search-page-mk");
+            return "master-template-mk";
+        }
+        else {
+            model.addAttribute("bodyContent", "search-page-en");
+            return "master-template-en";
+        }
     }
 }

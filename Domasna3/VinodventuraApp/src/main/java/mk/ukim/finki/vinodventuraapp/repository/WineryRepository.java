@@ -13,4 +13,6 @@ public interface WineryRepository extends JpaRepository<Winery,Long> {
     List<Winery> findAllByOccupationsContaining(String occupation);
 
     List<Winery> findAllByAddressContaining(String address);
+
+
 }
