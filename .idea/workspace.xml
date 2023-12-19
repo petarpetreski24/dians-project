@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Frontend refactoring and changing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/winery-details-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/winery-details-en.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/winery-details-mk.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/winery-details-mk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-mk.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-mk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-temp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +34,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "blagica9"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;blagica9&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -58,42 +60,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;frontend-preview&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/dians-project/Domasna3/VinodventuraApp/src/main/resources/static/images/wineries&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ff61543f092ef6163a2957a96b8fae17&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "frontend-preview",
+    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "last_opened_file_path": "D:/Fakultet/Petti semestar/Dizajn i arhitektura na softver/dians-project/Domasna3/VinodventuraApp/src/main/resources/static",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "spring.configuration.checksum": "ff61543f092ef6163a2957a96b8fae17",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\dians-project\Domasna3\VinodventuraApp\src\main\resources\static\images\wineries" />
-      <recent name="D:\IdeaProjects\dians-project\VinodventuraApp\src\main\resources" />
-      <recent name="D:\IdeaProjects\dians-project\VinodventuraApp\src\main\java\mk\ukim\finki\vinodventuraapp" />
-      <recent name="D:\PycharmProjects\dians-project\Домашна 2\architecture" />
-      <recent name="D:\PycharmProjects\dians-project\Домашна 1\Data\python_scripts" />
+      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main\resources\static" />
+      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main\resources\public" />
+      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp" />
+      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main" />
+      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\Desktop\dians4\Domasna3\VinodventuraApp\src\main\resources\static\images" />
