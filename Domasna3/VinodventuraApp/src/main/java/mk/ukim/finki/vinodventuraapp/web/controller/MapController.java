@@ -22,10 +22,18 @@ public class MapController {
     public String getMap(HttpServletRequest request, Model model) {
         List<Winery> wineries = wineryService.findAll();
         User user = (User) request.getSession().getAttribute("user");
-        model.addAttribute("bodyContent", "map");
+
         model.addAttribute("footerMap", "true");
         model.addAttribute("user",user);
         model.addAttribute("wineries",wineries);
-        return "master-template";
+        String lang = (String)request.getSession().getAttribute("lang");
+        if (lang.equals("mk")){
+            model.addAttribute("bodyContent", "map-mk");
+            return "master-template-mk";
+        }
+        else {
+            model.addAttribute("bodyContent", "map-en");
+            return "master-template-en";
+        }
     }
 }
