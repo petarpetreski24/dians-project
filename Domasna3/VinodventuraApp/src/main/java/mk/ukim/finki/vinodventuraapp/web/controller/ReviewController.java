@@ -20,7 +20,10 @@ public class ReviewController {
     public String addReview(@RequestParam Integer score, @RequestParam String description, @RequestParam(required = false) Long userId,
                             @PathVariable Long id, Model model) {
         if (userId == null){
+            model.addAttribute("hasError",true);
+            model.addAttribute("error","Invalid user.");
             return "redirect:/winery/details/" + id+"?error=user";
+
         }
         reviewService.addReview(score, description, id,userId);
         return "redirect:/winery/details/" + id;

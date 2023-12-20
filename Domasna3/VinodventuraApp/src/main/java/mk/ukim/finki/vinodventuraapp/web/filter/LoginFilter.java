@@ -42,9 +42,9 @@ public class LoginFilter implements Filter {
         if (path.equals("/wish-list") && user == null){
             response.sendRedirect("/home");
         }
-//        if(path.equals("/favicon.ico")) {
-//            response.sendRedirect("/images/favicon.ico");
-//        }
+        if(path.equals("/favicon.ico")) {
+            response.sendRedirect("/images/favicon.ico");
+        }
         filterChain.doFilter(servletRequest, servletResponse);
     }
 

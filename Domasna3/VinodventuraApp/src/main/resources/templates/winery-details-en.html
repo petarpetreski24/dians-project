@@ -340,6 +340,15 @@
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
 
+    var wineIcon = L.icon({
+        iconUrl: '../../images/wine-pin.png',
+        iconSize: [30, 46],
+        iconAnchor: [15, 46],
+        popupAnchor: [0, 180]
+    });
+
+    var marker = L.marker([lat, lon], {icon: wineIcon}).addTo(map);
+
 </script>
 </body>
 </html>

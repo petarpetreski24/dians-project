@@ -24,7 +24,7 @@ public class WineryDetailsController {
     public String getWineryDetails(@PathVariable Long id, Model model, @RequestParam(required = false) String error,
                                    HttpServletRequest request) {
         Optional<Winery> winery = wineryService.findById(id);
-
+        String lang = (String)request.getSession().getAttribute("lang");
         if (winery.isPresent()) {
             model.addAttribute("winery", winery.get());
             if (error != null && !error.isEmpty()){
@@ -34,9 +34,18 @@ public class WineryDetailsController {
         } else {
             model.addAttribute("error", "Winery not found.");
             model.addAttribute("hasError", true);
+            if (lang.equals("mk")){
+                model.addAttribute("bodyContent", "home-mk");
+                return "master-template-mk";
+            }
+            else {
+                model.addAttribute("bodyContent", "home-en");
+                return "master-template-en";
+            }
+
         }
 
-        String lang = (String)request.getSession().getAttribute("lang");
+
         if (lang.equals("mk")){
             model.addAttribute("bodyContent", "winery-details-mk");
             return "master-template-mk";

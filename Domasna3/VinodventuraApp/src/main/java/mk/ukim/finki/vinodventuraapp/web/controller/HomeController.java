@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping({"/home", "/","*"})
 public class HomeController {
 
-    @GetMapping
+    @GetMapping("/home")
     public String getHomePage(HttpServletRequest request,Model model) {
         User user = (User) request.getSession().getAttribute("user");
 
@@ -26,5 +25,11 @@ public class HomeController {
             return "master-template-en";
         }
     }
+
+    @GetMapping("/*")
+    public String redirectToHome(){
+        return "redirect:/home";
+    }
+
 }
 
