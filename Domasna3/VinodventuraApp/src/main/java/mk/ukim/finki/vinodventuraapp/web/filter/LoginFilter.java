@@ -9,17 +9,20 @@ import mk.ukim.finki.vinodventuraapp.model.User;
 
 import java.io.IOException;
 
-@WebFilter(filterName = "auth-filter", urlPatterns = "/*",
+@WebFilter(filterName = "auth-filter", urlPatterns = "*",
         dispatcherTypes = {DispatcherType.REQUEST, DispatcherType.FORWARD},
-        initParams = @WebInitParam(name = "ignore-path", value = "/login"))
+        initParams = {@WebInitParam(name = "ignore-path", value = "/login"),
+        @WebInitParam(name = "register-path",value = "/register")})
 public class LoginFilter implements Filter {
 
     private String ignorePath;
+    private String registerPath;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         Filter.super.init(filterConfig);
         ignorePath = filterConfig.getInitParameter("ignore-path");
+        registerPath = filterConfig.getInitParameter("register-path");
     }
 
     @Override
@@ -28,14 +31,21 @@ public class LoginFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         User user = (User) request.getSession().getAttribute("user");
         String path = request.getServletPath();
-        if (path.startsWith(ignorePath) && user != null){
+
+        if(request.getSession().getAttribute("lang") == null){
+            request.getSession().setAttribute("lang","mk");
+        }
+
+        if ((path.startsWith(ignorePath) || path.startsWith(registerPath)) && user != null){
             response.sendRedirect("/home");
         }
-        if (user != null) {
-            filterChain.doFilter(servletRequest, servletResponse);
-        } else {
-            response.sendRedirect("/login");
+        if (path.equals("/wish-list") && user == null){
+            response.sendRedirect("/home");
         }
+        if(path.equals("/favicon.ico")) {
+            response.sendRedirect("/images/favicon.ico");
+        }
+        filterChain.doFilter(servletRequest, servletResponse);
     }
 
     @Override

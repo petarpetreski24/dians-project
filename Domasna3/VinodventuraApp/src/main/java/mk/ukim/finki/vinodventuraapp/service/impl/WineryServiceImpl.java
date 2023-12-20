@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import mk.ukim.finki.vinodventuraapp.model.Winery;
 import mk.ukim.finki.vinodventuraapp.repository.WineryRepository;
 import mk.ukim.finki.vinodventuraapp.service.WineryService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -41,5 +43,10 @@ public class WineryServiceImpl implements WineryService {
     @Override
     public List<Winery> findAllByAddressContaining(String address) {
         return wineyRepository.findAllByAddressContaining(address);
+    }
+
+    @Override
+    public Page<Winery> findAll(Pageable pageable) {
+        return wineyRepository.findAll(pageable);
     }
 }

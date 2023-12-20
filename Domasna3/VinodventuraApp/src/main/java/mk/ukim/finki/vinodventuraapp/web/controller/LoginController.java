@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(path = {"/","/login","*"})
+@RequestMapping(path = {"/login"})
 public class LoginController {
 
     private final AuthService authService;
@@ -22,9 +22,13 @@ public class LoginController {
     }
 
     @GetMapping
-    public String getLoginPage(Model model) {
-        model.addAttribute("bodyContent", "login");
-        return "login";
+    public String getLoginPage(Model model, HttpServletRequest request) {
+        model.addAttribute("bodyContent", "home");
+        String lang = (String)request.getSession().getAttribute("lang");
+        if (lang.equals("mk")){
+            return "master-template-mk";
+        }
+        else return "master-template-en";
     }
 
     @PostMapping
@@ -34,10 +38,18 @@ public class LoginController {
         try {
             user = authService.login(request.getParameter("username"), request.getParameter("password"));
         } catch (InvalidUserCredentialsException | InvalidArgumentsException exception) {
-            model.addAttribute("bodyContent", "login");
+
             model.addAttribute("hasError", true);
             model.addAttribute("error", exception.getMessage());
-            return "master-template";
+            String lang = (String)request.getSession().getAttribute("lang");
+            if (lang.equals("mk")){
+                model.addAttribute("bodyContent", "home-mk");
+                return "master-template-mk";
+            }
+            else {
+                model.addAttribute("bodyContent", "home-en");
+                return "master-template-en";
+            }
         }
 
         request.getSession().setAttribute("user", user);
