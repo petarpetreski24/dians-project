@@ -2,7 +2,6 @@ package mk.ukim.finki.vinodventuraapp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import jakarta.persistence.*;
 
@@ -43,22 +42,22 @@ public class Winery {
     }
 
     public String getNameEn() {
-        return Translator.transliterate(name);
+        return Translator.transliterateToLatin(name);
     }
 
     public String getAddressEn() {
-        return Translator.transliterate(address);
+        return Translator.transliterateToLatin(address);
     }
 
     public String getLocationEn() {
-        return Translator.transliterate(location);
+        return Translator.transliterateToLatin(location);
     }
 
     public String getOccupationsEn() {
-        return Translator.transliterate(occupations);
+        return Translator.transliterateToLatin(occupations);
     }
 
     public String getWorkingHoursEn() {
-        return Translator.transliterate(workingHours);
+        return Translator.transliterateToLatin(workingHours);
     }
 }

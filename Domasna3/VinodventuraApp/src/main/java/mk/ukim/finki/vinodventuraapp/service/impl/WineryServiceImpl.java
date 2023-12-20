@@ -1,6 +1,7 @@
 package mk.ukim.finki.vinodventuraapp.service.impl;
 
 import lombok.AllArgsConstructor;
+import mk.ukim.finki.vinodventuraapp.model.Translator;
 import mk.ukim.finki.vinodventuraapp.model.Winery;
 import mk.ukim.finki.vinodventuraapp.repository.WineryRepository;
 import mk.ukim.finki.vinodventuraapp.service.WineryService;
@@ -27,22 +28,22 @@ public class WineryServiceImpl implements WineryService {
 
     @Override
     public List<Winery> findAllByLocation(String location) {
-        return wineyRepository.findAllByLocation(location);
+        return wineyRepository.findAllByLocationIgnoreCase(Translator.transliterateToCyrillic(location));
     }
 
     @Override
     public List<Winery> findAllByNameContaining(String name) {
-        return wineyRepository.findAllByNameContaining(name);
+        return wineyRepository.findAllByNameContainingIgnoreCase(Translator.transliterateToCyrillic(name));
     }
 
     @Override
     public List<Winery> findByOccupationContaining(String occupation) {
-        return wineyRepository.findAllByOccupationsContaining(occupation);
+        return wineyRepository.findAllByOccupationsContainingIgnoreCase(Translator.transliterateToCyrillic(occupation));
     }
 
     @Override
     public List<Winery> findAllByAddressContaining(String address) {
-        return wineyRepository.findAllByAddressContaining(address);
+        return wineyRepository.findAllByAddressContainingIgnoreCase(Translator.transliterateToCyrillic(address));
     }
 
     @Override
