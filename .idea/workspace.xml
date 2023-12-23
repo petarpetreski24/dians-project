@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Frontend refactoring and changing">
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="deploy">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/filter/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-en.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-mk.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-mk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-temp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "frontend-preview",
+    "git-widget-placeholder": "hiroku-deployment",
     "jdk.selected.JAVA_MODULE": "openjdk-20",
     "last_opened_file_path": "D:/Fakultet/Petti semestar/Dizajn i arhitektura na softver/dians-project/Domasna3/VinodventuraApp/src/main/resources/static",
     "node.js.detected.package.eslint": "true",
@@ -98,11 +96,11 @@
       <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\dians-project" />
       <recent name="C:\Users\Lenovo\Desktop\dians4\Domasna3\VinodventuraApp\src\main\resources\static\images" />
       <recent name="C:\Users\Lenovo\Desktop\dians3\Domasna3\VinodventuraApp\src\main\resources\static\images" />
       <recent name="D:\IdeaProjects\dians-project\Domasna3" />
       <recent name="D:\PycharmProjects\dians-project\Домашна 2\architecture" />
-      <recent name="D:\PycharmProjects\dians-project\Homework 1\Data" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.VinodventuraAppApplication">
@@ -269,6 +267,7 @@
       <workItem from="1702642039585" duration="7284000" />
       <workItem from="1702689111444" duration="606000" />
       <workItem from="1702836415397" duration="25199000" />
+      <workItem from="1703368484993" duration="1663000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
@@ -487,7 +486,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702919689855</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="deploy">
+      <option name="closed" value="true" />
+      <created>1703368659094</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1703368659094</updated>
+    </task>
+    <task id="LOCAL-00031" summary="deploy">
+      <option name="closed" value="true" />
+      <created>1703368816897</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1703368816897</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,58 +541,54 @@
     <MESSAGE value="Changing SQL Properties" />
     <MESSAGE value="Update register page frontend" />
     <MESSAGE value="Frontend refactoring and changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Frontend refactoring and changing" />
+    <MESSAGE value="deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java</url>
-          <line>149</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
           <line>59</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
           <line>55</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LoginController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LoginController.java</url>
           <line>25</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LoginController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LoginController.java</url>
           <line>37</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LogoutController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LogoutController.java</url>
           <line>14</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WineriesController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WineriesController.java</url>
           <line>24</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
           <line>94</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
           <line>28</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
           <line>63</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
