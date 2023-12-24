@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="deploy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-icons.css" afterDir="false" />
-    </list>
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="deploy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -274,7 +271,7 @@
       <workItem from="1702836415397" duration="25199000" />
       <workItem from="1703368484993" duration="3896000" />
       <workItem from="1703449224884" duration="18000" />
-      <workItem from="1703449889223" duration="618000" />
+      <workItem from="1703449889223" duration="982000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
