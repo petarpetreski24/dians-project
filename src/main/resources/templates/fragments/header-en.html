@@ -58,10 +58,10 @@
           <li class="nav-item">
             <a class="nav-link click-scroll" href="/map" id="map_active">Interactive Map</a>
           </li>
-          <li class="d-none nav-item" th:if="${session.user != null}">
+          <li class="nav-item" th:if="${session.user != null}">
             <a class="nav-link click-scroll" href="/wish-list">Wishlist</a>
           </li>
-          <li class="d-none nav-item" th:if="${session.user != null}">
+          <li class="nav-item" th:if="${session.user != null}">
             <a class="nav-link click-scroll" href="/logout">Signout</a>
           </li>
           <li class="nav-item">
@@ -78,7 +78,7 @@
 
   <div th:if="${session.user == null}" class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">H</h5>
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sign in</h5>
 
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
