@@ -1,0 +1,161 @@
+<section class="events-section events-listing-section section-bg section-padding" id="section_3" style="padding-top: 75px !important; ">
+    <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#56070c" d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z" stroke-width="0"></path> <path fill="#56070c" d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z" stroke-width="0"></path> <path fill="#56070c" d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z" stroke-width="0"></path><path fill="#56070c" d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z" stroke-width="0"></path><path fill="#56070c" d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z" stroke-width="0"></path><path fill="#56070c" d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z" stroke-width="0"></path><path fill="#56070c" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z" stroke-width="0"></path></svg>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 col-12">
+                <h2 class="mb-3" style="margin-top: 5rem; color: rgb(86, 7, 12);">Available wineries in Macedonia</h2>
+            </div>
+
+            <th:block th:each="i : ${#numbers.sequence( 0, wineries.size()-1)}">
+                <div class="row custom-block custom-block-bg" style="margin-top: 3rem;" th:if="${i % 2 ==0}">
+                    <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                        <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                            <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" th:text="${i+1}" style="color: white;"></h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                        <div class="custom-block-image-wrap">
+                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}">
+                                <img th:src="'/images/wineries/winery'+${(i % 5)+1}+'.jpg'" class="custom-block-image img-fluid" alt="">
+
+                                <i class="custom-block-icon bi-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 order-3 order-lg-0">
+                        <div class="custom-block-info mt-2 mt-lg-0">
+                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}" class="events-title mb-3" th:text="${wineries.get(i).getNameEn()}" style="color: #56070c;"></a>
+                            <p class="mb-0" th:text="${wineries.get(i).getOccupationsEn()}"></p>
+                            <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                <div class="mb-4 mb-lg-0">
+                                    <div class="d-flex flex-wrap align-items-center mb-1">
+                                        <span class="custom-block-span">Location:</span>
+
+                                        <p class="mb-0" th:text="${wineries.get(i).getLocationEn()}"></p>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="custom-block-span">Contact Number:</span>
+
+                                        <p class="mb-0" th:text="'+'+${wineries.get(i).getMobNumber()}"></p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center ms-lg-auto">
+                                    <form th:action="'/wish-list/add-winery/'+${wineries.get(i).getId()}" method="post">
+                                        <input type="submit" class="btn custom-btn" value="Add to wishlist">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row custom-block mb-3" style="margin-top: 3rem;" th:if="${i % 2 ==1}">
+                    <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                        <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                            <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0" th:text="${i+1}" style="color: #F4F1DE;"></h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                        <div class="custom-block-image-wrap">
+                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}">
+                                <img th:src="'/images/wineries/winery'+${(i % 5)+1}+'.jpg'" class="custom-block-image img-fluid" alt="">
+
+                                <i class="custom-block-icon bi-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 order-3 order-lg-0">
+                        <div class="custom-block-info mt-2 mt-lg-0">
+                            <a th:href="@{'/winery/details/' + ${wineries.get(i).getId()}}" class="events-title mb-3" th:text="${wineries.get(i).getNameEn()}" style="color: #56070c;"></a>
+                            <p class="mb-0" th:text="${wineries.get(i).getOccupationsEn()}"></p>
+                            <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                <div class="mb-4 mb-lg-0">
+                                    <div class="d-flex flex-wrap align-items-center mb-1">
+                                        <span class="custom-block-span">Location:</span>
+
+                                        <p class="mb-0" th:text="${wineries.get(i).getLocation()}"></p>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="custom-block-span">Contact Number:</span>
+
+                                        <p class="mb-0" th:text="'+'+${wineries.get(i).getMobNumber()}"></p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center ms-lg-auto">
+                                    <form th:action="'/wish-list/add-winery/'+${wineries.get(i).getId()}" method="post">
+                                    <input type="submit" class="btn custom-btn" value="Add to wishlist">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </th:block>
+        </div>
+    </div>
+    <div th:if="${wineryPage}">
+        <div th:if="${wineryPage.totalPages > 1}">
+            <ul class="pagination">
+                <li th:each="i : ${#numbers.sequence(0, wineryPage.totalPages - 1)}"
+                    th:class="${wineryPage.number == i} ? 'active'">
+                    <a th:href="@{'/allWineries?page=' + ${i}}" th:text="${i + 1}"></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</section>
+<script>
+    function addClassById(elementId, className) {
+        var element = document.getElementById(elementId);
+
+        if (element) {
+            element.classList.add(className);
+        } else {
+            console.error("Element with ID '" + elementId + "' not found.");
+        }
+    }
+    var anchorTags = document.getElementsByTagName('a');
+    for (var i = 0; i < anchorTags.length; i++) {
+        anchorTags[i].classList.remove('active');
+    }
+    addClassById("winery", "active");
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/jquery.sticky.js"></script>
+<script src="/js/custom.js"></script>
+<style>
+    .pagination {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .pagination li {
+        margin: 0 5px;
+    }
+
+    .pagination a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        color: #333;
+        border-radius: 3px;
+    }
+
+    .pagination .active a {
+        background-color: rgb(86, 7, 12) !important;
+        color: white !important;
+    }
+</style>

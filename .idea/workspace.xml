@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Frontend refactoring and changing">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/filter/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-en.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-mk.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-mk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/resources/templates/fragments/header-temp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,18 +62,20 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "frontend-preview",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_opened_file_path": "D:/Fakultet/Petti semestar/Dizajn i arhitektura na softver/dians-project/Domasna3/VinodventuraApp/src/main/resources/static",
+    "git-widget-placeholder": "homework-4",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/Frosina/OneDrive/Desktop/finki/2nd semester/Intro to Web Design/DomasnaZadaca/dians-project/Domasna4/Microservices",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
+    "project.structure.proportion": "0.14746094",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "spring.configuration.checksum": "ff61543f092ef6163a2957a96b8fae17",
@@ -91,18 +89,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main\resources\static" />
-      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main\resources\public" />
-      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp" />
-      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main" />
-      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src" />
+      <recent name="C:\Users\Frosina\OneDrive\Desktop\finki\2nd semester\Intro to Web Design\DomasnaZadaca\dians-project\Domasna4\Microservices\Wishlist" />
+      <recent name="C:\Users\Frosina\OneDrive\Desktop\finki\2nd semester\Intro to Web Design\DomasnaZadaca\dians-project\Domasna4\Microservices\WineryInformation" />
+      <recent name="C:\Users\Frosina\OneDrive\Desktop\finki\2nd semester\Intro to Web Design\DomasnaZadaca\dians-project\Domasna4\Microservices\UserAuthentication" />
+      <recent name="C:\Users\Frosina\OneDrive\Desktop\finki\2nd semester\Intro to Web Design\DomasnaZadaca\dians-project\Domasna4\Microservices\Search" />
+      <recent name="C:\Users\Frosina\OneDrive\Desktop\finki\2nd semester\Intro to Web Design\DomasnaZadaca\dians-project\Domasna4\Microservices\Map" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Frosina\OneDrive\Desktop\finki\2nd semester\Intro to Web Design\DomasnaZadaca\dians-project\Domasna4\Microservices" />
       <recent name="C:\Users\Lenovo\Desktop\dians4\Domasna3\VinodventuraApp\src\main\resources\static\images" />
       <recent name="C:\Users\Lenovo\Desktop\dians3\Domasna3\VinodventuraApp\src\main\resources\static\images" />
       <recent name="D:\IdeaProjects\dians-project\Domasna3" />
       <recent name="D:\PycharmProjects\dians-project\Домашна 2\architecture" />
-      <recent name="D:\PycharmProjects\dians-project\Homework 1\Data" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.VinodventuraAppApplication">
@@ -269,6 +267,9 @@
       <workItem from="1702642039585" duration="7284000" />
       <workItem from="1702689111444" duration="606000" />
       <workItem from="1702836415397" duration="25199000" />
+      <workItem from="1703449660475" duration="2194000" />
+      <workItem from="1703662518163" duration="55000" />
+      <workItem from="1705747677626" duration="11978000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
