@@ -4,29 +4,119 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="deploy">
-      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna4/Opis.txt" afterDir="false" />
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to implement microservices">
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/WineriesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/model/Winery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/repository/WineryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/service/WineryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/service/impl/WineryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/web/WineryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/test/java/mk/ukim/finki/wineries/WineriesApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application-h2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/VinodventuraAppApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/Review.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/Translator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/Winery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/WineryParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/WishList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/enumerations/WishListStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/exceptions/InvalidArgumentsException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/exceptions/InvalidUserCredentialsException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/exceptions/PasswordLengthException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/exceptions/PasswordsDoNotMatchException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/exceptions/UsernameAlreadyExistsException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/exceptions/WineryAlreadyInWishListException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/model/exceptions/WineryNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/repository/ReviewRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/repository/WineryRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/repository/WishListRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/service/AuthService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/service/ReviewService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/service/WineryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/service/WishListService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/service/impl/ReviewServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/service/impl/WineryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/service/impl/WishListServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/LanguageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/LogoutController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/MapController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/RegisterController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/ReviewController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/SearchController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/WineriesController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/WineryDetailsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/vinodventuraapp/web/filter/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/vinodventura.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/comments_background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/grape.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/home_background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/register_background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/register_background_backup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/vinarija1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/vinarija2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/wine-pin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/wineries/winery1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/wineries/winery2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/wineries/winery3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/wineries/winery4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/wineries/winery5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/animated-headline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/click-scroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/modernizr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/all-wineries-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/all-wineries-mk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/fragments/footer-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/fragments/footer-mk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header-mk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header-temp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/home-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/home-mk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/map-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/map-mk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/master-template-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/master-template-mk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/register-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/register-mk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/search-page-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/search-page-mk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/winery-details-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/winery-details-mk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/wish-list-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/wish-list-mk.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/helpers/Translator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/Winery.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/Winery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/WineryParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/helpers/WineryParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/WineryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/WineryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LanguageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LogoutController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/MapController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/RegisterController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/SearchController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WineriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WineriesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WineryDetailsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,42 +174,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/dians-project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ff61543f092ef6163a2957a96b8fae17&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "D:/IdeaProjects/dians-project/Domasna4/Microservices/Wineries/src/main/java/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "spring.configuration.checksum": "ff61543f092ef6163a2957a96b8fae17",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\dians-project\Domasna4\Microservices\Wineries\src\main\java\model" />
       <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main\resources\static" />
       <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main\resources\public" />
       <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp" />
       <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main" />
-      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\dians-project" />
@@ -128,8 +218,13 @@
       <recent name="D:\IdeaProjects\dians-project\Domasna3" />
       <recent name="D:\PycharmProjects\dians-project\Домашна 2\architecture" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="service.impl" />
+      <recent name="repository" />
+      <recent name="model" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.VinodventuraAppApplication (1)">
+  <component name="RunManager" selected="Spring Boot.WineriesApplication">
     <configuration name="data-pipe-filter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dians-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -255,8 +350,15 @@
       </method>
     </configuration>
     <configuration name="VinodventuraAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="VinodventuraApp (1)" />
+      <module name="VinodventuraApp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.vinodventuraapp.VinodventuraAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WineriesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Wineries" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.wineries.WineriesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -306,7 +408,8 @@
       <workItem from="1703447009481" duration="3224000" />
       <workItem from="1703603131867" duration="24000" />
       <workItem from="1706114208588" duration="398000" />
-      <workItem from="1706114651925" duration="2609000" />
+      <workItem from="1706114651925" duration="4378000" />
+      <workItem from="1706119349571" duration="2388000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
@@ -589,7 +692,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703449925029</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Refactoring the controllers">
+      <option name="closed" value="true" />
+      <created>1706117468413</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1706117468413</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +740,9 @@
     <MESSAGE value="Update register page frontend" />
     <MESSAGE value="Frontend refactoring and changing" />
     <MESSAGE value="deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy" />
+    <MESSAGE value="Refactoring the controllers" />
+    <MESSAGE value="Trying to implement microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to implement microservices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -678,6 +791,11 @@
           <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
           <line>63</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/WineriesApplication.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

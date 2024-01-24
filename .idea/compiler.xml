@@ -7,13 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="VinodventuraApp (2)" />
-        <module name="VinodventuraApp (1)" />
+        <module name="Wineries" />
+        <module name="VinodventuraApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Domasna3" target="17" />
-      <module name="VinodventuraApp" target="17" />
+      <module name="VinodventuraApp (1)" target="17" />
+      <module name="VinodventuraApp (2)" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -22,6 +23,7 @@
       <module name="VinodventuraApp" options="-parameters" />
       <module name="VinodventuraApp (1)" options="-parameters" />
       <module name="VinodventuraApp (2)" options="-parameters" />
+      <module name="Wineries" options="-parameters" />
     </option>
   </component>
 </project>
