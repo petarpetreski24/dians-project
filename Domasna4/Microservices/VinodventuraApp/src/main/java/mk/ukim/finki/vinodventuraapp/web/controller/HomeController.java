@@ -11,24 +11,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 
     @GetMapping("/home")
-    public String getHomePage(HttpServletRequest request,Model model) {
+    public String getHomePage(HttpServletRequest request, Model model) {
         User user = (User) request.getSession().getAttribute("user");
-
-        model.addAttribute("user",user);
-        String lang = (String)request.getSession().getAttribute("lang");
-        if (lang.equals("mk")){
-            model.addAttribute("bodyContent", "home-mk");
-            return "master-template-mk";
-        }
-        else{
-            model.addAttribute("bodyContent", "home-en");
-            return "master-template-en";
-        }
+        setCommonAttributes(user, request.getSession().getAttribute("lang"), "home", model);
+        return determineMasterTemplate(request);
     }
 
     @GetMapping("/*")
-    public String redirectToHome(){
+    public String redirectToHome() {
         return "redirect:/home";
+    }
+
+    private void setCommonAttributes(User user, Object langAttribute, String bodyContentSuffix, Model model) {
+        model.addAttribute("user", user);
+        String lang = (langAttribute instanceof String) ? (String) langAttribute : "en"; // Default to "en" if lang is not set
+        model.addAttribute("bodyContent", bodyContentSuffix + "-" + lang);
+    }
+
+    private String determineMasterTemplate(HttpServletRequest request) {
+        String lang = (String) request.getSession().getAttribute("lang");
+        return "master-template-" + lang;
     }
 
 }

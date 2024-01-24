@@ -1,6 +1,7 @@
-package mk.ukim.finki.vinodventuraapp.model;
+package mk.ukim.finki.vinodventuraapp.model.helpers;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import mk.ukim.finki.vinodventuraapp.model.Winery;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;

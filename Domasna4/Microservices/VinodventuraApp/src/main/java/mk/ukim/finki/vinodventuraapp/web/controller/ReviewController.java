@@ -12,20 +12,29 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @AllArgsConstructor
-@RequestMapping("reviews")
+@RequestMapping("/reviews")
 public class ReviewController {
     private final ReviewService reviewService;
 
     @PostMapping("/add/winery/{id}")
-    public String addReview(@RequestParam Integer score, @RequestParam String description, @RequestParam(required = false) Long userId,
-                            @PathVariable Long id, Model model) {
-        if (userId == null){
-            model.addAttribute("hasError",true);
-            model.addAttribute("error","Invalid user.");
-            return "redirect:/winery/details/" + id+"?error=user";
+    public String addReview(
+            @RequestParam Integer score,
+            @RequestParam String description,
+            @RequestParam(required = false) Long userId,
+            @PathVariable Long id,
+            Model model) {
 
+        if (userId == null) {
+            handleInvalidUser(model);
+            return "redirect:/winery/details/" + id + "?error=user";
         }
-        reviewService.addReview(score, description, id,userId);
+
+        reviewService.addReview(score, description, id, userId);
         return "redirect:/winery/details/" + id;
+    }
+
+    private void handleInvalidUser(Model model) {
+        model.addAttribute("hasError", true);
+        model.addAttribute("error", "Invalid user.");
     }
 }

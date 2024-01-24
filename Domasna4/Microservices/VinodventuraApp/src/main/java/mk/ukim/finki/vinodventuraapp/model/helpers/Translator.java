@@ -1,4 +1,4 @@
-package mk.ukim.finki.vinodventuraapp.model;
+package mk.ukim.finki.vinodventuraapp.model.helpers;
 
 public class Translator {
     public static String transliterateToLatin(String message){

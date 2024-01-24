@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.Data;
 import jakarta.persistence.*;
+import mk.ukim.finki.vinodventuraapp.model.helpers.Translator;
 
 import java.util.List;
 

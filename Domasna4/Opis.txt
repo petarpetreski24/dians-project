@@ -1,0 +1,3 @@
+Користен design pattern за целата апликација: MVC
+Користен design pattern за Translator класата: Singleton и WineryParser
+

@@ -24,92 +24,78 @@ public class WishListController {
 
     @GetMapping
     public String getWishList(Model model, @SessionAttribute(required = false) User user, HttpServletRequest request) {
-        String lang = (String)request.getSession().getAttribute("lang");
-        if (user == null){
-            model.addAttribute("hasError", true);
-            model.addAttribute("error", "You need to be logged in to do this action.");
-            model.addAttribute("wineries",wineryService.findAll());
-            if (lang.equals("mk")){
-                model.addAttribute("bodyContent", "all-wineries-mk");
-                return "master-template-mk";
-            }
-            else {
-                model.addAttribute("bodyContent", "all-wineries-en");
-                return "master-template-en";
-            }
+        if (user == null) {
+            handleNotLoggedInUser(model, wineryService.findAll(), request.getSession().getAttribute("lang"));
+        } else {
+            List<Winery> wineries = wishListService.getWishListForUser(user).getWineries();
+            setWishListAttributes(model, wineries, user, request.getSession().getAttribute("lang"));
         }
-        List<Winery> wineries = wishListService.getWishListForUser(user).getWineries();
-        model.addAttribute("wineries", wineries);
-        model.addAttribute("user", user);
-        if (lang.equals("mk")){
-            model.addAttribute("bodyContent", "wish-list-mk");
-            return "master-template-mk";
-        }
-        else {
-            model.addAttribute("bodyContent", "wish-list-en");
-            return "master-template-en";
-        }
+        return determineMasterTemplate(request);
     }
 
     @PostMapping("/add-winery/{id}")
-    public String addWineryToWishList(@PathVariable Long id, @SessionAttribute(required = false) User user,
-                                      Model model, @RequestParam(defaultValue = "0") int page, HttpServletRequest request) {
-        String lang = (String)request.getSession().getAttribute("lang");
+    public String addWineryToWishList(
+            @PathVariable Long id,
+            @SessionAttribute(required = false) User user,
+            Model model,
+            @RequestParam(defaultValue = "0") int page,
+            HttpServletRequest request) {
+
+        String lang = (String) request.getSession().getAttribute("lang");
         Page<Winery> wineryPage = wineryService.findAll(PageRequest.of(page, 5));
+
         if (user == null) {
-            model.addAttribute("hasError", true);
-            model.addAttribute("error", "You need to be logged in to do this action.");
-            model.addAttribute("wineries", wineryPage.getContent());
-            model.addAttribute("wineryPage", wineryPage);
-            if (lang.equals("mk")){
-                model.addAttribute("bodyContent", "all-wineries-mk");
-                return "master-template-mk";
-            }
-            else {
-                model.addAttribute("bodyContent", "all-wineries-en");
-                return "master-template-en";
+            handleNotLoggedInUser(model, wineryPage.getContent(), lang);
+        } else {
+            try {
+                wishListService.addToWishlist(user, id);
+                return "redirect:/allWineries?page=" + page;
+            } catch (RuntimeException exception) {
+                handleWishListActionError(model, wineryPage.getContent(), lang, exception.getMessage());
             }
         }
-        try {
-            WishList wishList = this.wishListService.addToWishlist(user, id);
-            return "redirect:/allWineries?page=" + page;
-        } catch (RuntimeException exception) {
-            model.addAttribute("hasError", true);
-            model.addAttribute("error", exception.getMessage());
-            model.addAttribute("wineries", wineryPage.getContent());
-            model.addAttribute("wineryPage", wineryPage);
-            if (lang.equals("mk")){
-                model.addAttribute("bodyContent", "all-wineries-mk");
-                return "master-template-mk";
-            }
-            else {
-                model.addAttribute("bodyContent", "all-wineries-en");
-                return "master-template-en";
-            }
-        }
+        return determineMasterTemplate(request);
     }
 
     @PostMapping("/delete-winery/{id}")
-    public String deleteProduct(@PathVariable Long id, @SessionAttribute User user, Model model, HttpServletRequest request) {
-        if (user == null){
-            model.addAttribute("hasError", true);
-            model.addAttribute("error", "You need to be logged in to do this action.");
-            model.addAttribute("wineries",wineryService.findAll());
-            String lang = (String)request.getSession().getAttribute("lang");
-            if (lang.equals("mk")){
-                model.addAttribute("bodyContent", "all-wineries-mk");
-                return "master-template-mk";
-            }
-            else {
-                model.addAttribute("bodyContent", "all-wineries-en");
-                return "master-template-en";
-            }
+    public String deleteWineryFromWishList(@PathVariable Long id, @SessionAttribute User user, Model model, HttpServletRequest request) {
+        if (user == null) {
+            handleNotLoggedInUser(model, wineryService.findAll(), request.getSession().getAttribute("lang"));
+        } else {
+            wishListService.removeFromWishList(user, id);
         }
-
-        this.wishListService.removeFromWishList(user, id);
-
         return "redirect:/wish-list";
     }
 
+    private void handleNotLoggedInUser(Model model, List<Winery> wineries, Object langAttribute) {
+        String lang = (langAttribute instanceof String) ? (String) langAttribute : "en"; // Default to "en" if lang is not set
+        model.addAttribute("hasError", true);
+        model.addAttribute("error", "You need to be logged in to do this action.");
+        model.addAttribute("wineries", wineries);
+        setLanguageSpecificAttributes(model, "all-wineries", lang);
+    }
 
+    private void handleWishListActionError(Model model, List<Winery> wineries, String lang, String errorMessage) {
+        model.addAttribute("hasError", true);
+        model.addAttribute("error", errorMessage);
+        model.addAttribute("wineries", wineries);
+        setLanguageSpecificAttributes(model, "all-wineries", lang);
+    }
+
+    private void setWishListAttributes(Model model, List<Winery> wineries, User user, Object langAttribute) {
+        model.addAttribute("wineries", wineries);
+        model.addAttribute("user", user);
+        setLanguageSpecificAttributes(model, "wish-list", langAttribute);
+    }
+
+    private void setLanguageSpecificAttributes(Model model, String bodyContentSuffix, Object langAttribute) {
+        String lang = (langAttribute instanceof String) ? (String) langAttribute : "en"; // Default to "en" if lang is not set
+        String bodyContent = bodyContentSuffix + "-" + lang;
+        model.addAttribute("bodyContent", bodyContent);
+    }
+
+    private String determineMasterTemplate(HttpServletRequest request) {
+        String lang = (String) request.getSession().getAttribute("lang");
+        return "master-template-" + lang;
+    }
 }

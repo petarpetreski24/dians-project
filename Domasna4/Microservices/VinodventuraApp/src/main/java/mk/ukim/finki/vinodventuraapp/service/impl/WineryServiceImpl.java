@@ -1,7 +1,7 @@
 package mk.ukim.finki.vinodventuraapp.service.impl;
 
 import lombok.AllArgsConstructor;
-import mk.ukim.finki.vinodventuraapp.model.Translator;
+import mk.ukim.finki.vinodventuraapp.model.helpers.Translator;
 import mk.ukim.finki.vinodventuraapp.model.Winery;
 import mk.ukim.finki.vinodventuraapp.repository.WineryRepository;
 import mk.ukim.finki.vinodventuraapp.service.WineryService;

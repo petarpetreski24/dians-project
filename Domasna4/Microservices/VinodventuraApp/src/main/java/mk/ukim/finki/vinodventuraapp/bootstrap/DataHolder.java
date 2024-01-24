@@ -3,7 +3,7 @@ package mk.ukim.finki.vinodventuraapp.bootstrap;
 import jakarta.annotation.PostConstruct;
 import mk.ukim.finki.vinodventuraapp.model.User;
 import mk.ukim.finki.vinodventuraapp.model.Winery;
-import mk.ukim.finki.vinodventuraapp.model.WineryParser;
+import mk.ukim.finki.vinodventuraapp.model.helpers.WineryParser;
 import mk.ukim.finki.vinodventuraapp.model.WishList;
 import mk.ukim.finki.vinodventuraapp.repository.UserRepository;
 import mk.ukim.finki.vinodventuraapp.repository.WineryRepository;
