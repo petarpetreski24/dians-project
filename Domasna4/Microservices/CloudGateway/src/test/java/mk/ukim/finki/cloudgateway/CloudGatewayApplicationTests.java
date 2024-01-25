@@ -1,4 +1,4 @@
-package mk.ukim.finki.vinodventuraapp.cloudgateway;
+package mk.ukim.finki.cloudgateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
