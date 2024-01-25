@@ -7,17 +7,15 @@
         <option value="$PROJECT_DIR$/Domasna 3/pom.xml" />
         <option value="$PROJECT_DIR$/VinodventuraApp/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Domasna4/Microservices/CloudGateway/pom.xml" />
         <option value="$PROJECT_DIR$/CloudGateway/pom.xml" />
         <option value="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/pom.xml" />
         <option value="$PROJECT_DIR$/Domasna4/Microservices/Wineries/pom.xml" />
-      </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/Domasna 3/pom.xml" />
         <option value="$PROJECT_DIR$/Domasna4/Microservices/CloudGateway/pom.xml" />
-      </set>
+        <option value="$PROJECT_DIR$/Domasna4/Microservices/Reviews/pom.xml" />
+        <option value="$PROJECT_DIR$/Domasna4/Microservices/User/pom.xml" />
+        <option value="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/pom.xml" />
+        <option value="$PROJECT_DIR$/Domasna4/Microservices/Server/pom.xml" />
+      </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK" />

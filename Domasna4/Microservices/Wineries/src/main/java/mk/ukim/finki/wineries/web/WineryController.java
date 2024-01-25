@@ -12,8 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/wineries")
 @Slf4j
+@RequestMapping({"/wineries"})
 public class WineryController {
 
     private final WineryService wineryService;
@@ -23,11 +23,11 @@ public class WineryController {
     }
 
     @GetMapping("/show/{id}")
-    public List<Winery> findVeterinaryById(@PathVariable("id") Long hospitalId) {
+    public List<Winery> findWineryById(@PathVariable("id") Long wineryId) {
         List<Winery> wineries=new ArrayList<>();
-        if(wineryService.findById(hospitalId).isPresent())
+        if(wineryService.findById(wineryId).isPresent())
         {
-            wineries.add(wineryService.findById(hospitalId).get());
+            wineries.add(wineryService.findById(wineryId).get());
         }
         return wineries;
     }
@@ -37,8 +37,7 @@ public class WineryController {
     }
 
     @GetMapping("/name/{name}")
-    public List<Winery> findByName(@PathVariable("name") String hospital) {
-
-        return wineryService.findAllByNameContaining(hospital);
+    public List<Winery> findByName(@PathVariable("name") String winery) {
+        return wineryService.findAllByNameContaining(winery);
     }
 }
