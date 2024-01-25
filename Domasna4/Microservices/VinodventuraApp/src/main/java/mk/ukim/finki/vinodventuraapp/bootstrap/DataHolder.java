@@ -8,6 +8,7 @@ import mk.ukim.finki.vinodventuraapp.model.WishList;
 import mk.ukim.finki.vinodventuraapp.repository.UserRepository;
 import mk.ukim.finki.vinodventuraapp.repository.WineryRepository;
 import mk.ukim.finki.vinodventuraapp.repository.WishListRepository;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -19,12 +20,14 @@ public class DataHolder {
     private final WineryRepository wineryRepository;
     private final WishListRepository wishListRepository;
     private final WineryParser wineryParser;
+    private final PasswordEncoder passwordEncoder;
 
-    public DataHolder(UserRepository userRepository, WineryRepository wineryRepository, WishListRepository wishListRepository, WineryParser wineryParser) {
+    public DataHolder(UserRepository userRepository, WineryRepository wineryRepository, WishListRepository wishListRepository, WineryParser wineryParser, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.wineryRepository = wineryRepository;
         this.wishListRepository = wishListRepository;
         this.wineryParser = wineryParser;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @PostConstruct

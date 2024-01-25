@@ -49,4 +49,9 @@ public class WineryServiceImpl implements WineryService {
     public Page<Winery> findAll(Pageable pageable) {
         return wineyRepository.findAll(pageable);
     }
+
+    @Override
+    public List<Winery> findByLatitudeBetweenAndLongitudeBetween(Double minLatitude, Double maxLatitude, Double minLongitude, Double maxLongitude) {
+        return wineyRepository.findByLatitudeBetweenAndLongitudeBetween(minLatitude,maxLatitude,minLongitude,maxLongitude);
+    }
 }

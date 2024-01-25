@@ -9,18 +9,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Wineries" />
         <module name="VinodventuraApp (2)" />
-        <module name="Reviews" />
-        <module name="User" />
-        <module name="Server" />
-        <module name="Wishlists" />
         <module name="VinodventuraApp" />
-        <module name="CloudGateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CloudGateway" target="17" />
       <module name="CloudGateway (1) (mk.ukim.finki.vinodventuraapp)" target="17" />
       <module name="Domasna3" target="17" />
+      <module name="Reviews" target="17" />
+      <module name="Server" target="17" />
+      <module name="User" target="17" />
       <module name="VinodventuraApp (1)" target="17" />
+      <module name="Wishlists" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

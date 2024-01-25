@@ -2,10 +2,7 @@ package mk.ukim.finki.wineries.web;
 
 import lombok.extern.slf4j.Slf4j;
 import mk.ukim.finki.wineries.model.Winery;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import mk.ukim.finki.wineries.service.WineryService;
 
 import java.util.ArrayList;
@@ -39,5 +36,17 @@ public class WineryController {
     @GetMapping("/name/{name}")
     public List<Winery> findByName(@PathVariable("name") String winery) {
         return wineryService.findAllByNameContaining(winery);
+    }
+
+    @GetMapping("/location/{location}")
+    public List<Winery> findByLocation(@PathVariable String location){
+        return wineryService.findAllByLocation(location);
+    }
+    @GetMapping("/geoposition")
+    public List<Winery> findAllByLongitudeLatitude(@RequestParam Double minLatitude,
+                                                   @RequestParam Double maxLatitude,
+                                                   @RequestParam Double minLongitude,
+                                                   @RequestParam Double maxLongitude){
+        return wineryService.findByLatitudeBetweenAndLongitudeBetween(minLatitude,maxLatitude,minLongitude,maxLongitude);
     }
 }
