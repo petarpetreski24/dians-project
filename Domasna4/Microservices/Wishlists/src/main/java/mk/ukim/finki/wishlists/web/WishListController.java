@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @Slf4j
-@RequestMapping("/wish-list")
+@RequestMapping("/api/wish-list")
 @AllArgsConstructor
 public class WishListController {
     private final WishListService wishListService;
