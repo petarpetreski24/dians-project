@@ -20,11 +20,8 @@ public class ReviewController {
     private final ReviewService reviewService;
 
     @GetMapping("/winery/{id}")
-    public List<Review> showReview(
-            @PathVariable Long id) {
-        List<Review> reviewList = new ArrayList<>();
-        reviewList = reviewService.allReviews(id);
-        return reviewList;
+    public List<Review> showReview(@PathVariable Long id) {
+        return reviewService.allReviews(id);
     }
 
 }

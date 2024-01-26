@@ -7,19 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Wineries" />
         <module name="VinodventuraApp (2)" />
         <module name="VinodventuraApp" />
+        <module name="Reviews" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CloudGateway" target="17" />
       <module name="CloudGateway (1) (mk.ukim.finki.vinodventuraapp)" target="17" />
       <module name="Domasna3" target="17" />
-      <module name="Reviews" target="17" />
       <module name="Server" target="17" />
       <module name="User" target="17" />
       <module name="VinodventuraApp (1)" target="17" />
+      <module name="Wineries" target="17" />
       <module name="Wishlists" target="17" />
     </bytecodeTargetLevel>
   </component>

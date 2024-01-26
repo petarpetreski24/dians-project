@@ -2,8 +2,6 @@ package mk.ukim.finki.reviews.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import mk.ukim.finki.user.model.User;
-import mk.ukim.finki.wineries.model.Winery;
 
 import java.time.LocalDateTime;
 
@@ -16,21 +14,18 @@ public class Review {
     private Long id;
     private Integer score;
     private String description;
-    @ManyToOne
-    @JoinColumn(name = "winery_id")
-    private Winery winery;
+    private Long winery_id;
     private LocalDateTime timestamp;
-    @ManyToOne
-    private User user;
+    private Long user_id;
 
     public Review() {
     }
 
-    public Review(Integer score, String description, Winery winery, LocalDateTime timestamp, User user) {
+    public Review(Integer score, String description, Long winery, LocalDateTime timestamp, Long user) {
         this.score = score;
         this.description = description;
-        this.winery = winery;
+        this.winery_id = winery;
         this.timestamp = timestamp;
-        this.user = user;
+        this.user_id = user;
     }
 }
