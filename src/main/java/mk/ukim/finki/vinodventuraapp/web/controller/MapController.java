@@ -25,7 +25,7 @@ public class MapController {
 
         model.addAttribute("footerMap", "true");
         model.addAttribute("user",user);
-        model.addAttribute("wineries",wineries);
+        model.addAttribute("wineries",wineries.toString());
         String lang = (String)request.getSession().getAttribute("lang");
         if (lang.equals("mk")){
             model.addAttribute("bodyContent", "map-mk");
