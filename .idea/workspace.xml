@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with map css" />
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with map rendering json" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -571,7 +571,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706370693285</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Trying to fix map error with map for cycle">
+      <created>1706370843005</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1706370843005</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Trying to fix map error with map rendering json">
+      <created>1706371368195</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1706371368195</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,8 +603,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Testing change" />
-    <MESSAGE value="Data modification" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Data Update" />
     <MESSAGE value="README edit" />
@@ -614,7 +626,9 @@
     <MESSAGE value="Trying to fix map error with map list" />
     <MESSAGE value="Trying to fix map error with map body" />
     <MESSAGE value="Trying to fix map error with map css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with map css" />
+    <MESSAGE value="Trying to fix map error with map for cycle" />
+    <MESSAGE value="Trying to fix map error with map rendering json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with map rendering json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
