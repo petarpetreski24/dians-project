@@ -13,6 +13,6 @@
 Никола Талевски (211009)
 
 	
-Линк до публикувана апликација: https://vinodventura-app-7e0635cf95e5.herokuapp.com/
+Линк до публикувана апликација(Домашна 3): https://vinodventura-app-7e0635cf95e5.herokuapp.com/
 
 Линк до видео (доколку има проблем со публикуваната верзија): https://youtu.be/OW64wS6i5AI
