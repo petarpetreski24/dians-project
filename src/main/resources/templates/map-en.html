@@ -159,7 +159,6 @@
         </div>
     </div>
 </div>
-<input type="hidden" id="map_json" th:value="${wineries}">
 <script th:inline="javascript">
     var mapList = L.map('mapList').setView([41.6086, 21.7453], 8);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -173,7 +172,6 @@
         iconAnchor: [15, 46],
         popupAnchor: [0, 180]
     });
-    let wineries = document.getElementById("map_json").value();
 
     for (let i = 0; i < 100; i++) {
         var lat = wineries[i].latitude;
