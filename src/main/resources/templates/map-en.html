@@ -116,7 +116,7 @@
 <body>
 <div id="map-page-container">
     <div id="map-container">
-        <div id="map"></div>
+        <div id="mapList"></div>
         <div id="map-footer-container">
             <div class="container">
                 <div class="row">
@@ -162,7 +162,7 @@
 </body>
 
 <script th:inline="javascript">
-    var mapList = L.map('map').setView([41.6086, 21.7453], 8);
+    var mapList = L.map('mapList').setView([41.6086, 21.7453], 8);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
