@@ -1,18 +1,17 @@
 package mk.ukim.finki.wineries.config;
 
 import jakarta.annotation.PostConstruct;
-import mk.ukim.finki.wineries.model.Winery;
+import mk.ukim.finki.wineries.model.helper.WineryParser;
 import mk.ukim.finki.wineries.repository.WineryRepository;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Component
 public class DataHolder {
+    private final WineryParser wineryParser;
     private final WineryRepository wineryRepository;
 
-    public DataHolder(WineryRepository wineryRepository) {
+    public DataHolder(WineryParser wineryParser, WineryRepository wineryRepository) {
+        this.wineryParser = wineryParser;
         this.wineryRepository = wineryRepository;
     }
 
@@ -20,7 +19,7 @@ public class DataHolder {
     public void init(){
 
         if (wineryRepository.count() == 0) {
-            wineryRepository.save(new Winery("ime", "adresa", "lokacija", "broj", "occ", "saati", "strana", 45.325, 44.25));
+            wineryRepository.saveAll(wineryParser.parseJsonFile("static/data.json"));
         }
     }
 }
