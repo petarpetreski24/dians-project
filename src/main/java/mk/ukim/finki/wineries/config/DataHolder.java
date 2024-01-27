@@ -18,7 +18,8 @@ public class DataHolder {
     @PostConstruct
     public void init(){
 
-        if (wineryRepository.count() == 0) {
+        if (wineryRepository.count() < 10) {
+            wineryRepository.deleteAll();
             wineryRepository.saveAll(wineryParser.parseJsonFile("static/data.json"));
         }
     }
