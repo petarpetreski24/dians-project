@@ -165,11 +165,11 @@
 </div>
 
 <th:block th:each="winery: ${wineries}" id="no-display">
-    <p name="lat" th:text="${winery.lat}"></p>
-    <p name="lon" th:text="${winery.lon}"></p>
+    <p name="lat" th:text="${winery.latitude}"></p>
+    <p name="lon" th:text="${winery.longitude}"></p>
     <p name="name" th:text="${winery.name}"></p>
     <p name="address" th:text="${winery.address}"></p>
-    <p name="town" th:text="${winery.town}"></p>
+    <p name="town" th:text="${winery.location}"></p>
     <p name="winery_id" th:text="${winery.id}"></p>
 </th:block>
 
@@ -194,13 +194,13 @@
     ids = document.getElementsByName("id");
 
     for (let i = 0; i < 100; i++) {
-        var lat = latitudes[i].latitude;
-        var lon = longitudes[i].longitude;
-        var name = names[i].name;
-        var address = addresses[i].address;
-        var town = towns[i].location;
+        var lat = latitudes[i];
+        var lon = longitudes[i];
+        var name = names[i];
+        var address = addresses[i];
+        var town = towns[i];
         var marker = L.marker([lat, lon], {icon: wineIcon}).addTo(mapList);
-        var winery_id = ids[i].id;
+        var winery_id = ids[i];
         var message = "<div class='popup'><div class='popup-text'><span class='name-popup'>" + name +
             "</span></br></br><span class='address-popup'><b>" + address + "</b></span></br><span class='town-popup'>" + town + "</span></div></br><div class='popup-button'><a href=\"/winery/details/" +
             winery_id + "\"" + " class=\"custom-btn-popup custom-border-btn-popup btn\" role=\"button\">Details</a></div></div>"
