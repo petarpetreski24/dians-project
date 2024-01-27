@@ -4,52 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Adding a microservice for email confirmation link when registration happens">
-      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/config/DataHolder.java" afterDir="false" />
+    <list default="true" id="bd9fb06d-155f-47fd-b7a1-5fb4f8de25ea" name="Changes" comment="Changes in the controller">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dians-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dians-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/repository/WineryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/repository/WineryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Opis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Opis.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/service/impl/EmailConfirmationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/service/impl/EmailConfirmationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/web/EmailConfirmationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/web/EmailConfirmationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/resources/application-mailconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/resources/application-mailconfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="nikola-microservices" />
+        <entry key="$PROJECT_DIR$" value="Deployment-Homework4-Microservices-Wineries" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;blagica9&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="38e72030-48f7-4f62-9258-521ee157cd95" />
-        <option name="url" value="https://github.com/petarpetreski24/dians-project.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,227 +39,37 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2XhwkbSUP9tss1sNidv5MAxlGMO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2bXtWPQ03mHq70lgfp5SmCKffHM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/dians-project/Domasna4/Microservices/Wineries/src/main/java/model&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ea6a7e7afba443a0287e53651ad0804e&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/IdeaProjects",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\dians-project\Domasna4\Microservices\Wineries\src\main\java\model" />
-      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main\resources\static" />
-      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main\resources\public" />
-      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp" />
-      <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\dians-project\Domasna4\Microservices" />
-      <recent name="D:\IdeaProjects\dians-project" />
-      <recent name="C:\Users\Lenovo\Desktop\dians4\Domasna3\VinodventuraApp\src\main\resources\static\images" />
-      <recent name="C:\Users\Lenovo\Desktop\dians3\Domasna3\VinodventuraApp\src\main\resources\static\images" />
-      <recent name="D:\IdeaProjects\dians-project\Domasna3" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="mk.ukim.finki.vinodventuraapp.model" />
-      <recent name="service.impl" />
-      <recent name="repository" />
-      <recent name="model" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Spring Boot.WineriesApplication">
-    <configuration name="data-pipe-filter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dians-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Домашна 1/Data/python_scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Домашна 1/Data/python_scripts/data-pipe-filter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="geocoding_script (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dians-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Домашна 1/Data/python_scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Домашна 1/Data/python_scripts/geocoding_script.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="geocoding_script" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dians-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Homework 1/Data/python_scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Homework 1/Data/python_scripts/geocoding_script.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="proba" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dians-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Homework 1/Data/python_scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Homework 1/Data/python_scripts/proba.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="zlatna-kniga-scraping" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dians-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Домашна 1/Data/python_scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Домашна 1/Data/python_scripts/zlatna-kniga-scraping.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="CloudGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="CloudGateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.cloudgateway.CloudGatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Domasna3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Domasna3" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="java.mk.ukim.finki.domasna3.Domasna3Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.VinodventuraAppApplication">
     <configuration name="EmailConfirmationSendgridApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="EmailConfirmation-Sendgrid" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.emailconfirmationsendgrid.EmailConfirmationSendgridApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReviewsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Reviews" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.reviews.ReviewsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.server.ServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="User" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.user.UserApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VinodventuraAppApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="VinodventuraApp (2)" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.vinodventuraapp.VinodventuraAppApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -289,545 +81,90 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WineriesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Wineries" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.wineries.WineriesApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WishlistsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Wishlists" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.wishlists.WishlistsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="" />
-      <created>1699094763735</created>
+      <changelist id="bd9fb06d-155f-47fd-b7a1-5fb4f8de25ea" name="Changes" comment="" />
+      <created>1706373283124</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1699094763735</updated>
-      <workItem from="1699094765804" duration="4294000" />
-      <workItem from="1699208684654" duration="263000" />
-      <workItem from="1699208961410" duration="8471000" />
-      <workItem from="1699269571844" duration="4967000" />
-      <workItem from="1699366684503" duration="415000" />
-      <workItem from="1699378988813" duration="337000" />
-      <workItem from="1699631283840" duration="1683000" />
-      <workItem from="1701354458890" duration="1370000" />
-      <workItem from="1701363591489" duration="766000" />
-      <workItem from="1701428589509" duration="654000" />
-      <workItem from="1701546077914" duration="108000" />
-      <workItem from="1702085178559" duration="402000" />
-      <workItem from="1702085590984" duration="116000" />
-      <workItem from="1702116851343" duration="8563000" />
-      <workItem from="1702304383065" duration="7264000" />
-      <workItem from="1702386489155" duration="367000" />
-      <workItem from="1702386867034" duration="18899000" />
-      <workItem from="1702304383065" duration="7604000" />
-      <workItem from="1702337324769" duration="5042000" />
-      <workItem from="1702402779242" duration="65000" />
-      <workItem from="1702403826376" duration="330000" />
-      <workItem from="1702404172298" duration="1621000" />
-      <workItem from="1702602339344" duration="498000" />
-      <workItem from="1702648614886" duration="1978000" />
-      <workItem from="1702210537582" duration="4340000" />
-      <workItem from="1702230515207" duration="2651000" />
-      <workItem from="1702251628841" duration="3764000" />
-      <workItem from="1702642039585" duration="7284000" />
-      <workItem from="1702689111444" duration="606000" />
-      <workItem from="1702836415397" duration="25199000" />
-      <workItem from="1703368484993" duration="4741000" />
-      <workItem from="1703411782579" duration="595000" />
-      <workItem from="1703429461407" duration="241000" />
-      <workItem from="1703447009481" duration="3224000" />
-      <workItem from="1703603131867" duration="24000" />
-      <workItem from="1706114208588" duration="398000" />
-      <workItem from="1706114651925" duration="4378000" />
-      <workItem from="1706119349571" duration="2465000" />
-      <workItem from="1706208227636" duration="1418000" />
-      <workItem from="1706218401911" duration="2748000" />
-      <workItem from="1706273219909" duration="1857000" />
-      <workItem from="1706351250520" duration="9220000" />
+      <updated>1706373283124</updated>
+      <workItem from="1706373286641" duration="3214000" />
+      <workItem from="1706397228155" duration="2126000" />
     </task>
-    <task id="LOCAL-00001" summary="Initialization">
-      <created>1699095053226</created>
+    <task id="LOCAL-00001" summary="Changes in the controller">
+      <option name="closed" value="true" />
+      <created>1706374565692</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1699095053226</updated>
+      <updated>1706374565692</updated>
     </task>
-    <task id="LOCAL-00002" summary="Getting data 1">
-      <created>1699098832590</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1699098832590</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Reorganization">
-      <created>1699098958817</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1699098958817</updated>
-    </task>
-    <task id="LOCAL-00004" summary="IDE files">
-      <created>1699209020907</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1699209020907</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Testing change">
-      <created>1699212923902</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1699212923902</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Data modification">
-      <created>1699232620126</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1699232620126</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Data modification">
-      <created>1699232685224</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1699232685224</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Refactoring">
-      <created>1699233424525</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1699233424525</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Refactoring">
-      <created>1699272381113</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1699272381114</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Refactoring">
-      <created>1699284914328</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1699284914328</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Data Update">
-      <created>1699395173135</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1699395173135</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Data Update">
-      <created>1699395247227</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1699395247227</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Data Update">
-      <created>1699633923669</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1699633923669</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Data Update">
-      <created>1699634086022</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1699634086022</updated>
-    </task>
-    <task id="LOCAL-00015" summary="README edit">
-      <created>1699634261121</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1699634261121</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Adding subfolders for Homework 2">
-      <option name="closed" value="true" />
-      <created>1701354893342</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1701354893342</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Adding subfolders for Homework 2">
-      <option name="closed" value="true" />
-      <created>1701354989899</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1701354989899</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Technical prototype">
-      <option name="closed" value="true" />
-      <created>1701363759979</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1701363759979</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Changes in Technical prototype description">
-      <option name="closed" value="true" />
-      <created>1701371650342</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1701371650342</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Changes in architecture files">
-      <option name="closed" value="true" />
-      <created>1701428761895</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1701428761895</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Adding conceptual and execution model and behaviours">
-      <option name="closed" value="true" />
-      <created>1701546176853</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1701546176853</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Creating folder for Homework 3 and adding the files from the techincal prototype">
-      <option name="closed" value="true" />
-      <created>1702119003372</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1702119003372</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Moving the folder">
-      <option name="closed" value="true" />
-      <created>1702119097751</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1702119097751</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Implementing JPA to the project, using H2 Database">
-      <option name="closed" value="true" />
-      <created>1702144325151</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1702144325151</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Minor footer changes">
-      <option name="closed" value="true" />
-      <created>1702145658948</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1702145658948</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Changing SQL Properties">
-      <option name="closed" value="true" />
-      <created>1702145720506</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1702145720506</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Frontend refactoring and changing">
-      <option name="closed" value="true" />
-      <created>1702509393539</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1702509393539</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Frontend refactoring and changing">
-      <option name="closed" value="true" />
-      <created>1702917187156</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1702917187156</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Frontend refactoring and changing">
-      <option name="closed" value="true" />
-      <created>1702919689855</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1702919689855</updated>
-    </task>
-    <task id="LOCAL-00030" summary="deploy">
-      <option name="closed" value="true" />
-      <created>1703368659094</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1703368659094</updated>
-    </task>
-    <task id="LOCAL-00031" summary="deploy">
-      <option name="closed" value="true" />
-      <created>1703368816897</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1703368816897</updated>
-    </task>
-    <task id="LOCAL-00032" summary="deploy">
-      <option name="closed" value="true" />
-      <created>1703370499190</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1703370499190</updated>
-    </task>
-    <task id="LOCAL-00033" summary="deploy">
-      <option name="closed" value="true" />
-      <created>1703371064868</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1703371064868</updated>
-    </task>
-    <task id="LOCAL-00034" summary="deploy">
-      <option name="closed" value="true" />
-      <created>1703372770208</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1703372770208</updated>
-    </task>
-    <task id="LOCAL-00035" summary="deploy">
-      <option name="closed" value="true" />
-      <created>1703449341697</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1703449341697</updated>
-    </task>
-    <task id="LOCAL-00036" summary="deploy">
-      <option name="closed" value="true" />
-      <created>1703449835614</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1703449835614</updated>
-    </task>
-    <task id="LOCAL-00037" summary="deploy">
-      <option name="closed" value="true" />
-      <created>1703449925029</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1703449925029</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Refactoring the controllers">
-      <option name="closed" value="true" />
-      <created>1706117468413</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1706117468413</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Trying to implement microservices">
-      <option name="closed" value="true" />
-      <created>1706122765975</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1706122765976</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Adding some services in the microservices">
-      <option name="closed" value="true" />
-      <created>1706220921641</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1706220921641</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Making changes in the Reviews Microservice">
-      <option name="closed" value="true" />
-      <created>1706274375894</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1706274375894</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Adding additional functionalities to the microservices">
-      <option name="closed" value="true" />
-      <created>1706358778559</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1706358778559</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Adding a microservice for email confirmation link when registration happens">
-      <option name="closed" value="true" />
-      <created>1706364568648</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1706364568648</updated>
-    </task>
-    <option name="localTasksCounter" value="44" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="IDE files" />
-    <MESSAGE value="Testing change" />
-    <MESSAGE value="Data modification" />
-    <MESSAGE value="Refactoring" />
-    <MESSAGE value="Data Update" />
-    <MESSAGE value="README edit" />
-    <MESSAGE value="Adding subfolders for Homework 2" />
-    <MESSAGE value="Technical prototype" />
-    <MESSAGE value="Changes in Technical prototype description" />
-    <MESSAGE value="Changes in architecture files" />
-    <MESSAGE value="Adding conceptual and execution model and behaviours" />
-    <MESSAGE value="Creating folder for Homework 3 and adding the files from the techincal prototype" />
-    <MESSAGE value="Moving the folder" />
-    <MESSAGE value="Implementing JPA to the project, using H2 Database" />
-    <MESSAGE value="Minor footer changes" />
-    <MESSAGE value="Changing SQL Properties" />
-    <MESSAGE value="Update register page frontend" />
-    <MESSAGE value="Frontend refactoring and changing" />
-    <MESSAGE value="deploy" />
-    <MESSAGE value="Refactoring the controllers" />
-    <MESSAGE value="Trying to implement microservices" />
-    <MESSAGE value="Adding some services in the microservices" />
-    <MESSAGE value="Making changes in the Reviews Microservice" />
-    <MESSAGE value="Adding additional functionalities to the microservices" />
-    <MESSAGE value="Adding a microservice for email confirmation link when registration happens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding a microservice for email confirmation link when registration happens" />
+    <MESSAGE value="Changes in the controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes in the controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
-          <line>59</line>
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java</url>
+          <line>78</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
-          <line>55</line>
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java</url>
+          <line>79</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LoginController.java</url>
-          <line>25</line>
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java</url>
+          <line>81</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LoginController.java</url>
-          <line>37</line>
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java</url>
+          <line>82</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/LogoutController.java</url>
-          <line>14</line>
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/service/impl/EmailConfirmationServiceImpl.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/service/impl/EmailConfirmationServiceImpl.java</url>
+          <line>18</line>
+          <properties field="sendGridApiKey" class="mk.ukim.finki.emailconfirmationsendgrid.service.impl.EmailConfirmationServiceImpl" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WineriesController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna3/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/WishListController.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="26" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/service/impl/EmailConfirmationServiceImpl.java</url>
+          <line>20</line>
+          <properties class="mk.ukim.finki.emailconfirmationsendgrid.service.impl.EmailConfirmationServiceImpl" method="sendConfirmationEmail">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="passwordEncoder.encode(password)" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
