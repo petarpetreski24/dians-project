@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/map-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/map-en.html" afterDir="false" />
-    </list>
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error without wineries length" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -532,7 +529,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706368579840</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Trying to fix map error without wineries thymeleaf">
+      <created>1706369103768</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1706369103768</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Trying to fix map error without wineries length">
+      <created>1706369276343</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1706369276343</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +584,9 @@
     <MESSAGE value="Frontend refactoring and changing" />
     <MESSAGE value="deploy" />
     <MESSAGE value="Trying to fix map error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error" />
+    <MESSAGE value="Trying to fix map error without wineries thymeleaf" />
+    <MESSAGE value="Trying to fix map error without wineries length" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error without wineries length" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
