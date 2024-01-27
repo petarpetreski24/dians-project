@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error without wineries length" />
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with map list" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -543,7 +543,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706369276343</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Trying to fix map error without wineries comment">
+      <created>1706369491246</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1706369491246</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Trying to fix map error with map list">
+      <created>1706369676871</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1706369676871</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,8 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initialization" />
-    <MESSAGE value="Getting data 1" />
     <MESSAGE value="Reorganization" />
     <MESSAGE value="IDE files" />
     <MESSAGE value="Testing change" />
@@ -586,7 +598,9 @@
     <MESSAGE value="Trying to fix map error" />
     <MESSAGE value="Trying to fix map error without wineries thymeleaf" />
     <MESSAGE value="Trying to fix map error without wineries length" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error without wineries length" />
+    <MESSAGE value="Trying to fix map error without wineries comment" />
+    <MESSAGE value="Trying to fix map error with map list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with map list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
