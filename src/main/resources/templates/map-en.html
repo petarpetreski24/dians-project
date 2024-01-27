@@ -165,12 +165,12 @@
 </div>
 
 <th:block th:each="winery: ${wineries}" id="no-display">
-    <p name="lat" th:text="winery.lat"></p>
-    <p name="lon" th:text="winery.lon"></p>
-    <p name="name" th:text="winery.name"></p>
-    <p name="address" th:text="winery.address"></p>
-    <p name="town" th:text="winery.town"></p>
-    <p name="winery_id" th:text="winery.id"></p>
+    <p name="lat" th:text="${winery.lat}"></p>
+    <p name="lon" th:text="${winery.lon}"></p>
+    <p name="name" th:text="${winery.name}"></p>
+    <p name="address" th:text="${winery.address}"></p>
+    <p name="town" th:text="${winery.town}"></p>
+    <p name="winery_id" th:text="${winery.id}"></p>
 </th:block>
 
 <script th:inline="javascript">
