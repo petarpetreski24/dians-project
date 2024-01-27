@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with map body" />
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with map css" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -564,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706369957312</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Trying to fix map error with map css">
+      <created>1706370693285</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1706370693285</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="IDE files" />
     <MESSAGE value="Testing change" />
     <MESSAGE value="Data modification" />
     <MESSAGE value="Refactoring" />
@@ -607,7 +613,8 @@
     <MESSAGE value="Trying to fix map error without wineries comment" />
     <MESSAGE value="Trying to fix map error with map list" />
     <MESSAGE value="Trying to fix map error with map body" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with map body" />
+    <MESSAGE value="Trying to fix map error with map css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with map css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
