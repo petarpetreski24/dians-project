@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with th block" />
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with th block part 3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -620,7 +620,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706372950279</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Trying to fix map error with th block part 2">
+      <created>1706373108830</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1706373108830</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Trying to fix map error with th block part 3">
+      <created>1706373298810</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1706373298810</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,8 +652,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changes in Technical prototype description" />
-    <MESSAGE value="Changes in architecture files" />
     <MESSAGE value="Adding conceptual and execution model and behaviours" />
     <MESSAGE value="Creating folder for Homework 3 and adding the files from the techincal prototype" />
     <MESSAGE value="Moving the folder" />
@@ -663,7 +675,9 @@
     <MESSAGE value="Trying to fix map error with map rendering json let part 3" />
     <MESSAGE value="Trying to fix map error with map rendering json let part 4" />
     <MESSAGE value="Trying to fix map error with th block" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with th block" />
+    <MESSAGE value="Trying to fix map error with th block part 2" />
+    <MESSAGE value="Trying to fix map error with th block part 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with th block part 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
