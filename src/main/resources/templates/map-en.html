@@ -196,12 +196,9 @@
 
 
     for (let i = 0; i < ids.length; i++) {
-        console.log("val")
         var lat = parseFloat(latitudes[i].innerHTML);
-        console.log(lat)
         var lon = parseFloat(longitudes[i].innerHTML);
         var name = names[i].innerHTML;
-        console.log(lon)
         var address = addresses[i].innerHTML;
         var town = towns[i].innerHTML;
         var marker = L.marker([lat, lon], {icon: wineIcon}).addTo(mapList);
