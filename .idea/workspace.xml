@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with th block part 5" />
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with th block part 7.1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/map-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/map-en.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -272,27 +275,6 @@
       <workItem from="1703368484993" duration="3896000" />
       <workItem from="1703449224884" duration="18000" />
       <workItem from="1703449889223" duration="982000" />
-    </task>
-    <task id="LOCAL-00003" summary="Reorganization">
-      <created>1699098958817</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1699098958817</updated>
-    </task>
-    <task id="LOCAL-00004" summary="IDE files">
-      <created>1699209020907</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1699209020907</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Testing change">
-      <created>1699212923902</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1699212923902</updated>
     </task>
     <task id="LOCAL-00006" summary="Data modification">
       <created>1699232620126</created>
@@ -634,7 +616,28 @@
       <option name="project" value="LOCAL" />
       <updated>1706373665303</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Trying to fix map error with th block part 6">
+      <created>1706373900840</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1706373900840</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Trying to fix map error with th block part 7">
+      <created>1706374062638</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1706374062638</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Trying to fix map error with th block part 7.1">
+      <created>1706374112602</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1706374112602</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,9 +655,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Moving the folder" />
-    <MESSAGE value="Implementing JPA to the project, using H2 Database" />
-    <MESSAGE value="Minor footer changes" />
     <MESSAGE value="Changing SQL Properties" />
     <MESSAGE value="Update register page frontend" />
     <MESSAGE value="Frontend refactoring and changing" />
@@ -677,7 +677,10 @@
     <MESSAGE value="Trying to fix map error with th block part 3" />
     <MESSAGE value="Trying to fix map error with th block part 4" />
     <MESSAGE value="Trying to fix map error with th block part 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with th block part 5" />
+    <MESSAGE value="Trying to fix map error with th block part 6" />
+    <MESSAGE value="Trying to fix map error with th block part 7" />
+    <MESSAGE value="Trying to fix map error with th block part 7.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with th block part 7.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

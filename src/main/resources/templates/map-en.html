@@ -113,7 +113,7 @@
         color: var(--white-color);;
     }
 
-    #no-display {
+    .no-display {
         display: none;
     }
 </style>
@@ -164,13 +164,13 @@
     </div>
 </div>
 
-<th:block th:each="winery: ${wineries}" id="no-display">
-    <p name="lat" th:text="${winery.latitude}"></p>
-    <p name="lon" th:text="${winery.longitude}"></p>
-    <p name="name" th:text="${winery.name}"></p>
-    <p name="address" th:text="${winery.address}"></p>
-    <p name="town" th:text="${winery.location}"></p>
-    <p name="winery_id" th:text="${winery.id}"></p>
+<th:block th:each="winery: ${wineries}" class="no-display">
+    <p name="lat" th:text="${winery.latitude}" class="no-display"></p>
+    <p name="lon" th:text="${winery.longitude}" class="no-display"></p>
+    <p name="name" th:text="${winery.name}" class="no-display"></p>
+    <p name="address" th:text="${winery.address}" class="no-display"></p>
+    <p name="town" th:text="${winery.location}" class="no-display"></p>
+    <p name="winery_id" th:text="${winery.id}" class="no-display"></p>
 </th:block>
 
 <script th:inline="javascript">
@@ -192,18 +192,20 @@
     names = document.getElementsByName("name");
     addresses = document.getElementsByName("address");
     towns = document.getElementsByName("town");
-    ids = document.getElementsByName("id");
+    ids = document.getElementsByName("winery_id");
+
 
     for (let i = 0; i < ids.length; i++) {
-        var lat = parseFloat(latitudes[i].value);
+        console.log("val")
+        var lat = parseFloat(latitudes[i].innerHTML);
         console.log(lat)
-        var lon = parseFloat(longitudes[i].value);
-        var name = names[i];
+        var lon = parseFloat(longitudes[i].innerHTML);
+        var name = names[i].innerHTML;
         console.log(lon)
-        var address = addresses[i];
-        var town = towns[i];
+        var address = addresses[i].innerHTML;
+        var town = towns[i].innerHTML;
         var marker = L.marker([lat, lon], {icon: wineIcon}).addTo(mapList);
-        var winery_id = ids[i];
+        var winery_id = ids[i].innerHTML;
         var message = "<div class='popup'><div class='popup-text'><span class='name-popup'>" + name +
             "</span></br></br><span class='address-popup'><b>" + address + "</b></span></br><span class='town-popup'>" + town + "</span></div></br><div class='popup-button'><a href=\"/winery/details/" +
             winery_id + "\"" + " class=\"custom-btn-popup custom-border-btn-popup btn\" role=\"button\">Details</a></div></div>"
