@@ -43,22 +43,22 @@ public class Winery {
     }
 
     public String getNameEn() {
-        return Translator.transliterateToLatin(name);
+        return Translator.getInstance().transliterateToLatin(name);
     }
 
     public String getAddressEn() {
-        return Translator.transliterateToLatin(address);
+        return Translator.getInstance().transliterateToLatin(address);
     }
 
     public String getLocationEn() {
-        return Translator.transliterateToLatin(location);
+        return Translator.getInstance().transliterateToLatin(location);
     }
 
     public String getOccupationsEn() {
-        return Translator.transliterateToLatin(occupations);
+        return Translator.getInstance().transliterateToLatin(occupations);
     }
 
     public String getWorkingHoursEn() {
-        return Translator.transliterateToLatin(workingHours);
+        return Translator.getInstance().transliterateToLatin(workingHours);
     }
 }

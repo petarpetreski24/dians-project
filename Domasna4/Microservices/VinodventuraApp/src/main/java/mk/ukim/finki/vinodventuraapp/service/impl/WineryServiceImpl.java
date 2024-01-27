@@ -28,22 +28,22 @@ public class WineryServiceImpl implements WineryService {
 
     @Override
     public List<Winery> findAllByLocation(String location) {
-        return wineyRepository.findAllByLocationIgnoreCase(Translator.transliterateToCyrillic(location));
+        return wineyRepository.findAllByLocationIgnoreCase(Translator.getInstance().transliterateToCyrillic(location));
     }
 
     @Override
     public List<Winery> findAllByNameContaining(String name) {
-        return wineyRepository.findAllByNameContainingIgnoreCase(Translator.transliterateToCyrillic(name));
+        return wineyRepository.findAllByNameContainingIgnoreCase(Translator.getInstance().transliterateToCyrillic(name));
     }
 
     @Override
     public List<Winery> findByOccupationContaining(String occupation) {
-        return wineyRepository.findAllByOccupationsContainingIgnoreCase(Translator.transliterateToCyrillic(occupation));
+        return wineyRepository.findAllByOccupationsContainingIgnoreCase(Translator.getInstance().transliterateToCyrillic(occupation));
     }
 
     @Override
     public List<Winery> findAllByAddressContaining(String address) {
-        return wineyRepository.findAllByAddressContainingIgnoreCase(Translator.transliterateToCyrillic(address));
+        return wineyRepository.findAllByAddressContainingIgnoreCase(Translator.getInstance().transliterateToCyrillic(address));
     }
 
     @Override

@@ -4,30 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Adding additional functionalities to the microservices">
-      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/model/EmailConfirmationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/service/EmailConfirmationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/service/impl/EmailConfirmationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/web/EmailConfirmationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/resources/application-mailconfig.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/EmailConfirmationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/helpers/EmailConfirmationTokenGenerator.java" afterDir="false" />
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Adding a microservice for email confirmation link when registration happens">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/VinodventuraAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/VinodventuraAppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/home-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/home-en.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/register-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/register-en.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/register-mk.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/register-mk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/search-page-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/search-page-en.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,7 +347,7 @@
       <workItem from="1706208227636" duration="1418000" />
       <workItem from="1706218401911" duration="2748000" />
       <workItem from="1706273219909" duration="1857000" />
-      <workItem from="1706351250520" duration="8155000" />
+      <workItem from="1706351250520" duration="9220000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
@@ -690,7 +670,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706358778559</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Adding a microservice for email confirmation link when registration happens">
+      <option name="closed" value="true" />
+      <created>1706364568648</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1706364568648</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -708,7 +696,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reorganization" />
     <MESSAGE value="IDE files" />
     <MESSAGE value="Testing change" />
     <MESSAGE value="Data modification" />
@@ -733,7 +720,8 @@
     <MESSAGE value="Adding some services in the microservices" />
     <MESSAGE value="Making changes in the Reviews Microservice" />
     <MESSAGE value="Adding additional functionalities to the microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding additional functionalities to the microservices" />
+    <MESSAGE value="Adding a microservice for email confirmation link when registration happens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding a microservice for email confirmation link when registration happens" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
