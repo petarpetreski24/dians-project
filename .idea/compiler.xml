@@ -9,13 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="VinodventuraApp (2)" />
         <module name="VinodventuraApp" />
-        <module name="Reviews" />
+        <module name="EmailConfirmation-Sendgrid" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CloudGateway" target="17" />
       <module name="CloudGateway (1) (mk.ukim.finki.vinodventuraapp)" target="17" />
       <module name="Domasna3" target="17" />
+      <module name="Reviews" target="17" />
       <module name="Server" target="17" />
       <module name="User" target="17" />
       <module name="VinodventuraApp (1)" target="17" />
@@ -27,6 +28,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="CloudGateway" options="-parameters" />
       <module name="Domasna3" options="-parameters" />
+      <module name="EmailConfirmation-Sendgrid" options="-parameters" />
       <module name="Reviews" options="-parameters" />
       <module name="Server" options="-parameters" />
       <module name="User" options="-parameters" />

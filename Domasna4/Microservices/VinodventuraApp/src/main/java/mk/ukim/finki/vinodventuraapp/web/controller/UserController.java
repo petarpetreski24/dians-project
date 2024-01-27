@@ -1,30 +1,36 @@
 package mk.ukim.finki.vinodventuraapp.web.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
+import mk.ukim.finki.vinodventuraapp.model.EmailConfirmationRequest;
 import mk.ukim.finki.vinodventuraapp.model.User;
 import mk.ukim.finki.vinodventuraapp.model.exceptions.*;
+import mk.ukim.finki.vinodventuraapp.model.helpers.EmailConfirmationTokenGenerator;
 import mk.ukim.finki.vinodventuraapp.service.AuthService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.client.RestTemplate;
 
 @Controller
 public class UserController {
 
     private final AuthService authService;
+    @Autowired
+    private RestTemplate restTemplate;
 
     public UserController(AuthService authService) {
         this.authService = authService;
     }
 
-    @GetMapping("/login")
-    public String getLoginPage(Model model, HttpServletRequest request) {
-        model.addAttribute("bodyContent", "home");
-        String lang = (String) request.getSession().getAttribute("lang");
-        return lang.equals("mk") ? "master-template-mk" : "master-template-en";
-    }
+//    @GetMapping("/login")
+//    public String getLoginPage(Model model, HttpServletRequest request) {
+//        model.addAttribute("bodyContent", "home");
+//        String lang = (String) request.getSession().getAttribute("lang");
+//        return lang.equals("mk") ? "master-template-mk" : "master-template-en";
+//    }
 
     @PostMapping("/login")
     public String login(HttpServletRequest request, Model model) {
@@ -59,13 +65,26 @@ public class UserController {
             @RequestParam String username,
             @RequestParam String password,
             @RequestParam String repeatPassword,
+            @RequestParam String email,
             Model model,
             HttpServletRequest request) {
 
         try {
-            authService.register(username, password, repeatPassword, name, surname);
+            authService.register(username, password, repeatPassword, name, surname,email);
 
             setSuccessAttributes(model, request);
+            try{
+                String token = EmailConfirmationTokenGenerator.generateToken();
+                EmailConfirmationRequest confirmationRequest = new EmailConfirmationRequest(email,
+                        "localhost:8080/home");
+                restTemplate.postForEntity("http://localhost:9090/confirmation/send-confirmation", confirmationRequest, String.class);
+            }
+            catch (Exception exception){
+                return determineMasterTemplate(request);
+            }
+
+
+
 
         } catch (InvalidArgumentsException | PasswordsDoNotMatchException
                  | UsernameAlreadyExistsException | PasswordLengthException exception) {

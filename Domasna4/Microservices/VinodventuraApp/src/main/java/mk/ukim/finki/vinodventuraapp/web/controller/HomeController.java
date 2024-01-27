@@ -24,6 +24,9 @@ public class HomeController {
 
     private void setCommonAttributes(User user, Object langAttribute, String bodyContentSuffix, Model model) {
         model.addAttribute("user", user);
+        if (langAttribute == null){
+
+        }
         String lang = (langAttribute instanceof String) ? (String) langAttribute : "en"; // Default to "en" if lang is not set
         model.addAttribute("bodyContent", bodyContentSuffix + "-" + lang);
     }

@@ -37,7 +37,7 @@ public class DataHolder {
         List<WishList> wishLists = new ArrayList<>();
 
         if (userRepository.count() == 0){
-            users.add(new User("pp","pp+","Petar","Petreski"));
+            users.add(new User("pp","pp+","Petar","Petreski","petarpetreski24@gmail.com"));
             userRepository.saveAll(users);
         }
 

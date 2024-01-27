@@ -4,37 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Making changes in the Reviews Microservice">
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Adding additional functionalities to the microservices">
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/model/EmailConfirmationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/service/EmailConfirmationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/service/impl/EmailConfirmationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/java/mk/ukim/finki/emailconfirmationsendgrid/web/EmailConfirmationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/EmailConfirmation-Sendgrid/src/main/resources/application-mailconfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/EmailConfirmationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/helpers/EmailConfirmationTokenGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/repository/ReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/service/ReviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/service/impl/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/service/impl/ReviewServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/web/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/web/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/web/WineryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/web/WineryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/WishlistsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/model/WishList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/repository/WishListRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/service/WishListService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/service/impl/WishListServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/web/WishListController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/test/java/mk/ukim/finki/wishlists/WishlistsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/VinodventuraAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/VinodventuraAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/bootstrap/DataHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/home-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/home-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/register-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/register-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/register-mk.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/register-mk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/search-page-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/resources/templates/search-page-en.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +123,14 @@
       <recent name="D:\Fakultet\Petti semestar\Dizajn i arhitektura na softver\dians-project\Domasna3\VinodventuraApp\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\dians-project\Domasna4\Microservices" />
       <recent name="D:\IdeaProjects\dians-project" />
       <recent name="C:\Users\Lenovo\Desktop\dians4\Domasna3\VinodventuraApp\src\main\resources\static\images" />
       <recent name="C:\Users\Lenovo\Desktop\dians3\Domasna3\VinodventuraApp\src\main\resources\static\images" />
       <recent name="D:\IdeaProjects\dians-project\Domasna3" />
-      <recent name="D:\PycharmProjects\dians-project\Домашна 2\architecture" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mk.ukim.finki.vinodventuraapp.model" />
       <recent name="service.impl" />
       <recent name="repository" />
       <recent name="model" />
@@ -267,6 +261,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EmailConfirmationSendgridApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="EmailConfirmation-Sendgrid" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.emailconfirmationsendgrid.EmailConfirmationSendgridApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReviewsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Reviews" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.reviews.ReviewsApplication" />
@@ -366,7 +367,7 @@
       <workItem from="1706208227636" duration="1418000" />
       <workItem from="1706218401911" duration="2748000" />
       <workItem from="1706273219909" duration="1857000" />
-      <workItem from="1706351250520" duration="3030000" />
+      <workItem from="1706351250520" duration="8155000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
@@ -681,7 +682,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706274375894</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Adding additional functionalities to the microservices">
+      <option name="closed" value="true" />
+      <created>1706358778559</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1706358778559</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,7 +708,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Getting data 1" />
     <MESSAGE value="Reorganization" />
     <MESSAGE value="IDE files" />
     <MESSAGE value="Testing change" />
@@ -724,7 +732,8 @@
     <MESSAGE value="Trying to implement microservices" />
     <MESSAGE value="Adding some services in the microservices" />
     <MESSAGE value="Making changes in the Reviews Microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making changes in the Reviews Microservice" />
+    <MESSAGE value="Adding additional functionalities to the microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding additional functionalities to the microservices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -813,6 +822,16 @@
           <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/service/impl/AuthServiceImpl.java</url>
           <line>32</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Domasna4/Microservices/VinodventuraApp/src/main/java/mk/ukim/finki/vinodventuraapp/web/controller/HomeController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

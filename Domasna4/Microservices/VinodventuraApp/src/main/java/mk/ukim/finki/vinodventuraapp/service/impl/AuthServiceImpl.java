@@ -34,9 +34,9 @@ public class AuthServiceImpl implements AuthService, UserDetailsService {
     }
 
     @Override
-    public User register(String username, String password, String repeatPassword, String name, String surname) {
-        if (username == null || username.isEmpty() || password == null || password.isEmpty() || repeatPassword == null ||
-                repeatPassword.isEmpty() || name == null || name.isEmpty() || surname == null || surname.isEmpty()) {
+    public User register(String username, String password, String repeatPassword, String name, String surname, String email) {
+        if (username == null || username.isEmpty() || password == null || password.isEmpty() || repeatPassword == null || email == null ||
+                repeatPassword.isEmpty() || name == null || name.isEmpty() || surname == null || surname.isEmpty() || email.isEmpty()) {
             throw new InvalidArgumentsException();
         }
         if (password.length() < 8) {
@@ -49,7 +49,7 @@ public class AuthServiceImpl implements AuthService, UserDetailsService {
         if (userRepository.findByUsername(username).isPresent()) {
             throw new UsernameAlreadyExistsException(username);
         }
-        User user = new User(username, password, name, surname);
+        User user = new User(username, password, name, surname,email);
         return userRepository.save(user);
 
     }
