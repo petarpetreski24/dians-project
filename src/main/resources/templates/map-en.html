@@ -194,8 +194,8 @@
     ids = document.getElementsByName("id").values();
 
     for (let i = 0; i < 100; i++) {
-        var lat = parseInt(latitudes[i]);
-        var lon = parseInt(longitudes[i]);
+        var lat = parseInt(latitudes[i].value);
+        var lon = parseInt(longitudes[i].value);
         var name = names[i];
         var address = addresses[i];
         var town = towns[i];
