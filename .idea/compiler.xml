@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Wineries" />
         <module name="VinodventuraApp (2)" />
-        <module name="VinodventuraApp" />
         <module name="EmailConfirmation-Sendgrid" />
       </profile>
     </annotationProcessing>
@@ -21,6 +20,7 @@
       <module name="Reviews" target="17" />
       <module name="Server" target="17" />
       <module name="User" target="17" />
+      <module name="VinodventuraApp" target="1.5" />
       <module name="VinodventuraApp (1)" target="17" />
       <module name="Wishlists" target="17" />
     </bytecodeTargetLevel>
@@ -33,7 +33,7 @@
       <module name="Reviews" options="-parameters" />
       <module name="Server" options="-parameters" />
       <module name="User" options="-parameters" />
-      <module name="VinodventuraApp" options="-parameters" />
+      <module name="VinodventuraApp" options="" />
       <module name="VinodventuraApp (1)" options="-parameters" />
       <module name="VinodventuraApp (2)" options="-parameters" />
       <module name="Wineries" options="-parameters" />
