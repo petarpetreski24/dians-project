@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 @Slf4j
-@RequestMapping({"/api/wineries"})
 public class WineryController {
 
     private final WineryService wineryService;
@@ -19,7 +18,8 @@ public class WineryController {
         this.wineryService = wineryService;
     }
 
-    @GetMapping("/show/{id}")
+
+    @GetMapping("/api/wineries/show/{id}")
     public List<Winery> findWineryById(@PathVariable("id") Long wineryId) {
         List<Winery> wineries=new ArrayList<>();
         if(wineryService.findById(wineryId).isPresent())
@@ -28,25 +28,29 @@ public class WineryController {
         }
         return wineries;
     }
-    @GetMapping("/all")
+    @GetMapping("/api/wineries/all")
     public List<Winery> findAll() {
         return wineryService.findAll();
     }
 
-    @GetMapping("/name/{name}")
+    @GetMapping("/api/wineries/name/{name}")
     public List<Winery> findByName(@PathVariable("name") String winery) {
         return wineryService.findAllByNameContaining(winery);
     }
 
-    @GetMapping("/location/{location}")
+    @GetMapping("/api/wineries/location/{location}")
     public List<Winery> findByLocation(@PathVariable String location){
         return wineryService.findAllByLocation(location);
     }
-    @GetMapping("/geoposition")
+    @GetMapping("/api/wineries/geoposition")
     public List<Winery> findAllByLongitudeLatitude(@RequestParam Double minLatitude,
                                                    @RequestParam Double maxLatitude,
                                                    @RequestParam Double minLongitude,
                                                    @RequestParam Double maxLongitude){
         return wineryService.findByLatitudeBetweenAndLongitudeBetween(minLatitude,maxLatitude,minLongitude,maxLongitude);
+    }
+    @GetMapping("/*")
+    public List<Winery> defaultWineries() {
+        return wineryService.findAll();
     }
 }
