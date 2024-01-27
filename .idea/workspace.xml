@@ -4,15 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Adding some services in the microservices">
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Making changes in the Reviews Microservice">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/model/Review.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/repository/ReviewRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/service/ReviewService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/service/impl/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/service/impl/ReviewServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/web/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Reviews/src/main/java/mk/ukim/finki/reviews/web/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/User/src/main/java/mk/ukim/finki/user/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/web/WineryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domasna4/Microservices/Wineries/src/main/java/mk/ukim/finki/wineries/web/WineryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/WishlistsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/model/WishList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/repository/WishListRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/service/WishListService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/service/impl/WishListServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/java/mk/ukim/finki/wishlists/web/WishListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domasna4/Microservices/Wishlists/src/test/java/mk/ukim/finki/wishlists/WishlistsApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +112,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "spring.configuration.checksum": "ff61543f092ef6163a2957a96b8fae17",
+    "spring.configuration.checksum": "ea6a7e7afba443a0287e53651ad0804e",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -343,7 +365,8 @@
       <workItem from="1706119349571" duration="2465000" />
       <workItem from="1706208227636" duration="1418000" />
       <workItem from="1706218401911" duration="2748000" />
-      <workItem from="1706273219909" duration="951000" />
+      <workItem from="1706273219909" duration="1857000" />
+      <workItem from="1706351250520" duration="3030000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1699095053226</created>
@@ -650,7 +673,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706220921641</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Making changes in the Reviews Microservice">
+      <option name="closed" value="true" />
+      <created>1706274375894</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1706274375894</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -668,7 +699,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initialization" />
     <MESSAGE value="Getting data 1" />
     <MESSAGE value="Reorganization" />
     <MESSAGE value="IDE files" />
@@ -693,7 +723,8 @@
     <MESSAGE value="Refactoring the controllers" />
     <MESSAGE value="Trying to implement microservices" />
     <MESSAGE value="Adding some services in the microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding some services in the microservices" />
+    <MESSAGE value="Making changes in the Reviews Microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making changes in the Reviews Microservice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
