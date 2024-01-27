@@ -186,12 +186,13 @@
         iconAnchor: [15, 46],
         popupAnchor: [0, 180]
     });
-    latitudes = document.getElementsByName("lat").values();
-    longitudes = document.getElementsByName("lon").values();
-    names = document.getElementsByName("name").values();
-    addresses = document.getElementsByName("address").values();
-    towns = document.getElementsByName("town").values();
-    ids = document.getElementsByName("id").values();
+
+    latitudes = document.getElementsByName("lat");
+    longitudes = document.getElementsByName("lon");
+    names = document.getElementsByName("name");
+    addresses = document.getElementsByName("address");
+    towns = document.getElementsByName("town");
+    ids = document.getElementsByName("id");
 
     for (let i = 0; i < 100; i++) {
         var lat = parseInt(latitudes[i].value);

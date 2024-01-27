@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with th block part 3" />
+    <list default="true" id="09b50fc0-c51e-4cc8-bc94-e06b669f8fc6" name="Changes" comment="Trying to fix map error with th block part 5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -272,20 +272,6 @@
       <workItem from="1703368484993" duration="3896000" />
       <workItem from="1703449224884" duration="18000" />
       <workItem from="1703449889223" duration="982000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initialization">
-      <created>1699095053226</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1699095053226</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Getting data 1">
-      <created>1699098832590</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1699098832590</updated>
     </task>
     <task id="LOCAL-00003" summary="Reorganization">
       <created>1699098958817</created>
@@ -634,7 +620,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706373298810</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Trying to fix map error with th block part 4">
+      <created>1706373485247</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1706373485247</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Trying to fix map error with th block part 5">
+      <created>1706373665303</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1706373665303</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,8 +652,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding conceptual and execution model and behaviours" />
-    <MESSAGE value="Creating folder for Homework 3 and adding the files from the techincal prototype" />
     <MESSAGE value="Moving the folder" />
     <MESSAGE value="Implementing JPA to the project, using H2 Database" />
     <MESSAGE value="Minor footer changes" />
@@ -677,7 +675,9 @@
     <MESSAGE value="Trying to fix map error with th block" />
     <MESSAGE value="Trying to fix map error with th block part 2" />
     <MESSAGE value="Trying to fix map error with th block part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with th block part 3" />
+    <MESSAGE value="Trying to fix map error with th block part 4" />
+    <MESSAGE value="Trying to fix map error with th block part 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix map error with th block part 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
