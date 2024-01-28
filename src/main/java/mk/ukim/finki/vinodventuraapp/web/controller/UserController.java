@@ -76,8 +76,8 @@ public class UserController {
             try{
                 String token = EmailConfirmationTokenGenerator.generateToken();
                 EmailConfirmationRequest confirmationRequest = new EmailConfirmationRequest(email,
-                        "localhost:8080/home");
-                restTemplate.postForEntity("http://localhost:9090/email/confirm", confirmationRequest, String.class);
+                        "https://homework4-vinodventura-app-4ff3f600feab.herokuapp.com/home");
+                restTemplate.postForEntity("https://homework4-microservices-email-bff7ac390804.herokuapp.com/email/confirm", confirmationRequest, String.class);
             }
             catch (Exception exception){
                 return determineMasterTemplate(request);
