@@ -14,7 +14,12 @@
 
 **ЛИНК ДО ПУБЛИКУВАНА АПЛИКАЦИЈА: https://homework4-vinodventura-app-4ff3f600feab.herokuapp.com/home**
 
-
+-
+-
+-
+-
+-
+-
 	
 Линк до публикувана апликација(Домашна 3): https://vinodventura-app-7e0635cf95e5.herokuapp.com/
 
