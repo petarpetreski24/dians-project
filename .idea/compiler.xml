@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="VinodventuraApp (2)" />
-        <module name="VinodventuraApp" />
         <module name="EmailConfirmation-Sendgrid" />
+        <module name="VinodventuraApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
