@@ -11,7 +11,7 @@
 
 </head>
 <style>
-    #map {
+    #mapList {
         height: 100vh;
         width: 100%;
         text-align: center;
@@ -111,11 +111,15 @@
     .leaflet-container a {
         color: var(--white-color);;
     }
+
+    .no-display {
+        display: none;
+    }
 </style>
 <body>
 <div id="map-page-container">
     <div id="map-container">
-        <div id="map"></div>
+        <div id="mapList"></div>
         <div id="map-footer-container">
             <div class="container">
                 <div class="row">
@@ -158,9 +162,17 @@
         </div>
     </div>
 </div>
-</body>
+<th:block th:each="winery: ${wineries}" class="no-display">
+    <p name="lat" th:text="${winery.latitude}" class="no-display"></p>
+    <p name="lon" th:text="${winery.longitude}" class="no-display"></p>
+    <p name="name" th:text="${winery.name}" class="no-display"></p>
+    <p name="address" th:text="${winery.address}" class="no-display"></p>
+    <p name="town" th:text="${winery.location}" class="no-display"></p>
+    <p name="winery_id" th:text="${winery.id}" class="no-display"></p>
+</th:block>
+
 <script th:inline="javascript">
-    var mapList = L.map('map').setView([41.6086, 21.7453], 8);
+    var mapList = L.map('mapList').setView([41.6086, 21.7453], 8);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -173,33 +185,44 @@
         popupAnchor: [0, 180]
     });
 
-    var wineries = [[${wineries}]];
-    for (let i = 0; i < wineries.length; i++) {
-        var lat = wineries[i].latitude;
-        var lon = wineries[i].longitude;
-        var name = wineries[i].name;
-        var address = wineries[i].address;
-        var town = wineries[i].location;
+    latitudes = document.getElementsByName("lat");
+    longitudes = document.getElementsByName("lon");
+    names = document.getElementsByName("name");
+    addresses = document.getElementsByName("address");
+    towns = document.getElementsByName("town");
+    ids = document.getElementsByName("winery_id");
+
+
+    for (let i = 0; i < ids.length; i++) {
+        var lat = parseFloat(latitudes[i].innerHTML);
+        var lon = parseFloat(longitudes[i].innerHTML);
+        var name = names[i].innerHTML;
+        var address = addresses[i].innerHTML;
+        var town = towns[i].innerHTML;
         var marker = L.marker([lat, lon], {icon: wineIcon}).addTo(mapList);
-        var winery_id = wineries[i].id;
+        var winery_id = ids[i].innerHTML;
         var message = "<div class='popup'><div class='popup-text'><span class='name-popup'>" + name +
             "</span></br></br><span class='address-popup'><b>" + address + "</b></span></br><span class='town-popup'>" + town + "</span></div></br><div class='popup-button'><a href=\"/winery/details/" +
             winery_id + "\"" + " class=\"custom-btn-popup custom-border-btn-popup btn\" role=\"button\">Details</a></div></div>"
         marker.bindPopup(message);
     }
-        function addClassById(elementId, className) {
+
+    function addClassById(elementId, className) {
         var element = document.getElementById(elementId);
 
         if (element) {
-        element.classList.add(className);
-    } else {
-        console.error("Element with ID '" + elementId + "' not found.");
+            element.classList.add(className);
+        } else {
+            console.error("Element with ID '" + elementId + "' not found.");
+        }
     }
-    }
+
     var anchorTags = document.getElementsByTagName('a');
     for (var i = 0; i < anchorTags.length; i++) {
         anchorTags[i].classList.remove('active');
     }
-        addClassById("map_active", "active");
+    addClassById("map_active", "active");
 </script>
+</body>
+
 </html>
