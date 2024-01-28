@@ -80,19 +80,18 @@ public class UserController {
                 restTemplate.postForEntity("http://localhost:9090/email/confirm", confirmationRequest, String.class);
             }
             catch (Exception exception){
-                return "redirect:/home";
+                return determineMasterTemplate(request);
             }
-
-
-
 
         } catch (InvalidArgumentsException | PasswordsDoNotMatchException
                  | UsernameAlreadyExistsException | PasswordLengthException exception) {
 
             setErrorAttributes(model, exception, request);
+            return determineMasterTemplate(request);
+
         }
 
-        return "redirect:/home";
+        return determineMasterTemplate(request);
     }
 
     @GetMapping("/language/mk")
