@@ -10,13 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/emailConfirmation")
 public class EmailConfirmationController {
 
     @Autowired
     private EmailConfirmationService emailConfirmationService;
 
-    @PostMapping("/send-confirmation")
+    @PostMapping("/email/confirm")
     public ResponseEntity<String> sendConfirmation(@RequestBody EmailConfirmationRequest confirmationRequest) {
 
         emailConfirmationService.sendConfirmationEmail(confirmationRequest.getEmail(), confirmationRequest.getConfirmationLink());

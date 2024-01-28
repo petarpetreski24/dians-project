@@ -77,19 +77,18 @@ public class UserController {
                 String token = EmailConfirmationTokenGenerator.generateToken();
                 EmailConfirmationRequest confirmationRequest = new EmailConfirmationRequest(email,
                         "localhost:8080/home");
-                restTemplate.postForEntity("http://localhost:9090/confirmation/send-confirmation", confirmationRequest, String.class);
+                restTemplate.postForEntity("http://localhost:9090/email/confirm", confirmationRequest, String.class);
             }
             catch (Exception exception){
                 return determineMasterTemplate(request);
             }
 
-
-
-
         } catch (InvalidArgumentsException | PasswordsDoNotMatchException
                  | UsernameAlreadyExistsException | PasswordLengthException exception) {
 
             setErrorAttributes(model, exception, request);
+            return determineMasterTemplate(request);
+
         }
 
         return determineMasterTemplate(request);

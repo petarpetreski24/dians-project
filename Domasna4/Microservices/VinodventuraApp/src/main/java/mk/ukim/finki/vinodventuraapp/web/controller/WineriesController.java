@@ -142,7 +142,12 @@ public class WineriesController {
 
     private void setErrorAttributes(String errorMessage, Model model) {
         if (errorMessage != null && !errorMessage.isEmpty()) {
-            model.addAttribute("error", errorMessage);
+            if (errorMessage.equals("user")){
+                model.addAttribute("error", "You need to be logged in to leave a review.");
+            }
+            else {
+                model.addAttribute("error", errorMessage);
+            }
             model.addAttribute("hasError", true);
         }
     }

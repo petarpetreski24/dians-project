@@ -3,9 +3,11 @@ package mk.ukim.finki.wineries.repository;
 import mk.ukim.finki.wineries.model.Winery;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface WineryRepository extends JpaRepository<Winery,Long> {
     List<Winery> findAllByLocationIgnoreCase(String location);
 

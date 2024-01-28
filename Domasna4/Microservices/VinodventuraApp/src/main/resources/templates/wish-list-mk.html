@@ -83,13 +83,13 @@
             <div th:each="winery : ${wineries}" class="winery-card">
                 <th:block th:if="${winery != null}">
                     <h2 th:if="${winery.getName() != null}" th:text="${winery.getName()}"></h2>
-                    <p th:if="${winery.getAddress() != null}" th:text="'Адреса: ' + ${winery.getAddress()}"></p>
-                    <p th:if="${winery.getLocation() != null}" th:text="'Населено место: ' + ${winery.getLocation()}"></p>
-                    <p th:if="${winery.getMobNumber() != null}" th:text="'Контакт телефон: ' + ${winery.getMobNumber()}"></p>
-                    <p th:if="${winery.getWebsite() != null}">
+                    <p th:if="${winery.getAddress() != null && !winery.getAddress().isEmpty()}" th:text="'Адреса: ' + ${winery.getAddress()}"></p>
+                    <p th:if="${winery.getLocation() != null && !winery.getLocation().isEmpty()}" th:text="'Населено место: ' + ${winery.getLocation()}"></p>
+                    <p th:if="${winery.getMobNumber() != null && !winery.getMobNumber().isEmpty()}" th:text="'Контакт телефон: +' + ${winery.getMobNumber()}"></p>
+                    <p th:if="${winery.getWebsite() != null && !winery.getWebsite().isEmpty()}">
                         Веб страна: <a th:href="${winery.getWebsite()}" target="_blank" th:text="${winery.getWebsite()}"></a>
                     </p>
-                    <p th:if="${winery.getWorkingHours() != null}" th:text="'Работни часови: ' + ${winery.getWorkingHours()}"></p>
+                    <p th:if="${winery.getWorkingHours() != null && !winery.getWorkingHours().isEmpty()}" th:text="'Работни часови: ' + ${winery.getWorkingHours()}"></p>
                     <form th:action="@{'/wish-list/delete-winery/{id}' (id=${winery.getId()})}" th:method="POST">
                         <button class="btn custom-btn custom-border-btn" href="/wish-list" role="button" type="submit">
                             Отстрани

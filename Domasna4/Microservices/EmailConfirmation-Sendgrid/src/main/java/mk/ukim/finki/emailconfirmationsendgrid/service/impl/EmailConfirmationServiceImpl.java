@@ -15,11 +15,11 @@ import java.io.IOException;
 
 @Service
 public class EmailConfirmationServiceImpl implements EmailConfirmationService {
-    @Value("${sendgrid.api-key}")
-    private String sendGridApiKey;
+//    @Value("${spring.sendgrid.api-key}")
+    private String sendGridApiKey = "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";
     @Override
     public void sendConfirmationEmail(String toEmail, String confirmationLink) {
-        Email from = new Email(""); //TODO
+        Email from = new Email("vinodventura@outlook.com"); //TODO
         Email to = new Email(toEmail);
         String subject = "Confirm Your Registration";
         String confirm = "<a href=" + confirmationLink + ">Confirm Your Account</a>";
@@ -42,6 +42,5 @@ public class EmailConfirmationServiceImpl implements EmailConfirmationService {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-    }
     }
 }
