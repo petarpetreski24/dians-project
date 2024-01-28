@@ -1,4 +1,11 @@
-FROM openjdk:19
+FROM maven:latest AS build
+WORKDIR /app-api
+COPY pom.xml .
+COPY src ./src
+
+RUN mvn clean package -DskipTests
+FROM openjdk:latest
 EXPOSE 9191
-ADD target/api-docker.jar api-docker.jar
-ENTRYPOINT ["java", "-jar", "/api-docker.jar"]
+WORKDIR /app-api
+COPY --from=build /app-api/target/api-gate.jar .
+CMD ["java", "-jar", "api-gate.jar"]

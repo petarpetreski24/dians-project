@@ -1,81 +1,73 @@
 version: '3'
 services:
   db:
-    image: "postgres"
+    image: "postgres:latest"
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: postgres
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Nikolapass1212.
+      POSTGRES_USER: njlwsnurgjndny
+      POSTGRES_PASSWORD: 46cd51b304900304f4c6eb6b51198441cc9edf19158d66301cd5660f995a8cea
+      POSTGRES_HOST: jdbc:postgresql://ec2-34-242-154-118.eu-west-1.compute.amazonaws.com/ddg2l7rs2uqffc
   app0:
     build: .
-    image: "server-docker.jar"
+    image: "server-app.jar"
     ports:
       - "8761:8761"
   app1:
     build: .
-    image: "review-docker.jar"
+    image: "email-conformation.jar"
     ports:
       - "9001:9001"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/postgres?currentSchema=dizajn_proekt
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: Nikolapass1212.
+      SPRING_DATASOURCE_URL: jdbc:postgresql://ec2-34-242-154-118.eu-west-1.compute.amazonaws.com/ddg2l7rs2uqffc
+      SPRING_DATASOURCE_USERNAME: njlwsnurgjndny
+      SPRING_DATASOURCE_PASSWORD: 46cd51b304900304f4c6eb6b51198441cc9edf19158d66301cd5660f995a8cea
     depends_on:
       - db
       - app0
-      - app6
+      - app5
   app2:
     build: .
-    image: "user-docker.jar"
+    image: "reviews-app.jar"
     ports:
       - "9002:9002"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/postgres?currentSchema=dizajn_proekt
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: Nikolapass1212.
+      SPRING_DATASOURCE_URL: jdbc:postgresql://ec2-34-242-154-118.eu-west-1.compute.amazonaws.com/ddg2l7rs2uqffc
+      SPRING_DATASOURCE_USERNAME: njlwsnurgjndny
+      SPRING_DATASOURCE_PASSWORD: 46cd51b304900304f4c6eb6b51198441cc9edf19158d66301cd5660f995a8cea
     depends_on:
       - db
       - app0
-      - app6
+      - app5
   app3:
     build: .
-    image: "winery-docker.jar"
+    image: "user-app.jar"
     ports:
       - "9003:9003"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/postgres?currentSchema=dizajn_proekt
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: Nikolapass1212.
+      SPRING_DATASOURCE_URL: jdbc:postgresql://ec2-34-242-154-118.eu-west-1.compute.amazonaws.com/ddg2l7rs2uqffc
+      SPRING_DATASOURCE_USERNAME: njlwsnurgjndny
+      SPRING_DATASOURCE_PASSWORD: 46cd51b304900304f4c6eb6b51198441cc9edf19158d66301cd5660f995a8cea
     depends_on:
       - db
       - app0
-      - app6
+      - app5
   app4:
     build: .
-    image: "wishlist-docker.jar"
+    image: "web-app.jar"
     ports:
       - "9004:9004"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/postgres?currentSchema=dizajn_proekt
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: Nikolapass1212.
+      SPRING_DATASOURCE_URL: jdbc:postgresql://ec2-34-242-154-118.eu-west-1.compute.amazonaws.com/ddg2l7rs2uqffc
+      SPRING_DATASOURCE_USERNAME: njlwsnurgjndny
+      SPRING_DATASOURCE_PASSWORD: 46cd51b304900304f4c6eb6b51198441cc9edf19158d66301cd5660f995a8cea
     depends_on:
       - db
       - app0
-      - app6
+      - app5
   app5:
     build: .
-    image: "web-app-docker.jar"
-    ports:
-      - "9005:9005"
-    depends_on:
-      - app0
-      - app6
-  app6:
-    build: .
-    image: "api-docker.jar"
+    image: "api-gate.jar"
     ports:
       - "9191:9191"
     depends_on:

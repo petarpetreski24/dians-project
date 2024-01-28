@@ -1,4 +1,11 @@
-FROM openjdk:17
-EXPOSE 9003
-ADD target/winery-docker.jar winery-docker.jar
-ENTRYPOINT ["java", "-jar", "/winery-docker.jar"]
+FROM maven:latest AS build
+WORKDIR /app-winery
+COPY pom.xml .
+COPY src ./src
+
+RUN mvn clean package -DskipTests
+FROM openjdk:latest
+EXPOSE 9005
+WORKDIR /app-winery
+COPY --from=build /app-winery/target/winery-app.jar .
+CMD ["java", "-jar", "winery-app.jar"]

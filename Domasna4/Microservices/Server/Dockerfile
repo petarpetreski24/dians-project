@@ -1,4 +1,11 @@
-FROM openjdk:17
+FROM maven:latest AS build
+WORKDIR /server
+COPY pom.xml .
+COPY src ./src
+
+RUN mvn clean package -DskipTests
+FROM openjdk:latest
 EXPOSE 8761
-ADD target/server-docker.jar server-docker.jar
-ENTRYPOINT ["java", "-jar", "server-docker.jar"]
+WORKDIR /server
+COPY --from=build /server/target/server-app.jar .
+CMD ["java", "-jar", "server-app.jar"]

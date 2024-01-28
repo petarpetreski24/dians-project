@@ -55,6 +55,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>email-conformation</finalName>
 	</build>
 
 </project>
