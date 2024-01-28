@@ -234,15 +234,15 @@
         <div class="wine-map-comment-container" >
             <div class="wine-map-container">
                 <div th:if="${winery}" class="winery-card">
-                    <h2 th:text="${winery.getName()}"></h2>
-                    <p th:if="${winery.getAddress()!=null}" th:text="'Адреса: ' + ${winery.getAddress()}"></p>
-                    <p th:if="${winery.getLocation()!=null}" th:text="'Град: ' + ${winery.getLocation()}"></p>
-                    <p th:if="${winery.getMobNumber()!=null}" th:text="'Телефонски број: ' + ${winery.getMobNumber()}"></p>
-                    <p th:if="${winery.getWebsite()!=null}">
-                        Веб-страница: <a th:href="${winery.getWebsite()}" target="_blank"
+                    <h2 th:text="${winery.getNameEn()}"></h2>
+                    <p th:if="${winery.getAddressEn()!=null && !winery.getAddressEn().isEmpty()}" th:text="'Address: ' + ${winery.getAddressEn()}"></p>
+                    <p th:if="${winery.getLocationEn()!=null && !winery.getLocationEn().isEmpty()}" th:text="'Location: ' + ${winery.getLocationEn()}"></p>
+                    <p th:if="${winery.getMobNumber()!=null && !winery.getMobNumber().isEmpty()}" th:text="'Mobile Number: +' + ${winery.getMobNumber()}"></p>
+                    <p th:if="${winery.getWebsite()!=null && !winery.getWebsite().isEmpty()}">
+                        Website: <a th:href="${winery.getWebsite()}" target="_blank"
                                          th:text="${winery.getWebsite()}"></a>
                     </p>
-                    <p th:if="${winery.getWorkingHours()!=null}"  th:text="'Работни часови: ' + ${winery.getWorkingHours()}"></p>
+                    <p th:if="${winery.getWorkingHoursEn()!=null}"  th:text="'Working Hours: ' + ${winery.getWorkingHoursEn()}"></p>
 
                 </div>
                 <div class="map-container" id="map"></div>
@@ -250,9 +250,9 @@
             <div class="comment-container">
                 <div class="comment-form" >
                     <form th:action="@{'/reviews/add/winery/{id}' (id=${winery.getId()})}" th:method="POST">
-                        <h3>Додај коментар</h3>
+                        <h3>Add a review</h3>
                         <div class="form-group">
-                            <label for="score" style="color: black">Рејтинг:</label>
+                            <label for="score" style="color: black">Rating:</label>
                             <select class="form-control" id="score" name="score" required style="appearance: auto;">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -262,12 +262,12 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="description" style="color: black">Опис:</label>
+                            <label for="description" style="color: black">Description:</label>
                             <textarea class="form-control" rows="4" id="description" name="description" required></textarea>
                         </div>
                         <input th:if="${#ctx.session.user !=null}" type="hidden" name="userId"
                                th:value="${#ctx.session.user.getId()}">
-                        <button type="submit" id="btn_r" class="custom-btn custom-btn:hover">Коментирај</button>
+                        <button type="submit" id="btn_r" class="custom-btn custom-btn:hover">Review</button>
                     </form>
                 </div>
             </div>
@@ -285,7 +285,7 @@
 
                 <div class="comments scroll" th:if="${winery.getReviews().size()>0}">
                     <div style="position: fixed; top: 0; width: 100%; background-color: #333; padding: 10px; z-index: 1000;">
-                        <h3 style="color: #f2f2f2;">Коментари:</h3>
+                        <h3 style="color: #f2f2f2;">Reviews:</h3>
                     </div>
 
 
@@ -296,14 +296,14 @@
                                 <span style="font-weight: lighter" th:text="${review.getUser().getUsername()} + ' ' + ${#temporals.format(review.getTimestamp(), 'yyyy-MM-dd HH:mm')}"></span>
                             </div>
                             <div style="font-size: medium; font-weight: normal; margin-top: 3px; margin-bottom: 3px; overflow-wrap: break-word;word-wrap: break-word;margin-left: 20px;white-space: pre-line;" th:text="'&nbsp;&nbsp;&nbsp;&nbsp;- ' + ${review.getDescription()}"></div>
-                            <div  th:text="'Рејтинг: '+ ${review.getScore()}"></div>
+                            <div  th:text="'Rating: '+ ${review.getScore()}"></div>
 
 
                         </div>
                     </div>
                 </div>
                 <div class="comments" th:if="${winery.getReviews().size()==0}">
-                    <h3 style="color: #f2f2f2; text-align: center">Нема коментари! <a href="#comment-form" style="color: #f2f2f2; text-decoration: underline;">Додади коментар.</a><span style="color: white;">&#8593;</span></h3>
+                    <h3 style="color: #f2f2f2; text-align: center">No reviews! <a href="#comment-form" style="color: #f2f2f2; text-decoration: underline;">Add a review.</a><span style="color: white;">&#8593;</span></h3>
                 </div>
             </div>
 

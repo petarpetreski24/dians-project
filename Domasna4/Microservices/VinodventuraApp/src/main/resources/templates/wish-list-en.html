@@ -82,14 +82,14 @@
         <th:block th:if="${wineries.size()!=0}">
             <div th:each="winery : ${wineries}" class="winery-card">
                 <th:block th:if="${winery != null}">
-                    <h2 th:if="${winery.getName() != null}" th:text="${winery.getName()}"></h2>
-                    <p th:if="${winery.getAddress() != null}" th:text="'Address: ' + ${winery.getAddress()}"></p>
-                    <p th:if="${winery.getLocation() != null}" th:text="'Location: ' + ${winery.getLocation()}"></p>
-                    <p th:if="${winery.getMobNumber() != null}" th:text="'Contact Number: ' + ${winery.getMobNumber()}"></p>
-                    <p th:if="${winery.getWebsite() != null}">
-                        Веб страна: <a th:href="${winery.getWebsite()}" target="_blank" th:text="${winery.getWebsite()}"></a>
+                    <h2 th:if="${winery.getNameEn() != null}" th:text="${winery.getNameEn()}"></h2>
+                    <p th:if="${winery.getAddressEn() != null && !winery.getAddressEn().isEmpty()}" th:text="'Address: ' + ${winery.getAddressEn()}"></p>
+                    <p th:if="${winery.getLocationEn() != null && !winery.getLocationEn().isEmpty()}" th:text="'Location: ' + ${winery.getLocationEn()}"></p>
+                    <p th:if="${winery.getMobNumber() != null && !winery.getMobNumber().isEmpty()}" th:text="'Contact Number: +' + ${winery.getMobNumber()}"></p>
+                    <p th:if="${winery.getWebsite() != null && !winery.getWebsite().isEmpty()}">
+                        Website: <a th:href="${winery.getWebsite()}" target="_blank" th:text="${winery.getWebsite()}"></a>
                     </p>
-                    <p th:if="${winery.getWorkingHours() != null}" th:text="'Working Hours: ' + ${winery.getWorkingHours()}"></p>
+                    <p th:if="${winery.getWorkingHoursEn() != null && !winery.getWorkingHoursEn().isEmpty()}" th:text="'Working Hours: ' + ${winery.getWorkingHoursEn()}"></p>
                     <form th:action="@{'/wish-list/delete-winery/{id}' (id=${winery.getId()})}" th:method="POST">
                         <button class="btn custom-btn custom-border-btn" href="/wish-list" role="button" type="submit">
                             Remove from list
